@@ -1,0 +1,5119 @@
+starting worker pid=45133 on localhost:11182 at 12:02:02.789
+starting worker pid=45146 on localhost:11182 at 12:02:02.960
+starting worker pid=45159 on localhost:11182 at 12:02:03.123
+starting worker pid=45172 on localhost:11182 at 12:02:03.287
+starting worker pid=45185 on localhost:11182 at 12:02:03.444
+starting worker pid=45198 on localhost:11182 at 12:02:03.601
+starting worker pid=45211 on localhost:11182 at 12:02:03.766
+starting worker pid=45224 on localhost:11182 at 12:02:03.931
+starting worker pid=45237 on localhost:11182 at 12:02:04.072
+starting worker pid=45251 on localhost:11182 at 12:02:04.223
+starting worker pid=45264 on localhost:11182 at 12:02:04.369
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+
+Attaching package: ‘SoilR’
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+ Bird_2002Edmonton, AlbertaEDM
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+  Bird_2002Edmonton, AlbertaEDM
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+  Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Bird_2002Edmonton, AlbertaEDM
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+   Doetterl_2021UG_felsic_ForestUPL1_2_3
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+  Bird_2002Edmonton, AlbertaEDM
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+  Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Bird_2002Edmonton, AlbertaEDM
+   Fekete_2020Carpathian Basin_1Bajansenye
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+   Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Fekete_2020Carpathian Basin_29Fule-1
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Fekete_2020Carpathian Basin_1Bajansenye
+ Fekete_2020Carpathian Basin_29Fule-2
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+   Fekete_2020Carpathian Basin_25Demjen-Eszak
+Fekete_2020Carpathian Basin_3Szilvagy
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+   Doetterl_2021UG_felsic_ForestUPL7_8_9
+Fekete_2020Carpathian Basin_5Bak-1
+ Foley_2023Hopland_BuckHopland_Buck_R4
+Fekete_2020Carpathian Basin_29Fule-1
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Fekete_2020Carpathian Basin_1Bajansenye
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+  Fekete_2020Carpathian Basin_29Fule-1
+Hahn_2004HainichHainich_1
+   Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Nagy_2017FP12013_FP1
+Fekete_2020Carpathian Basin_29Fule-2
+    Fekete_2020Carpathian Basin_3Szilvagy
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Nagy_2017FP32013_FP3
+  Fekete_2020Carpathian Basin_5Bak-1
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+   Foley_2023Hopland_BuckHopland_Buck_R4
+Nagy_2017FP42013_FP4
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Fekete_2020Carpathian Basin_29Fule-2
+Nagy_2017FP72013_FP7
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+   Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Nowinski_2021Joshua_TreeC10_near
+ Fekete_2020Carpathian Basin_3Szilvagy
+Hahn_2004HainichHainich_1
+  Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Nowinski_2021Joshua_TreeC5_near
+  Nagy_2017FP12013_FP1
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Bird_2002Edmonton, AlbertaEDM
+   Fekete_2020Carpathian Basin_5Bak-1
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+   Foley_2023Hopland_BuckHopland_Buck_R4
+ Nagy_2017FP32013_FP3
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Nagy_2017FP42013_FP4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+   Doetterl_2021UG_felsic_ForestUPL7_8_9
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Nagy_2017FP72013_FP7
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+  Hahn_2004HainichHainich_1
+Nowinski_2021Joshua_TreeC10_near
+  Nagy_2017FP12013_FP1
+  Nowinski_2021Joshua_TreeC5_near
+  Nagy_2017FP32013_FP3
+Nowinski_2021Joshua_TreeC7_near
+   Nagy_2017FP42013_FP4
+Posada_2011AMAAMA_3
+Fekete_2020Carpathian Basin_1Bajansenye
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Nagy_2017FP72013_FP7
+Posada_2011AMAAMA_4
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+  Nowinski_2021Joshua_TreeC10_near
+Posada_2011BCIBCI_4
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+Nowinski_2021Joshua_TreeC5_near
+  Posada_2011BCIBCI_5
+  Nowinski_2021Joshua_TreeC7_near
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Posada_2011BCIBCI_6
+Nowinski_2021Joshua_TreeC7_near
+   Posada_2011AMAAMA_3
+Posada_2011GORGGORG_1
+  Posada_2011AMAAMA_4
+ Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+Posada_2011GORGGORG_2
+Posada_2011BCIBCI_4
+    Doetterl_2021UG_felsic_ForestUPL4_5_6
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Posada_2011GORGGORG_4
+Posada_2011BCIBCI_5
+   Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011BCIBCI_6
+Posada_2011GORGGORG_5
+    Posada_2011GORGGORG_1
+Posada_2011PACUPACU_1
+  Fekete_2020Carpathian Basin_1Bajansenye
+  Posada_2011GORGGORG_2
+Posada_2011PACUPACU_2
+  Posada_2011GORGGORG_4
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Fekete_2020Carpathian Basin_29Fule-1
+ Posada_2011PACUPACU_3
+Posada_2011GORGGORG_5
+    Posada_2011PACUPACU_4
+Posada_2011PACUPACU_1
+Fekete_2020Carpathian Basin_1Bajansenye
+Posada_2011AMAAMA_3
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Bird_2002Edmonton, AlbertaEDM
+ Posada_2011PACUPACU_2
+    Posada_2011RITARITA_2
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Fekete_2020Carpathian Basin_29Fule-1
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Posada_2011PACUPACU_3
+ Fekete_2020Carpathian Basin_29Fule-2
+ Fekete_2020Carpathian Basin_29Fule-1
+Posada_2011PACUPACU_4
+  Posada_2011RITARITA_3
+Posada_2011AMAAMA_4
+  Fekete_2020Carpathian Basin_3Szilvagy
+Fekete_2020Carpathian Basin_29Fule-2
+Posada_2011RITARITA_2
+ Fekete_2020Carpathian Basin_29Fule-2
+  Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Fekete_2020Carpathian Basin_3Szilvagy
+ Posada_2011RITARITA_3
+  Posada_2011RITARITA_4
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Fekete_2020Carpathian Basin_5Bak-1
+   Posada_2011SELVASELVA_INCEPTISOL_4
+Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011RITARITA_4
+  Fekete_2020Carpathian Basin_5Bak-1
+Fekete_2020Carpathian Basin_5Bak-1
+   Posada_2011BCIBCI_4
+ Bird_2002Edmonton, AlbertaEDM
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Posada_2011SELVASELVA_UTISOL_4
+Posada_2011SELVASELVA_INCEPTISOL_4
+Foley_2023Hopland_BuckHopland_Buck_R4
+Foley_2023Hopland_BuckHopland_Buck_R4
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+     Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Posada_2011BCIBCI_5
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Bird_2002Edmonton, AlbertaEDM
+  Hahn_2004HainichHainich_1
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Bird_2002Edmonton, AlbertaEDM
+   Foley_2023Hopland_BuckHopland_Buck_R4
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+   Hahn_2004HainichHainich_1
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011SHERSHER_2
+   Posada_2011BCIBCI_6
+Nagy_2017FP12013_FP1
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011SELVASELVA_UTISOL_4
+ Posada_2011GORGGORG_1
+ Posada_2011SHERSHER_3
+Posada_2011SHERSHER_2
+   Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Posada_2011SHERSHER_3
+ Nagy_2017FP12013_FP1
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+   Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+     Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Posada_2011SHERSHER_5
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Nagy_2017FP32013_FP3
+  Posada_2011SHERSHER_5
+Bird_2002Edmonton, AlbertaEDM
+Scheibe_2022NahuelbutaNb_1
+ Nagy_2017FP32013_FP3
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Scheibe_2022NahuelbutaNb_2
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Scheibe_2022NahuelbutaNb_3
+Hahn_2004HainichHainich_1
+  Scheibe_2022NahuelbutaNb_4
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Nagy_2017FP42013_FP4
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Scheibe_2022Santa GraciaSG_1
+Posada_2011GORGGORG_2
+    Scheibe_2022NahuelbutaNb_1
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Posada_2011GORGGORG_4
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+Scheibe_2022Santa GraciaSG_2
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Posada_2011GORGGORG_5
+Scheibe_2022NahuelbutaNb_2
+  Nagy_2017FP42013_FP4
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+   Scheibe_2022NahuelbutaNb_3
+    Doetterl_2021UG_felsic_ForestUPL10_11_12
+Posada_2011PACUPACU_1
+ Scheibe_2022Santa GraciaSG_3
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Nagy_2017FP72013_FP7
+Scheibe_2022NahuelbutaNb_4
+   Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Nowinski_2021Joshua_TreeC10_near
+  Doetterl_2021UG_felsic_ForestUPL10_11_12
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Posada_2011PACUPACU_2
+Nagy_2017FP12013_FP1
+   Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Nagy_2017FP32013_FP3
+ Nowinski_2021Joshua_TreeC5_near
+Nagy_2017FP72013_FP7
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+Scheibe_2022Santa GraciaSG_1
+    Scheibe_2022Santa GraciaSG_2
+  Fekete_2020Carpathian Basin_1Bajansenye
+ Doetterl_2021UG_felsic_ForestUPL7_8_9
+  Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Doetterl_2021UG_felsic_ForestUPL4_5_6
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Posada_2011PACUPACU_3
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+  Sierra_2013ZAR01ZAR01_C
+Fekete_2020Carpathian Basin_1Bajansenye
+  Fekete_2020Carpathian Basin_29Fule-1
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Nowinski_2021Joshua_TreeC10_near
+Fekete_2020Carpathian Basin_29Fule-1
+ Scheibe_2022Santa GraciaSG_3
+ Nowinski_2021Joshua_TreeC5_near
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Fekete_2020Carpathian Basin_1Bajansenye
+    Nagy_2017FP42013_FP4
+Nowinski_2021Joshua_TreeC7_near
+Nowinski_2021Joshua_TreeC7_near
+ Posada_2011PACUPACU_4
+Nagy_2017FP72013_FP7
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Sierra_2013ZAR01ZAR01_C
+Fekete_2020Carpathian Basin_29Fule-2
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Posada_2011RITARITA_2
+     Posada_2011AMAAMA_3
+Nowinski_2021Joshua_TreeC10_near
+Sierra_2013ZAR01ZAR01_P1
+  Posada_2011AMAAMA_3
+ Posada_2011AMAAMA_4
+Fekete_2020Carpathian Basin_29Fule-2
+Nowinski_2021Joshua_TreeC5_near
+Fekete_2020Carpathian Basin_1Bajansenye
+   Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Sierra_2013ZAR01ZAR01_P1
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+Fekete_2020Carpathian Basin_3Szilvagy
+   Doetterl_2021UG_felsic_ForestUPL7_8_9
+Fekete_2020Carpathian Basin_29Fule-1
+Posada_2011BCIBCI_4
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Posada_2011AMAAMA_4
+  Posada_2011RITARITA_3
+Fekete_2020Carpathian Basin_3Szilvagy
+ Sierra_2013ZAR01ZAR01_P3
+Fekete_2020Carpathian Basin_5Bak-1
+ Fekete_2020Carpathian Basin_29Fule-2
+   Nowinski_2021Joshua_TreeC7_near
+ Posada_2011BCIBCI_4
+  Posada_2011AMAAMA_3
+Fekete_2020Carpathian Basin_29Fule-1
+Posada_2011BCIBCI_5
+Fekete_2020Carpathian Basin_5Bak-1
+  Sierra_2013ZAR01ZAR01_P3
+Foley_2023Hopland_BuckHopland_Buck_R4
+Posada_2011BCIBCI_6
+Fekete_2020Carpathian Basin_1Bajansenye
+  Posada_2011BCIBCI_5
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Fekete_2020Carpathian Basin_3Szilvagy
+ Posada_2011GORGGORG_1
+Posada_2011RITARITA_4
+  Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Fekete_2020Carpathian Basin_5Bak-1
+      Fekete_2020Carpathian Basin_29Fule-1
+Fekete_2020Carpathian Basin_29Fule-2
+Foley_2023Hopland_BuckHopland_Buck_R4
+ Posada_2011AMAAMA_4
+Sierra_2013ZAR04ZAR04_P1
+Fekete_2020Carpathian Basin_3Szilvagy
+Sierra_2013ZAR04ZAR04_P1
+Foley_2023Hopland_BuckHopland_Buck_R4
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Posada_2011GORGGORG_2
+   Posada_2011BCIBCI_4
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011BCIBCI_6
+    Posada_2011SELVASELVA_INCEPTISOL_4
+  Sierra_2013ZAR04ZAR04_P2
+Fekete_2020Carpathian Basin_29Fule-2
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Fekete_2020Carpathian Basin_5Bak-1
+  Foley_2023Hopland_BuckHopland_Buck_R4
+Posada_2011BCIBCI_5
+ Hahn_2004HainichHainich_1
+  Posada_2011GORGGORG_4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Sierra_2013ZAR04ZAR04_P3
+  Fekete_2020Carpathian Basin_3Szilvagy
+     Posada_2011SELVASELVA_UTISOL_4
+Fekete_2020Carpathian Basin_5Bak-1
+Nagy_2017FP12013_FP1
+Posada_2011GORGGORG_5
+Sierra_2013ZAR04ZAR04_P4
+Posada_2011GORGGORG_1
+  Nagy_2017FP32013_FP3
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011BCIBCI_6
+ Posada_2011PACUPACU_1
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Hahn_2004HainichHainich_1
+Posada_2011SHERSHER_2
+   Foley_2023Hopland_BuckHopland_Buck_R4
+Hahn_2004HainichHainich_1
+Sierra_2013ZAR04ZAR04_P2
+ Nagy_2017FP42013_FP4
+ Nagy_2017FP12013_FP1
+  Posada_2011PACUPACU_2
+ Posada_2011GORGGORG_1
+  Posada_2011GORGGORG_2
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Posada_2011GORGGORG_2
+Sierra_2013ZAR04ZAR04_P3
+  Posada_2011GORGGORG_4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Nagy_2017FP72013_FP7
+  Hahn_2004HainichHainich_1
+ Posada_2011GORGGORG_4
+  Posada_2011SHERSHER_3
+ Posada_2011PACUPACU_3
+ Nagy_2017FP12013_FP1
+ Nagy_2017FP32013_FP3
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011PACUPACU_4
+   Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Nowinski_2021Joshua_TreeC10_near
+Posada_2011SHERSHER_5
+ Posada_2011GORGGORG_5
+Sierra_2013ZAR04ZAR04_P4
+Posada_2011RITARITA_2
+ Nagy_2017FP32013_FP3
+   Nagy_2017FP12013_FP1
+ Posada_2011PACUPACU_1
+ Posada_2011GORGGORG_5
+   Posada_2011RITARITA_3
+Hahn_2004HainichHainich_1
+ Nagy_2017FP42013_FP4
+Nowinski_2021Joshua_TreeC5_near
+Scheibe_2022NahuelbutaNb_1
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Posada_2011RITARITA_4
+      Scheibe_2022NahuelbutaNb_2
+Nagy_2017FP32013_FP3
+Posada_2011PACUPACU_1
+  Nagy_2017FP12013_FP1
+Nagy_2017FP42013_FP4
+  Posada_2011SELVASELVA_INCEPTISOL_4
+    Nagy_2017FP72013_FP7
+Nowinski_2021Joshua_TreeC7_near
+Nagy_2017FP32013_FP3
+Posada_2011PACUPACU_2
+ Posada_2011PACUPACU_2
+ Posada_2011SELVASELVA_UTISOL_4
+Nagy_2017FP42013_FP4
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Nagy_2017FP72013_FP7
+  Nagy_2017FP42013_FP4
+Scheibe_2022NahuelbutaNb_3
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Posada_2011AMAAMA_3
+  Nowinski_2021Joshua_TreeC10_near
+  Posada_2011SHERSHER_2
+  Nowinski_2021Joshua_TreeC5_near
+ Posada_2011PACUPACU_3
+Nowinski_2021Joshua_TreeC7_near
+ Posada_2011AMAAMA_4
+Nagy_2017FP72013_FP7
+ Nagy_2017FP72013_FP7
+  Nowinski_2021Joshua_TreeC10_near
+   Posada_2011PACUPACU_4
+ Nowinski_2021Joshua_TreeC10_near
+Nowinski_2021Joshua_TreeC5_near
+ Posada_2011PACUPACU_3
+  Nowinski_2021Joshua_TreeC5_near
+Posada_2011AMAAMA_3
+   Scheibe_2022NahuelbutaNb_4
+Posada_2011RITARITA_2
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Nowinski_2021Joshua_TreeC7_near
+ Scheibe_2022Santa GraciaSG_1
+  Nowinski_2021Joshua_TreeC10_near
+Posada_2011AMAAMA_4
+ Scheibe_2022Santa GraciaSG_2
+Posada_2011SHERSHER_3
+Posada_2011AMAAMA_3
+Posada_2011BCIBCI_4
+   Posada_2011AMAAMA_4
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Posada_2011PACUPACU_4
+  Posada_2011RITARITA_3
+  Posada_2011BCIBCI_4
+Nowinski_2021Joshua_TreeC7_near
+Nowinski_2021Joshua_TreeC5_near
+Posada_2011BCIBCI_5
+  Posada_2011AMAAMA_3
+  Posada_2011BCIBCI_5
+  Posada_2011AMAAMA_4
+Posada_2011SHERSHER_5
+ Posada_2011BCIBCI_6
+Scheibe_2022Santa GraciaSG_3
+Posada_2011BCIBCI_4
+Posada_2011BCIBCI_6
+Posada_2011BCIBCI_4
+ Nowinski_2021Joshua_TreeC7_near
+    Posada_2011AMAAMA_3
+Posada_2011RITARITA_4
+Posada_2011RITARITA_2
+    Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011RITARITA_3
+Scheibe_2022NahuelbutaNb_1
+   Sierra_2013ZAR01ZAR01_C
+Posada_2011GORGGORG_1
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Posada_2011RITARITA_4
+Posada_2011AMAAMA_4
+Posada_2011BCIBCI_5
+  Sierra_2013ZAR01ZAR01_P1
+  Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011GORGGORG_1
+Posada_2011BCIBCI_6
+ Scheibe_2022NahuelbutaNb_2
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Posada_2011BCIBCI_4
+   Posada_2011SELVASELVA_UTISOL_4
+Posada_2011BCIBCI_5
+ Posada_2011GORGGORG_2
+Posada_2011SHERSHER_2
+Posada_2011SELVASELVA_UTISOL_4
+  Posada_2011SHERSHER_3
+   Posada_2011GORGGORG_2
+  Scheibe_2022NahuelbutaNb_3
+ Posada_2011GORGGORG_1
+Scheibe_2022NahuelbutaNb_4
+ Sierra_2013ZAR01ZAR01_P3
+Posada_2011SHERSHER_2
+Posada_2011SHERSHER_5
+Posada_2011BCIBCI_6
+ Posada_2011GORGGORG_4
+Scheibe_2022NahuelbutaNb_1
+    Posada_2011BCIBCI_5
+  Posada_2011SHERSHER_3
+Posada_2011GORGGORG_1
+   Sierra_2013ZAR04ZAR04_P1
+Posada_2011BCIBCI_6
+  Posada_2011SHERSHER_5
+Sierra_2013ZAR04ZAR04_P2
+Posada_2011GORGGORG_5
+Scheibe_2022Santa GraciaSG_1
+ Posada_2011GORGGORG_1
+  Posada_2011GORGGORG_2
+Scheibe_2022NahuelbutaNb_2
+  Posada_2011GORGGORG_2
+ Posada_2011GORGGORG_4
+Scheibe_2022NahuelbutaNb_1
+  Scheibe_2022NahuelbutaNb_3
+ Sierra_2013ZAR04ZAR04_P3
+ Posada_2011GORGGORG_2
+Scheibe_2022NahuelbutaNb_2
+ Posada_2011GORGGORG_4
+  Posada_2011GORGGORG_4
+Posada_2011PACUPACU_1
+    Sierra_2013ZAR04ZAR04_P4
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Scheibe_2022NahuelbutaNb_3
+ Posada_2011GORGGORG_5
+ Posada_2011GORGGORG_5
+Scheibe_2022Santa GraciaSG_2
+ Posada_2011GORGGORG_4
+   Scheibe_2022NahuelbutaNb_4
+Scheibe_2022Santa GraciaSG_3
+Posada_2011PACUPACU_2
+ Posada_2011GORGGORG_5
+Posada_2011PACUPACU_1
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Posada_2011GORGGORG_5
+  Scheibe_2022NahuelbutaNb_4
+  Posada_2011PACUPACU_1
+  Posada_2011PACUPACU_3
+  Posada_2011PACUPACU_1
+ Posada_2011PACUPACU_1
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Posada_2011PACUPACU_2
+  Posada_2011PACUPACU_2
+Posada_2011PACUPACU_3
+ Posada_2011PACUPACU_4
+ Posada_2011PACUPACU_4
+  Sierra_2013ZAR01ZAR01_C
+Scheibe_2022Santa GraciaSG_1
+ Posada_2011RITARITA_2
+ Posada_2011PACUPACU_2
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Posada_2011PACUPACU_2
+Sierra_2013ZAR01ZAR01_P1
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+  Scheibe_2022Santa GraciaSG_1
+ Posada_2011RITARITA_2
+Posada_2011PACUPACU_3
+      Posada_2011PACUPACU_3
+Posada_2011PACUPACU_4
+Posada_2011RITARITA_3
+  Posada_2011PACUPACU_4
+Scheibe_2022Santa GraciaSG_2
+Posada_2011RITARITA_2
+Posada_2011PACUPACU_3
+Scheibe_2022Santa GraciaSG_2
+Posada_2011RITARITA_3
+ Sierra_2013ZAR01ZAR01_P3
+ Posada_2011RITARITA_4
+ Posada_2011RITARITA_2
+     Sierra_2013ZAR04ZAR04_P1
+ Posada_2011SELVASELVA_INCEPTISOL_4
+Scheibe_2022Santa GraciaSG_3
+Posada_2011RITARITA_3
+  Sierra_2013ZAR04ZAR04_P2
+  Posada_2011RITARITA_4
+Scheibe_2022Santa GraciaSG_3
+ Sierra_2013ZAR04ZAR04_P3
+ Posada_2011RITARITA_4
+ Sierra_2013ZAR01ZAR01_C
+Posada_2011RITARITA_3
+Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011PACUPACU_4
+  Posada_2011SELVASELVA_UTISOL_4
+  Posada_2011RITARITA_4
+ Posada_2011SELVASELVA_UTISOL_4
+Posada_2011SELVASELVA_INCEPTISOL_4
+ Posada_2011SELVASELVA_UTISOL_4
+  Posada_2011SHERSHER_2
+   Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Posada_2011SHERSHER_3
+Sierra_2013ZAR01ZAR01_C
+  Sierra_2013ZAR04ZAR04_P4
+Posada_2011SHERSHER_2
+Bird_2002Edmonton, AlbertaEDM
+ Posada_2011RITARITA_2
+  Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Sierra_2013ZAR01ZAR01_P1
+    Posada_2011SHERSHER_5
+Sierra_2013ZAR01ZAR01_P1
+   Posada_2011SHERSHER_3
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Sierra_2013ZAR01ZAR01_P3
+Posada_2011SHERSHER_2
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+   Posada_2011SELVASELVA_INCEPTISOL_4
+Sierra_2013ZAR01ZAR01_P3
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+     Scheibe_2022NahuelbutaNb_1
+Posada_2011SHERSHER_5
+   Scheibe_2022NahuelbutaNb_2
+Scheibe_2022NahuelbutaNb_1
+  Scheibe_2022NahuelbutaNb_3
+Scheibe_2022NahuelbutaNb_2
+Sierra_2013ZAR04ZAR04_P1
+Posada_2011SELVASELVA_UTISOL_4
+Sierra_2013ZAR04ZAR04_P1
+  Posada_2011SHERSHER_2
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Scheibe_2022NahuelbutaNb_4
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Posada_2011RITARITA_3
+Posada_2011SHERSHER_3
+Posada_2011SHERSHER_3
+  Posada_2011SHERSHER_5
+ Posada_2011RITARITA_4
+       Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Posada_2011SELVASELVA_INCEPTISOL_4
+ Sierra_2013ZAR04ZAR04_P2
+Sierra_2013ZAR04ZAR04_P2
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Scheibe_2022Santa GraciaSG_1
+Scheibe_2022NahuelbutaNb_3
+ Scheibe_2022NahuelbutaNb_1
+Posada_2011SHERSHER_5
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+   Scheibe_2022NahuelbutaNb_1
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Posada_2011SELVASELVA_UTISOL_4
+   Scheibe_2022NahuelbutaNb_2
+  Posada_2011SHERSHER_2
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+   Scheibe_2022NahuelbutaNb_4
+Scheibe_2022NahuelbutaNb_2
+Bird_2002Edmonton, AlbertaEDM
+ Scheibe_2022NahuelbutaNb_3
+  Posada_2011SHERSHER_3
+Sierra_2013ZAR04ZAR04_P3
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Scheibe_2022NahuelbutaNb_4
+  Scheibe_2022Santa GraciaSG_1
+   Scheibe_2022Santa GraciaSG_1
+Scheibe_2022Santa GraciaSG_2
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+   Scheibe_2022NahuelbutaNb_3
+Scheibe_2022Santa GraciaSG_2
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+Scheibe_2022Santa GraciaSG_3
+Scheibe_2022Santa GraciaSG_2
+  Sierra_2013ZAR04ZAR04_P3
+   Sierra_2013ZAR04ZAR04_P4
+Scheibe_2022Santa GraciaSG_3
+  Sierra_2013ZAR01ZAR01_C
+ Posada_2011SHERSHER_5
+Scheibe_2022Santa GraciaSG_3
+Sierra_2013ZAR01ZAR01_C
+    Scheibe_2022NahuelbutaNb_1
+Sierra_2013ZAR01ZAR01_C
+   Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Scheibe_2022NahuelbutaNb_4
+Sierra_2013ZAR01ZAR01_P1
+Sierra_2013ZAR01ZAR01_P1
+Sierra_2013ZAR01ZAR01_P1
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Sierra_2013ZAR01ZAR01_P3
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Sierra_2013ZAR01ZAR01_P3
+   Scheibe_2022Santa GraciaSG_1
+ Sierra_2013ZAR04ZAR04_P1
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Sierra_2013ZAR04ZAR04_P1
+  Sierra_2013ZAR04ZAR04_P4
+ Scheibe_2022NahuelbutaNb_2
+    Fekete_2020Carpathian Basin_1Bajansenye
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Sierra_2013ZAR04ZAR04_P2
+Scheibe_2022NahuelbutaNb_3
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Sierra_2013ZAR01ZAR01_P3
+    Sierra_2013ZAR04ZAR04_P2
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+ Sierra_2013ZAR04ZAR04_P3
+Sierra_2013ZAR04ZAR04_P1
+  Sierra_2013ZAR04ZAR04_P4
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+  Sierra_2013ZAR04ZAR04_P2
+  Scheibe_2022Santa GraciaSG_2
+Scheibe_2022NahuelbutaNb_4
+  Scheibe_2022Santa GraciaSG_3
+Sierra_2013ZAR04ZAR04_P3
+  Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Sierra_2013ZAR04ZAR04_P3
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Sierra_2013ZAR04ZAR04_P4
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Fekete_2020Carpathian Basin_29Fule-1
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+    Sierra_2013ZAR04ZAR04_P4
+   Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Fekete_2020Carpathian Basin_29Fule-2
+  Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Sierra_2013ZAR01ZAR01_C
+   Scheibe_2022Santa GraciaSG_1
+Fekete_2020Carpathian Basin_3Szilvagy
+Sierra_2013ZAR01ZAR01_P1
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Fekete_2020Carpathian Basin_5Bak-1
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+  Scheibe_2022Santa GraciaSG_2
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Scheibe_2022Santa GraciaSG_3
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Sierra_2013ZAR01ZAR01_P3
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Foley_2023Hopland_BuckHopland_Buck_R4
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+   Sierra_2013ZAR04ZAR04_P1
+Fekete_2020Carpathian Basin_1Bajansenye
+ Bird_2002Edmonton, AlbertaEDM
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Sierra_2013ZAR04ZAR04_P2
+    Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+  Fekete_2020Carpathian Basin_25Demjen-Eszak
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Sierra_2013ZAR01ZAR01_C
+ Sierra_2013ZAR04ZAR04_P3
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+  Sierra_2013ZAR04ZAR04_P4
+   Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Sierra_2013ZAR01ZAR01_P1
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+   Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Bird_2002Edmonton, AlbertaEDM
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+Sierra_2013ZAR01ZAR01_P3
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+   Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Sierra_2013ZAR04ZAR04_P1
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Hahn_2004HainichHainich_1
+   Fekete_2020Carpathian Basin_29Fule-1
+Nagy_2017FP12013_FP1
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Sierra_2013ZAR04ZAR04_P2
+  Nagy_2017FP32013_FP3
+Fekete_2020Carpathian Basin_29Fule-2
+  Nagy_2017FP42013_FP4
+   Fekete_2020Carpathian Basin_3Szilvagy
+Nagy_2017FP72013_FP7
+ Sierra_2013ZAR04ZAR04_P3
+   Nowinski_2021Joshua_TreeC10_near
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Fekete_2020Carpathian Basin_5Bak-1
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Nowinski_2021Joshua_TreeC5_near
+  Sierra_2013ZAR04ZAR04_P4
+ Nowinski_2021Joshua_TreeC7_near
+Foley_2023Hopland_BuckHopland_Buck_R4
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+   Doetterl_2021UG_felsic_ForestUPL7_8_9
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Fekete_2020Carpathian Basin_1Bajansenye
+   Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011AMAAMA_3
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Posada_2011AMAAMA_4
+Fekete_2020Carpathian Basin_29Fule-1
+  Posada_2011BCIBCI_4
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Fekete_2020Carpathian Basin_29Fule-2
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Posada_2011BCIBCI_5
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+   Posada_2011BCIBCI_6
+Fekete_2020Carpathian Basin_3Szilvagy
+    Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011GORGGORG_1
+Fekete_2020Carpathian Basin_5Bak-1
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Foley_2023Hopland_BuckHopland_Buck_R4
+ Posada_2011GORGGORG_2
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Posada_2011GORGGORG_4
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Hahn_2004HainichHainich_1
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Posada_2011GORGGORG_5
+   Bird_2002Edmonton, AlbertaEDM
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Nagy_2017FP12013_FP1
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+  Posada_2011PACUPACU_1
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+    Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011PACUPACU_2
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Nagy_2017FP32013_FP3
+ Hahn_2004HainichHainich_1
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011PACUPACU_3
+  Nagy_2017FP42013_FP4
+ Posada_2011PACUPACU_4
+  Nagy_2017FP72013_FP7
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Posada_2011RITARITA_2
+  Nowinski_2021Joshua_TreeC10_near
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+   Nowinski_2021Joshua_TreeC5_near
+   Posada_2011RITARITA_3
+Nowinski_2021Joshua_TreeC7_near
+  Nagy_2017FP12013_FP1
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Posada_2011RITARITA_4
+  Bird_2002Edmonton, AlbertaEDM
+  Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011AMAAMA_3
+Nagy_2017FP32013_FP3
+   Posada_2011AMAAMA_4
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011BCIBCI_4
+   Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Posada_2011BCIBCI_5
+   Posada_2011BCIBCI_6
+   Nagy_2017FP42013_FP4
+Posada_2011GORGGORG_1
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+  Posada_2011GORGGORG_2
+Posada_2011SELVASELVA_UTISOL_4
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+Posada_2011GORGGORG_4
+   Nagy_2017FP72013_FP7
+Posada_2011GORGGORG_5
+Fekete_2020Carpathian Basin_1Bajansenye
+   Doetterl_2021UG_felsic_ForestUPL1_2_3
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+   Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Posada_2011SHERSHER_2
+Fekete_2020Carpathian Basin_1Bajansenye
+Nowinski_2021Joshua_TreeC10_near
+  Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Nowinski_2021Joshua_TreeC5_near
+Bird_2002Edmonton, AlbertaEDM
+     Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Posada_2011PACUPACU_1
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Nowinski_2021Joshua_TreeC7_near
+   Doetterl_2021UG_felsic_ForestUPL10_11_12
+Posada_2011SHERSHER_3
+Fekete_2020Carpathian Basin_29Fule-1
+Fekete_2020Carpathian Basin_29Fule-1
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Posada_2011PACUPACU_2
+Posada_2011AMAAMA_3
+    Posada_2011AMAAMA_4
+Fekete_2020Carpathian Basin_29Fule-2
+Posada_2011PACUPACU_3
+Fekete_2020Carpathian Basin_29Fule-2
+  Fekete_2020Carpathian Basin_3Szilvagy
+    Fekete_2020Carpathian Basin_3Szilvagy
+  Posada_2011BCIBCI_4
+Fekete_2020Carpathian Basin_5Bak-1
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Posada_2011PACUPACU_4
+ Posada_2011SHERSHER_5
+  Posada_2011RITARITA_2
+Scheibe_2022NahuelbutaNb_1
+Posada_2011BCIBCI_5
+  Posada_2011RITARITA_3
+   Scheibe_2022NahuelbutaNb_2
+Posada_2011RITARITA_4
+  Foley_2023Hopland_BuckHopland_Buck_R4
+Scheibe_2022NahuelbutaNb_3
+ Fekete_2020Carpathian Basin_5Bak-1
+Posada_2011BCIBCI_6
+Posada_2011SELVASELVA_INCEPTISOL_4
+    Foley_2023Hopland_BuckHopland_Buck_R4
+  Posada_2011SELVASELVA_UTISOL_4
+Posada_2011GORGGORG_1
+Scheibe_2022NahuelbutaNb_4
+  Posada_2011SHERSHER_2
+  Posada_2011GORGGORG_2
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Posada_2011SHERSHER_3
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Fekete_2020Carpathian Basin_1Bajansenye
+Posada_2011SHERSHER_5
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+   Scheibe_2022NahuelbutaNb_1
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+   Scheibe_2022NahuelbutaNb_2
+Posada_2011GORGGORG_4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Fekete_2020Carpathian Basin_29Fule-1
+Scheibe_2022NahuelbutaNb_3
+ Scheibe_2022Santa GraciaSG_1
+   Fekete_2020Carpathian Basin_29Fule-2
+  Doetterl_2021RW_mixed_ForestNPL10_11_12
+Scheibe_2022Santa GraciaSG_2
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Fekete_2020Carpathian Basin_3Szilvagy
+Scheibe_2022NahuelbutaNb_4
+  Fekete_2020Carpathian Basin_5Bak-1
+  Foley_2023Hopland_BuckHopland_Buck_R4
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Scheibe_2022Santa GraciaSG_1
+  Doetterl_2021UG_felsic_ForestUPL1_2_3
+Posada_2011GORGGORG_5
+Scheibe_2022Santa GraciaSG_3
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Sierra_2013ZAR01ZAR01_C
+ Sierra_2013ZAR01ZAR01_P1
+  Scheibe_2022Santa GraciaSG_2
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+   Hahn_2004HainichHainich_1
+Scheibe_2022Santa GraciaSG_3
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Sierra_2013ZAR01ZAR01_P3
+   Bird_2002Edmonton, AlbertaEDM
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Nagy_2017FP12013_FP1
+Hahn_2004HainichHainich_1
+Hahn_2004HainichHainich_1
+  Nagy_2017FP12013_FP1
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011PACUPACU_1
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011PACUPACU_2
+     Nagy_2017FP32013_FP3
+ Fekete_2020Carpathian Basin_1Bajansenye
+Sierra_2013ZAR01ZAR01_C
+  Nagy_2017FP42013_FP4
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Nagy_2017FP12013_FP1
+Nagy_2017FP32013_FP3
+ Fekete_2020Carpathian Basin_29Fule-1
+  Fekete_2020Carpathian Basin_29Fule-2
+ Sierra_2013ZAR04ZAR04_P1
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011PACUPACU_3
+   Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Fekete_2020Carpathian Basin_5Bak-1
+ Sierra_2013ZAR04ZAR04_P2
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+  Foley_2023Hopland_BuckHopland_Buck_R4
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+ Nagy_2017FP42013_FP4
+  Nagy_2017FP32013_FP3
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+   Posada_2011PACUPACU_4
+Bird_2002Edmonton, AlbertaEDM
+Sierra_2013ZAR01ZAR01_P1
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Nagy_2017FP72013_FP7
+   Nagy_2017FP72013_FP7
+ Sierra_2013ZAR04ZAR04_P3
+  Bird_2002Edmonton, AlbertaEDM
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Posada_2011RITARITA_2
+  Sierra_2013ZAR01ZAR01_P3
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Nowinski_2021Joshua_TreeC10_near
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Nagy_2017FP42013_FP4
+ Nowinski_2021Joshua_TreeC10_near
+   Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Sierra_2013ZAR04ZAR04_P4
+Sierra_2013ZAR04ZAR04_P1
+Nowinski_2021Joshua_TreeC5_near
+ Posada_2011RITARITA_3
+      Nowinski_2021Joshua_TreeC5_near
+ Sierra_2013ZAR04ZAR04_P2
+ Bird_2002Edmonton, AlbertaEDM
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Nagy_2017FP72013_FP7
+ Posada_2011RITARITA_4
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+   Nowinski_2021Joshua_TreeC7_near
+Nowinski_2021Joshua_TreeC10_near
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Posada_2011SELVASELVA_INCEPTISOL_4
+   Posada_2011SELVASELVA_UTISOL_4
+  Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Nowinski_2021Joshua_TreeC7_near
+   Hahn_2004HainichHainich_1
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+ Sierra_2013ZAR04ZAR04_P3
+Nagy_2017FP12013_FP1
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Posada_2011AMAAMA_3
+   Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+   Doetterl_2021UG_felsic_ForestUPL4_5_6
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+  Nowinski_2021Joshua_TreeC5_near
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011SHERSHER_2
+Sierra_2013ZAR04ZAR04_P4
+Nagy_2017FP32013_FP3
+  Fekete_2020Carpathian Basin_1Bajansenye
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Fekete_2020Carpathian Basin_25Demjen-Eszak
+    Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Nowinski_2021Joshua_TreeC7_near
+Posada_2011SHERSHER_3
+Posada_2011AMAAMA_3
+Nagy_2017FP42013_FP4
+     Fekete_2020Carpathian Basin_29Fule-1
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Posada_2011AMAAMA_4
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Posada_2011AMAAMA_4
+Nagy_2017FP72013_FP7
+        Doetterl_2021UG_felsic_ForestUPL1_2_3
+Posada_2011AMAAMA_3
+Posada_2011BCIBCI_4
+Posada_2011SHERSHER_5
+Nowinski_2021Joshua_TreeC10_near
+ Fekete_2020Carpathian Basin_29Fule-2
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011BCIBCI_4
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+    Posada_2011BCIBCI_5
+Fekete_2020Carpathian Basin_3Szilvagy
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+  Fekete_2020Carpathian Basin_5Bak-1
+ Posada_2011BCIBCI_5
+Posada_2011AMAAMA_4
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Nowinski_2021Joshua_TreeC5_near
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011BCIBCI_6
+ Scheibe_2022NahuelbutaNb_1
+Posada_2011BCIBCI_6
+  Posada_2011BCIBCI_4
+Foley_2023Hopland_BuckHopland_Buck_R4
+    Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Scheibe_2022NahuelbutaNb_2
+   Posada_2011GORGGORG_1
+Scheibe_2022NahuelbutaNb_3
+Posada_2011GORGGORG_1
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011BCIBCI_5
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Posada_2011GORGGORG_2
+Nowinski_2021Joshua_TreeC7_near
+    Doetterl_2021UG_felsic_ForestUPL10_11_12
+Posada_2011AMAAMA_3
+  Scheibe_2022NahuelbutaNb_4
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Posada_2011GORGGORG_4
+Posada_2011BCIBCI_6
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Fekete_2020Carpathian Basin_1Bajansenye
+ Posada_2011GORGGORG_2
+Fekete_2020Carpathian Basin_1Bajansenye
+     Posada_2011GORGGORG_4
+Scheibe_2022Santa GraciaSG_1
+Fekete_2020Carpathian Basin_1Bajansenye
+ Posada_2011GORGGORG_5
+   Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Posada_2011GORGGORG_5
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+Scheibe_2022Santa GraciaSG_2
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Posada_2011GORGGORG_1
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+   Hahn_2004HainichHainich_1
+ Posada_2011PACUPACU_1
+   Posada_2011PACUPACU_1
+ Fekete_2020Carpathian Basin_29Fule-1
+Fekete_2020Carpathian Basin_29Fule-1
+  Fekete_2020Carpathian Basin_29Fule-2
+Fekete_2020Carpathian Basin_29Fule-1
+ Posada_2011GORGGORG_2
+  Nagy_2017FP12013_FP1
+Fekete_2020Carpathian Basin_29Fule-2
+ Posada_2011PACUPACU_2
+ Posada_2011PACUPACU_2
+ Fekete_2020Carpathian Basin_29Fule-2
+Posada_2011AMAAMA_4
+Posada_2011GORGGORG_4
+ Scheibe_2022Santa GraciaSG_3
+Fekete_2020Carpathian Basin_3Szilvagy
+Fekete_2020Carpathian Basin_3Szilvagy
+  Nagy_2017FP32013_FP3
+Fekete_2020Carpathian Basin_5Bak-1
+    Fekete_2020Carpathian Basin_3Szilvagy
+Foley_2023Hopland_BuckHopland_Buck_R4
+   Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Nagy_2017FP42013_FP4
+ Posada_2011BCIBCI_4
+ Posada_2011PACUPACU_3
+Fekete_2020Carpathian Basin_5Bak-1
+Nagy_2017FP72013_FP7
+Fekete_2020Carpathian Basin_5Bak-1
+ Posada_2011PACUPACU_3
+ Posada_2011PACUPACU_4
+Nowinski_2021Joshua_TreeC10_near
+   Nowinski_2021Joshua_TreeC5_near
+  Posada_2011GORGGORG_5
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+   Hahn_2004HainichHainich_1
+Foley_2023Hopland_BuckHopland_Buck_R4
+Nowinski_2021Joshua_TreeC7_near
+   Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Nagy_2017FP12013_FP1
+ Foley_2023Hopland_BuckHopland_Buck_R4
+ Posada_2011AMAAMA_3
+ Sierra_2013ZAR01ZAR01_C
+Posada_2011RITARITA_2
+Posada_2011BCIBCI_5
+ Posada_2011PACUPACU_1
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+  Sierra_2013ZAR01ZAR01_P1
+  Posada_2011BCIBCI_6
+Hahn_2004HainichHainich_1
+ Posada_2011PACUPACU_4
+   Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011RITARITA_3
+Posada_2011RITARITA_2
+ Posada_2011AMAAMA_4
+ Sierra_2013ZAR01ZAR01_P3
+Nagy_2017FP32013_FP3
+Posada_2011GORGGORG_1
+ Posada_2011RITARITA_3
+  Posada_2011PACUPACU_2
+Nagy_2017FP12013_FP1
+  Sierra_2013ZAR04ZAR04_P1
+ Nagy_2017FP42013_FP4
+ Nagy_2017FP32013_FP3
+ Sierra_2013ZAR04ZAR04_P2
+Nagy_2017FP72013_FP7
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011RITARITA_4
+ Nagy_2017FP42013_FP4
+ Posada_2011BCIBCI_4
+Posada_2011RITARITA_4
+   Posada_2011PACUPACU_3
+Posada_2011SELVASELVA_INCEPTISOL_4
+Hahn_2004HainichHainich_1
+    Nagy_2017FP72013_FP7
+Nagy_2017FP12013_FP1
+  Posada_2011SELVASELVA_UTISOL_4
+    Posada_2011BCIBCI_5
+Nowinski_2021Joshua_TreeC10_near
+Nagy_2017FP32013_FP3
+Posada_2011SHERSHER_2
+Posada_2011GORGGORG_2
+    Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011SHERSHER_3
+Sierra_2013ZAR04ZAR04_P3
+Nowinski_2021Joshua_TreeC10_near
+ Nagy_2017FP42013_FP4
+ Posada_2011GORGGORG_4
+   Sierra_2013ZAR04ZAR04_P4
+Posada_2011SHERSHER_5
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Nowinski_2021Joshua_TreeC5_near
+Scheibe_2022NahuelbutaNb_1
+   Scheibe_2022NahuelbutaNb_2
+Posada_2011PACUPACU_4
+ Nowinski_2021Joshua_TreeC7_near
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Posada_2011SELVASELVA_UTISOL_4
+ Posada_2011BCIBCI_6
+Nagy_2017FP72013_FP7
+   Posada_2011AMAAMA_3
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Posada_2011GORGGORG_5
+   Posada_2011AMAAMA_4
+Nowinski_2021Joshua_TreeC5_near
+    Posada_2011BCIBCI_4
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Nowinski_2021Joshua_TreeC10_near
+  Posada_2011GORGGORG_1
+Posada_2011BCIBCI_5
+ Nowinski_2021Joshua_TreeC5_near
+   Posada_2011BCIBCI_6
+Posada_2011RITARITA_2
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Scheibe_2022NahuelbutaNb_3
+Nowinski_2021Joshua_TreeC7_near
+Posada_2011PACUPACU_1
+   Posada_2011SHERSHER_2
+ Posada_2011PACUPACU_2
+Scheibe_2022NahuelbutaNb_4
+ Posada_2011GORGGORG_1
+  Posada_2011GORGGORG_2
+Posada_2011PACUPACU_3
+Posada_2011AMAAMA_3
+     Nowinski_2021Joshua_TreeC7_near
+Posada_2011PACUPACU_4
+ Posada_2011RITARITA_2
+ Posada_2011GORGGORG_4
+Posada_2011AMAAMA_4
+Posada_2011RITARITA_3
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+ Posada_2011RITARITA_3
+  Posada_2011BCIBCI_4
+Posada_2011GORGGORG_2
+Posada_2011SHERSHER_3
+Scheibe_2022Santa GraciaSG_1
+Posada_2011RITARITA_4
+ Bird_2002Edmonton, AlbertaEDM
+     Posada_2011GORGGORG_4
+  Posada_2011GORGGORG_5
+  Posada_2011BCIBCI_5
+Posada_2011GORGGORG_5
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Posada_2011AMAAMA_3
+Posada_2011SHERSHER_5
+   Posada_2011SELVASELVA_INCEPTISOL_4
+Scheibe_2022Santa GraciaSG_2
+  Posada_2011RITARITA_4
+Posada_2011PACUPACU_1
+Posada_2011AMAAMA_4
+Scheibe_2022NahuelbutaNb_1
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+    Posada_2011BCIBCI_6
+  Posada_2011SELVASELVA_UTISOL_4
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Scheibe_2022Santa GraciaSG_3
+Posada_2011PACUPACU_1
+  Scheibe_2022NahuelbutaNb_2
+ Posada_2011PACUPACU_2
+ Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011BCIBCI_4
+Posada_2011PACUPACU_2
+   Posada_2011GORGGORG_1
+   Posada_2011SHERSHER_2
+Scheibe_2022NahuelbutaNb_3
+ Posada_2011SELVASELVA_UTISOL_4
+   Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Sierra_2013ZAR01ZAR01_C
+ Posada_2011BCIBCI_5
+Posada_2011SHERSHER_2
+  Doetterl_2021RW_mixed_ForestNPL10_11_12
+ Posada_2011PACUPACU_3
+Posada_2011SHERSHER_3
+Posada_2011GORGGORG_2
+Posada_2011BCIBCI_6
+  Posada_2011GORGGORG_4
+ Posada_2011GORGGORG_5
+  Posada_2011PACUPACU_3
+ Posada_2011SHERSHER_5
+Posada_2011GORGGORG_1
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+Sierra_2013ZAR01ZAR01_P1
+   Posada_2011PACUPACU_4
+Posada_2011GORGGORG_2
+   Posada_2011RITARITA_2
+Posada_2011GORGGORG_4
+Posada_2011SHERSHER_3
+  Sierra_2013ZAR01ZAR01_P3
+Posada_2011RITARITA_3
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Scheibe_2022NahuelbutaNb_4
+Posada_2011GORGGORG_5
+Scheibe_2022NahuelbutaNb_1
+    Posada_2011PACUPACU_1
+Posada_2011PACUPACU_4
+     Sierra_2013ZAR04ZAR04_P1
+Scheibe_2022NahuelbutaNb_2
+Posada_2011RITARITA_2
+ Posada_2011SHERSHER_5
+  Scheibe_2022NahuelbutaNb_3
+Posada_2011RITARITA_3
+  Scheibe_2022Santa GraciaSG_1
+Posada_2011PACUPACU_2
+ Scheibe_2022NahuelbutaNb_4
+ Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011RITARITA_4
+ Posada_2011PACUPACU_1
+  Scheibe_2022Santa GraciaSG_1
+   Sierra_2013ZAR04ZAR04_P2
+  Posada_2011SELVASELVA_INCEPTISOL_4
+Sierra_2013ZAR04ZAR04_P3
+ Scheibe_2022Santa GraciaSG_2
+ Scheibe_2022Santa GraciaSG_2
+Posada_2011PACUPACU_2
+Scheibe_2022NahuelbutaNb_1
+ Sierra_2013ZAR04ZAR04_P4
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Posada_2011PACUPACU_3
+ Scheibe_2022NahuelbutaNb_2
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Scheibe_2022Santa GraciaSG_3
+ Posada_2011RITARITA_4
+Posada_2011SELVASELVA_UTISOL_4
+   Posada_2011PACUPACU_4
+  Scheibe_2022Santa GraciaSG_3
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Posada_2011RITARITA_2
+   Scheibe_2022NahuelbutaNb_3
+Posada_2011SELVASELVA_INCEPTISOL_4
+Sierra_2013ZAR01ZAR01_C
+Posada_2011SHERSHER_2
+Posada_2011PACUPACU_3
+ Fekete_2020Carpathian Basin_1Bajansenye
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+    Sierra_2013ZAR01ZAR01_C
+   Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Scheibe_2022NahuelbutaNb_4
+Posada_2011PACUPACU_4
+  Posada_2011SELVASELVA_UTISOL_4
+Sierra_2013ZAR01ZAR01_P1
+Posada_2011RITARITA_3
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Bird_2002Edmonton, AlbertaEDM
+     Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011SHERSHER_2
+ Sierra_2013ZAR01ZAR01_P1
+Posada_2011RITARITA_2
+  Sierra_2013ZAR01ZAR01_P3
+Sierra_2013ZAR01ZAR01_P3
+Scheibe_2022Santa GraciaSG_1
+   Sierra_2013ZAR04ZAR04_P1
+    Posada_2011RITARITA_4
+Scheibe_2022Santa GraciaSG_2
+Posada_2011SHERSHER_3
+  Posada_2011RITARITA_3
+ Sierra_2013ZAR04ZAR04_P1
+ Fekete_2020Carpathian Basin_29Fule-1
+Scheibe_2022Santa GraciaSG_3
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Posada_2011SHERSHER_5
+ Posada_2011SELVASELVA_INCEPTISOL_4
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Sierra_2013ZAR04ZAR04_P2
+   Posada_2011SHERSHER_3
+Scheibe_2022NahuelbutaNb_1
+ Posada_2011RITARITA_4
+Scheibe_2022NahuelbutaNb_2
+    Sierra_2013ZAR01ZAR01_C
+Posada_2011SELVASELVA_UTISOL_4
+  Sierra_2013ZAR01ZAR01_P1
+Posada_2011SHERSHER_2
+Scheibe_2022NahuelbutaNb_3
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+  Sierra_2013ZAR01ZAR01_P3
+  Fekete_2020Carpathian Basin_29Fule-2
+  Sierra_2013ZAR04ZAR04_P2
+Scheibe_2022NahuelbutaNb_4
+  Posada_2011SELVASELVA_INCEPTISOL_4
+ Posada_2011SHERSHER_3
+Posada_2011SHERSHER_5
+Sierra_2013ZAR04ZAR04_P1
+   Scheibe_2022NahuelbutaNb_1
+  Scheibe_2022Santa GraciaSG_1
+Sierra_2013ZAR04ZAR04_P2
+Sierra_2013ZAR04ZAR04_P3
+   Posada_2011SHERSHER_5
+Scheibe_2022Santa GraciaSG_2
+   Scheibe_2022Santa GraciaSG_3
+ Sierra_2013ZAR01ZAR01_C
+Sierra_2013ZAR04ZAR04_P3
+ Sierra_2013ZAR04ZAR04_P4
+ Sierra_2013ZAR04ZAR04_P3
+Scheibe_2022NahuelbutaNb_2
+ Sierra_2013ZAR01ZAR01_P1
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+    Scheibe_2022NahuelbutaNb_1
+Scheibe_2022NahuelbutaNb_3
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011SELVASELVA_UTISOL_4
+Sierra_2013ZAR01ZAR01_P3
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Posada_2011SHERSHER_2
+Sierra_2013ZAR04ZAR04_P4
+    Sierra_2013ZAR04ZAR04_P4
+   Posada_2011SHERSHER_3
+ Scheibe_2022NahuelbutaNb_2
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Scheibe_2022NahuelbutaNb_4
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Fekete_2020Carpathian Basin_5Bak-1
+  Scheibe_2022NahuelbutaNb_3
+ Posada_2011SHERSHER_5
+Sierra_2013ZAR04ZAR04_P1
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Sierra_2013ZAR04ZAR04_P2
+   Sierra_2013ZAR04ZAR04_P3
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+ Scheibe_2022NahuelbutaNb_1
+  Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Scheibe_2022NahuelbutaNb_4
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Doetterl_2021UG_felsic_ForestUPL4_5_6
+  Scheibe_2022Santa GraciaSG_1
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Scheibe_2022Santa GraciaSG_1
+Scheibe_2022Santa GraciaSG_2
+   Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Sierra_2013ZAR04ZAR04_P4
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Scheibe_2022NahuelbutaNb_2
+   Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Foley_2023Hopland_BuckHopland_Buck_R4
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Scheibe_2022NahuelbutaNb_3
+Fekete_2020Carpathian Basin_1Bajansenye
+ Scheibe_2022Santa GraciaSG_2
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Scheibe_2022Santa GraciaSG_3
+  Scheibe_2022NahuelbutaNb_4
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+Scheibe_2022Santa GraciaSG_3
+Scheibe_2022Santa GraciaSG_1
+  Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Bird_2002Edmonton, AlbertaEDM
+Sierra_2013ZAR01ZAR01_C
+Scheibe_2022Santa GraciaSG_2
+  Sierra_2013ZAR01ZAR01_P1
+  Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Scheibe_2022Santa GraciaSG_3
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Fekete_2020Carpathian Basin_29Fule-1
+   Hahn_2004HainichHainich_1
+Sierra_2013ZAR01ZAR01_C
+   Nagy_2017FP12013_FP1
+  Fekete_2020Carpathian Basin_29Fule-2
+Nagy_2017FP32013_FP3
+  Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Nagy_2017FP42013_FP4
+Fekete_2020Carpathian Basin_3Szilvagy
+Sierra_2013ZAR01ZAR01_P1
+  Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Nagy_2017FP72013_FP7
+  Fekete_2020Carpathian Basin_5Bak-1
+ Nowinski_2021Joshua_TreeC10_near
+   Foley_2023Hopland_BuckHopland_Buck_R4
+   Sierra_2013ZAR01ZAR01_P3
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Sierra_2013ZAR01ZAR01_P3
+Nowinski_2021Joshua_TreeC5_near
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Nowinski_2021Joshua_TreeC7_near
+  Hahn_2004HainichHainich_1
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+  Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Sierra_2013ZAR01ZAR01_C
+  Posada_2011AMAAMA_3
+ Sierra_2013ZAR01ZAR01_P1
+  Sierra_2013ZAR04ZAR04_P1
+Sierra_2013ZAR01ZAR01_P3
+Nagy_2017FP12013_FP1
+  Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011AMAAMA_4
+Sierra_2013ZAR04ZAR04_P1
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Posada_2011BCIBCI_4
+Sierra_2013ZAR04ZAR04_P2
+   Posada_2011BCIBCI_5
+Sierra_2013ZAR04ZAR04_P3
+Nagy_2017FP32013_FP3
+   Nagy_2017FP42013_FP4
+Sierra_2013ZAR04ZAR04_P1
+  Sierra_2013ZAR04ZAR04_P4
+Nagy_2017FP72013_FP7
+ Sierra_2013ZAR04ZAR04_P2
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Posada_2011BCIBCI_6
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Sierra_2013ZAR04ZAR04_P3
+  Posada_2011GORGGORG_1
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+    Nowinski_2021Joshua_TreeC10_near
+Posada_2011GORGGORG_2
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Sierra_2013ZAR04ZAR04_P4
+  Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Sierra_2013ZAR04ZAR04_P2
+ Nowinski_2021Joshua_TreeC5_near
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+    Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Nowinski_2021Joshua_TreeC7_near
+Posada_2011GORGGORG_4
+Sierra_2013ZAR04ZAR04_P3
+   Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011AMAAMA_3
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+  Posada_2011AMAAMA_4
+Sierra_2013ZAR04ZAR04_P4
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Posada_2011BCIBCI_4
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Posada_2011GORGGORG_5
+    Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011BCIBCI_5
+  Posada_2011PACUPACU_1
+ Posada_2011BCIBCI_6
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+  Fekete_2020Carpathian Basin_1Bajansenye
+ Posada_2011GORGGORG_1
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Posada_2011PACUPACU_2
+  Posada_2011GORGGORG_2
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+  Fekete_2020Carpathian Basin_25Demjen-Eszak
+Posada_2011PACUPACU_3
+Posada_2011GORGGORG_4
+  Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Fekete_2020Carpathian Basin_29Fule-1
+Posada_2011GORGGORG_5
+Bird_2002Edmonton, AlbertaEDM
+Posada_2011PACUPACU_4
+   Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Posada_2011PACUPACU_1
+ Fekete_2020Carpathian Basin_29Fule-2
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+  Posada_2011PACUPACU_2
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+   Fekete_2020Carpathian Basin_3Szilvagy
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011PACUPACU_3
+Posada_2011RITARITA_2
+   Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Posada_2011PACUPACU_4
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Posada_2011RITARITA_3
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Fekete_2020Carpathian Basin_5Bak-1
+ Posada_2011RITARITA_2
+ Doetterl_2021UG_felsic_ForestUPL4_5_6
+   Posada_2011RITARITA_4
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Foley_2023Hopland_BuckHopland_Buck_R4
+ Posada_2011RITARITA_3
+Fekete_2020Carpathian Basin_1Bajansenye
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+    Bird_2002Edmonton, AlbertaEDM
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Posada_2011RITARITA_4
+  Fekete_2020Carpathian Basin_29Fule-1
+ Posada_2011SELVASELVA_INCEPTISOL_4
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Fekete_2020Carpathian Basin_29Fule-2
+  Posada_2011SELVASELVA_INCEPTISOL_4
+ Fekete_2020Carpathian Basin_3Szilvagy
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+  Fekete_2020Carpathian Basin_5Bak-1
+   Posada_2011SELVASELVA_UTISOL_4
+Foley_2023Hopland_BuckHopland_Buck_R4
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011SHERSHER_2
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+   Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011SHERSHER_3
+ Posada_2011SELVASELVA_UTISOL_4
+Hahn_2004HainichHainich_1
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+   Posada_2011SHERSHER_5
+Nagy_2017FP12013_FP1
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Nagy_2017FP32013_FP3
+  Doetterl_2021UG_felsic_ForestUPL1_2_3
+Scheibe_2022NahuelbutaNb_1
+ Posada_2011SHERSHER_2
+Nagy_2017FP42013_FP4
+   Nagy_2017FP72013_FP7
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+   Nowinski_2021Joshua_TreeC10_near
+Scheibe_2022NahuelbutaNb_2
+ Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011SHERSHER_3
+ Nowinski_2021Joshua_TreeC5_near
+   Doetterl_2021UG_felsic_ForestUPL7_8_9
+Nowinski_2021Joshua_TreeC7_near
+Scheibe_2022NahuelbutaNb_3
+  Posada_2011SHERSHER_5
+ Posada_2011AMAAMA_3
+Fekete_2020Carpathian Basin_1Bajansenye
+  Posada_2011AMAAMA_4
+Scheibe_2022NahuelbutaNb_4
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011BCIBCI_4
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Posada_2011BCIBCI_5
+   Scheibe_2022NahuelbutaNb_1
+Fekete_2020Carpathian Basin_29Fule-1
+Posada_2011BCIBCI_6
+  Hahn_2004HainichHainich_1
+Posada_2011GORGGORG_1
+Scheibe_2022Santa GraciaSG_1
+  Posada_2011GORGGORG_2
+   Scheibe_2022Santa GraciaSG_2
+Posada_2011GORGGORG_4
+Nagy_2017FP12013_FP1
+ Fekete_2020Carpathian Basin_29Fule-2
+ Posada_2011GORGGORG_5
+   Nagy_2017FP32013_FP3
+Scheibe_2022Santa GraciaSG_3
+Scheibe_2022NahuelbutaNb_2
+Posada_2011PACUPACU_1
+   Posada_2011PACUPACU_2
+Fekete_2020Carpathian Basin_3Szilvagy
+Sierra_2013ZAR01ZAR01_C
+  Posada_2011PACUPACU_3
+   Posada_2011PACUPACU_4
+Sierra_2013ZAR01ZAR01_P1
+ Scheibe_2022NahuelbutaNb_3
+  Fekete_2020Carpathian Basin_5Bak-1
+Posada_2011RITARITA_2
+Nagy_2017FP42013_FP4
+  Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Posada_2011RITARITA_3
+   Nagy_2017FP72013_FP7
+Posada_2011RITARITA_4
+ Posada_2011SELVASELVA_INCEPTISOL_4
+   Posada_2011SELVASELVA_UTISOL_4
+Scheibe_2022NahuelbutaNb_4
+Nowinski_2021Joshua_TreeC10_near
+Sierra_2013ZAR01ZAR01_P3
+ Foley_2023Hopland_BuckHopland_Buck_R4
+Posada_2011SHERSHER_2
+Bird_2002Edmonton, AlbertaEDM
+    Posada_2011SHERSHER_3
+  Nowinski_2021Joshua_TreeC5_near
+Sierra_2013ZAR04ZAR04_P1
+Scheibe_2022Santa GraciaSG_1
+  Posada_2011SHERSHER_5
+Nowinski_2021Joshua_TreeC7_near
+  Posada_2011AMAAMA_3
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Scheibe_2022NahuelbutaNb_1
+ Posada_2011AMAAMA_4
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+ Sierra_2013ZAR04ZAR04_P2
+Scheibe_2022Santa GraciaSG_2
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+ Sierra_2013ZAR04ZAR04_P3
+  Scheibe_2022Santa GraciaSG_3
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Sierra_2013ZAR01ZAR01_C
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Sierra_2013ZAR01ZAR01_P1
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Sierra_2013ZAR01ZAR01_P3
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+   Doetterl_2021UG_felsic_ForestUPL4_5_6
+Sierra_2013ZAR04ZAR04_P1
+   Posada_2011BCIBCI_4
+Sierra_2013ZAR04ZAR04_P2
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Sierra_2013ZAR04ZAR04_P4
+  Sierra_2013ZAR04ZAR04_P3
+Fekete_2020Carpathian Basin_1Bajansenye
+Scheibe_2022NahuelbutaNb_2
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Posada_2011BCIBCI_5
+Fekete_2020Carpathian Basin_29Fule-1
+Bird_2002Edmonton, AlbertaEDM
+   Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Fekete_2020Carpathian Basin_29Fule-2
+Posada_2011BCIBCI_6
+    Fekete_2020Carpathian Basin_3Szilvagy
+ Posada_2011GORGGORG_1
+Bird_2002Edmonton, AlbertaEDM
+Sierra_2013ZAR04ZAR04_P4
+   Hahn_2004HainichHainich_1
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Posada_2011GORGGORG_2
+ Scheibe_2022NahuelbutaNb_3
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Scheibe_2022NahuelbutaNb_4
+Posada_2011GORGGORG_4
+  Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Nagy_2017FP12013_FP1
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Fekete_2020Carpathian Basin_5Bak-1
+    Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Nagy_2017FP32013_FP3
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Scheibe_2022Santa GraciaSG_1
+  Bird_2002Edmonton, AlbertaEDM
+Posada_2011GORGGORG_5
+Nagy_2017FP42013_FP4
+     Scheibe_2022Santa GraciaSG_2
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+   Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Foley_2023Hopland_BuckHopland_Buck_R4
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+   Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+  Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Scheibe_2022Santa GraciaSG_3
+Nagy_2017FP72013_FP7
+  Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+   Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Posada_2011PACUPACU_1
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Sierra_2013ZAR01ZAR01_C
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Nowinski_2021Joshua_TreeC10_near
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+   Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Bird_2002Edmonton, AlbertaEDM
+   Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Nowinski_2021Joshua_TreeC5_near
+Posada_2011PACUPACU_2
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Fekete_2020Carpathian Basin_1Bajansenye
+ Doetterl_2021UG_felsic_ForestUPL4_5_6
+    Bird_2002Edmonton, AlbertaEDM
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Sierra_2013ZAR01ZAR01_P1
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Posada_2011PACUPACU_3
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+   Fekete_2020Carpathian Basin_1Bajansenye
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Hahn_2004HainichHainich_1
+   Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Sierra_2013ZAR01ZAR01_P3
+Nowinski_2021Joshua_TreeC7_near
+   Nagy_2017FP12013_FP1
+ Posada_2011AMAAMA_3
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Posada_2011AMAAMA_4
+ Fekete_2020Carpathian Basin_29Fule-1
+Posada_2011PACUPACU_4
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+   Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Sierra_2013ZAR04ZAR04_P1
+Fekete_2020Carpathian Basin_29Fule-1
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Posada_2011BCIBCI_4
+Sierra_2013ZAR04ZAR04_P2
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Posada_2011RITARITA_2
+Posada_2011BCIBCI_5
+Sierra_2013ZAR04ZAR04_P3
+  Posada_2011BCIBCI_6
+  Nagy_2017FP32013_FP3
+ Fekete_2020Carpathian Basin_29Fule-2
+Posada_2011RITARITA_3
+Sierra_2013ZAR04ZAR04_P4
+   Fekete_2020Carpathian Basin_3Szilvagy
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+   Doetterl_2021UG_felsic_ForestUPL10_11_12
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+  Posada_2011GORGGORG_1
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Posada_2011GORGGORG_2
+   Posada_2011RITARITA_4
+Fekete_2020Carpathian Basin_5Bak-1
+ Fekete_2020Carpathian Basin_1Bajansenye
+   Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Posada_2011GORGGORG_4
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Doetterl_2021UG_felsic_ForestUPL7_8_9
+Fekete_2020Carpathian Basin_29Fule-2
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Nagy_2017FP42013_FP4
+Fekete_2020Carpathian Basin_3Szilvagy
+   Nagy_2017FP72013_FP7
+Fekete_2020Carpathian Basin_5Bak-1
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Nowinski_2021Joshua_TreeC10_near
+  Posada_2011SELVASELVA_INCEPTISOL_4
+Fekete_2020Carpathian Basin_1Bajansenye
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+  Foley_2023Hopland_BuckHopland_Buck_R4
+ Posada_2011GORGGORG_5
+Foley_2023Hopland_BuckHopland_Buck_R4
+ Fekete_2020Carpathian Basin_29Fule-1
+    Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Nowinski_2021Joshua_TreeC5_near
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Posada_2011PACUPACU_1
+Nowinski_2021Joshua_TreeC7_near
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Posada_2011SELVASELVA_UTISOL_4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Fekete_2020Carpathian Basin_1Bajansenye
+Fekete_2020Carpathian Basin_29Fule-2
+ Posada_2011AMAAMA_3
+  Fekete_2020Carpathian Basin_3Szilvagy
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+   Bird_2002Edmonton, AlbertaEDM
+ Posada_2011PACUPACU_2
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Fekete_2020Carpathian Basin_5Bak-1
+ Fekete_2020Carpathian Basin_29Fule-1
+Posada_2011SHERSHER_2
+ Fekete_2020Carpathian Basin_29Fule-1
+  Fekete_2020Carpathian Basin_29Fule-2
+Foley_2023Hopland_BuckHopland_Buck_R4
+  Posada_2011AMAAMA_4
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Posada_2011SHERSHER_3
+ Posada_2011BCIBCI_4
+   Hahn_2004HainichHainich_1
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Fekete_2020Carpathian Basin_29Fule-2
+  Nagy_2017FP12013_FP1
+Hahn_2004HainichHainich_1
+Posada_2011PACUPACU_3
+Posada_2011SHERSHER_5
+Posada_2011BCIBCI_5
+    Nagy_2017FP32013_FP3
+   Fekete_2020Carpathian Basin_3Szilvagy
+Nagy_2017FP12013_FP1
+ Nagy_2017FP42013_FP4
+  Posada_2011BCIBCI_6
+Nagy_2017FP72013_FP7
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Posada_2011PACUPACU_4
+ Fekete_2020Carpathian Basin_3Szilvagy
+ Nowinski_2021Joshua_TreeC10_near
+Scheibe_2022NahuelbutaNb_1
+     Posada_2011GORGGORG_1
+Posada_2011RITARITA_2
+Scheibe_2022NahuelbutaNb_2
+ Fekete_2020Carpathian Basin_5Bak-1
+ Posada_2011RITARITA_3
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+  Fekete_2020Carpathian Basin_5Bak-1
+ Nagy_2017FP32013_FP3
+Nowinski_2021Joshua_TreeC5_near
+Scheibe_2022NahuelbutaNb_3
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+  Posada_2011RITARITA_4
+Foley_2023Hopland_BuckHopland_Buck_R4
+   Hahn_2004HainichHainich_1
+Nowinski_2021Joshua_TreeC7_near
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+   Nagy_2017FP42013_FP4
+Foley_2023Hopland_BuckHopland_Buck_R4
+Scheibe_2022NahuelbutaNb_4
+Posada_2011SELVASELVA_INCEPTISOL_4
+    Posada_2011GORGGORG_2
+Nagy_2017FP12013_FP1
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Nagy_2017FP32013_FP3
+  Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+   Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011AMAAMA_3
+ Bird_2002Edmonton, AlbertaEDM
+Hahn_2004HainichHainich_1
+Nagy_2017FP72013_FP7
+Posada_2011SELVASELVA_UTISOL_4
+Posada_2011GORGGORG_4
+ Nagy_2017FP42013_FP4
+ Scheibe_2022Santa GraciaSG_1
+    Doetterl_2021RW_mixed_ForestNPL10_11_12
+Posada_2011AMAAMA_4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+   Posada_2011BCIBCI_4
+Posada_2011SHERSHER_2
+ Nagy_2017FP12013_FP1
+Posada_2011GORGGORG_5
+Posada_2011BCIBCI_5
+   Posada_2011BCIBCI_6
+Nowinski_2021Joshua_TreeC10_near
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Doetterl_2021UG_felsic_ForestUPL1_2_3
+Nagy_2017FP72013_FP7
+Scheibe_2022Santa GraciaSG_2
+   Doetterl_2021UG_felsic_ForestUPL10_11_12
+  Scheibe_2022Santa GraciaSG_3
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+      Nagy_2017FP32013_FP3
+Posada_2011SHERSHER_3
+Posada_2011GORGGORG_1
+Posada_2011PACUPACU_1
+ Hahn_2004HainichHainich_1
+ Sierra_2013ZAR01ZAR01_C
+ Nowinski_2021Joshua_TreeC5_near
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Nowinski_2021Joshua_TreeC10_near
+Posada_2011SHERSHER_5
+ Posada_2011PACUPACU_2
+  Nagy_2017FP42013_FP4
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Sierra_2013ZAR01ZAR01_P1
+Nagy_2017FP12013_FP1
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+     Posada_2011PACUPACU_3
+ Nowinski_2021Joshua_TreeC7_near
+Posada_2011GORGGORG_2
+  Bird_2002Edmonton, AlbertaEDM
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Nagy_2017FP72013_FP7
+Posada_2011GORGGORG_4
+  Posada_2011GORGGORG_5
+Nagy_2017FP32013_FP3
+ Scheibe_2022NahuelbutaNb_1
+Posada_2011PACUPACU_1
+   Sierra_2013ZAR01ZAR01_P3
+Nagy_2017FP42013_FP4
+ Posada_2011AMAAMA_3
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Nagy_2017FP72013_FP7
+Fekete_2020Carpathian Basin_1Bajansenye
+ Scheibe_2022NahuelbutaNb_2
+   Posada_2011AMAAMA_4
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Nowinski_2021Joshua_TreeC10_near
+  Posada_2011PACUPACU_4
+Posada_2011PACUPACU_2
+Nowinski_2021Joshua_TreeC5_near
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+    Nowinski_2021Joshua_TreeC10_near
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Sierra_2013ZAR04ZAR04_P1
+  Fekete_2020Carpathian Basin_29Fule-1
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+  Scheibe_2022NahuelbutaNb_3
+   Sierra_2013ZAR04ZAR04_P2
+Nowinski_2021Joshua_TreeC7_near
+Posada_2011RITARITA_2
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011BCIBCI_4
+Posada_2011PACUPACU_3
+ Fekete_2020Carpathian Basin_29Fule-2
+    Scheibe_2022NahuelbutaNb_4
+  Doetterl_2021RW_mixed_ForestNPL10_11_12
+Nowinski_2021Joshua_TreeC5_near
+Fekete_2020Carpathian Basin_3Szilvagy
+  Posada_2011PACUPACU_4
+Posada_2011BCIBCI_5
+ Posada_2011RITARITA_3
+Nowinski_2021Joshua_TreeC5_near
+   Sierra_2013ZAR04ZAR04_P3
+    Doetterl_2021RW_mixed_ForestNPL10_11_12
+Nowinski_2021Joshua_TreeC7_near
+ Scheibe_2022Santa GraciaSG_1
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+Posada_2011BCIBCI_6
+Posada_2011RITARITA_2
+Fekete_2020Carpathian Basin_5Bak-1
+ Posada_2011AMAAMA_3
+  Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Nowinski_2021Joshua_TreeC7_near
+Scheibe_2022Santa GraciaSG_2
+ Sierra_2013ZAR04ZAR04_P4
+Posada_2011GORGGORG_1
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Posada_2011AMAAMA_4
+   Posada_2011AMAAMA_3
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Foley_2023Hopland_BuckHopland_Buck_R4
+ Scheibe_2022Santa GraciaSG_3
+ Posada_2011AMAAMA_3
+Posada_2011RITARITA_3
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+  Posada_2011GORGGORG_2
+Posada_2011BCIBCI_4
+    Posada_2011BCIBCI_5
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Posada_2011AMAAMA_4
+Posada_2011RITARITA_4
+Sierra_2013ZAR01ZAR01_C
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011RITARITA_4
+    Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011SELVASELVA_INCEPTISOL_4
+     Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011BCIBCI_6
+  Posada_2011AMAAMA_4
+Posada_2011GORGGORG_4
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011SELVASELVA_UTISOL_4
+  Posada_2011SELVASELVA_UTISOL_4
+Posada_2011GORGGORG_5
+   Posada_2011SHERSHER_2
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011BCIBCI_4
+Posada_2011GORGGORG_1
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011PACUPACU_1
+  Sierra_2013ZAR01ZAR01_P1
+ Posada_2011BCIBCI_4
+ Hahn_2004HainichHainich_1
+   Posada_2011GORGGORG_2
+Posada_2011SHERSHER_3
+Posada_2011BCIBCI_5
+   Posada_2011SHERSHER_2
+Nagy_2017FP12013_FP1
+  Posada_2011BCIBCI_5
+Posada_2011GORGGORG_4
+Fekete_2020Carpathian Basin_1Bajansenye
+    Sierra_2013ZAR01ZAR01_P3
+  Posada_2011BCIBCI_6
+Posada_2011GORGGORG_5
+ Posada_2011SHERSHER_5
+Fekete_2020Carpathian Basin_1Bajansenye
+ Nagy_2017FP32013_FP3
+ Posada_2011PACUPACU_1
+Posada_2011PACUPACU_2
+ Posada_2011SHERSHER_3
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+   Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Scheibe_2022NahuelbutaNb_1
+ Posada_2011GORGGORG_1
+ Sierra_2013ZAR04ZAR04_P1
+ Posada_2011PACUPACU_3
+Posada_2011PACUPACU_2
+Fekete_2020Carpathian Basin_29Fule-1
+  Scheibe_2022NahuelbutaNb_2
+  Posada_2011PACUPACU_4
+Posada_2011BCIBCI_6
+Posada_2011GORGGORG_2
+    Nagy_2017FP42013_FP4
+Sierra_2013ZAR04ZAR04_P2
+Fekete_2020Carpathian Basin_29Fule-1
+   Posada_2011SHERSHER_5
+Posada_2011PACUPACU_3
+Posada_2011GORGGORG_4
+Posada_2011GORGGORG_1
+Scheibe_2022NahuelbutaNb_3
+     Scheibe_2022NahuelbutaNb_4
+Posada_2011GORGGORG_5
+ Posada_2011PACUPACU_4
+Fekete_2020Carpathian Basin_29Fule-2
+   Scheibe_2022Santa GraciaSG_1
+Nagy_2017FP72013_FP7
+  Posada_2011RITARITA_2
+Sierra_2013ZAR04ZAR04_P3
+ Scheibe_2022NahuelbutaNb_1
+  Fekete_2020Carpathian Basin_29Fule-2
+Nowinski_2021Joshua_TreeC10_near
+Scheibe_2022Santa GraciaSG_2
+  Fekete_2020Carpathian Basin_3Szilvagy
+ Nowinski_2021Joshua_TreeC5_near
+   Nowinski_2021Joshua_TreeC7_near
+Fekete_2020Carpathian Basin_5Bak-1
+ Posada_2011GORGGORG_2
+Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011RITARITA_2
+ Scheibe_2022Santa GraciaSG_3
+Posada_2011PACUPACU_1
+Posada_2011GORGGORG_4
+  Sierra_2013ZAR01ZAR01_C
+  Posada_2011AMAAMA_3
+   Sierra_2013ZAR04ZAR04_P4
+  Posada_2011AMAAMA_4
+Posada_2011RITARITA_3
+Fekete_2020Carpathian Basin_5Bak-1
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Posada_2011PACUPACU_2
+   Posada_2011GORGGORG_5
+Posada_2011PACUPACU_3
+Foley_2023Hopland_BuckHopland_Buck_R4
+Scheibe_2022NahuelbutaNb_2
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Posada_2011RITARITA_3
+     Posada_2011PACUPACU_1
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011RITARITA_4
+ Scheibe_2022NahuelbutaNb_3
+ Sierra_2013ZAR01ZAR01_P1
+  Foley_2023Hopland_BuckHopland_Buck_R4
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Posada_2011RITARITA_4
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+   Bird_2002Edmonton, AlbertaEDM
+ Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011BCIBCI_4
+  Posada_2011SELVASELVA_UTISOL_4
+Sierra_2013ZAR01ZAR01_P3
+Posada_2011PACUPACU_4
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Posada_2011SELVASELVA_INCEPTISOL_4
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Sierra_2013ZAR04ZAR04_P1
+Posada_2011PACUPACU_2
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Posada_2011BCIBCI_5
+  Posada_2011SHERSHER_2
+ Scheibe_2022NahuelbutaNb_4
+    Hahn_2004HainichHainich_1
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Posada_2011SELVASELVA_UTISOL_4
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011RITARITA_2
+Posada_2011PACUPACU_3
+Posada_2011SHERSHER_3
+  Posada_2011PACUPACU_4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011SHERSHER_5
+   Posada_2011BCIBCI_6
+Posada_2011SHERSHER_2
+   Posada_2011SHERSHER_3
+ Sierra_2013ZAR04ZAR04_P2
+  Posada_2011SHERSHER_5
+Hahn_2004HainichHainich_1
+Nagy_2017FP12013_FP1
+   Posada_2011RITARITA_2
+Scheibe_2022NahuelbutaNb_1
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+   Nagy_2017FP12013_FP1
+Scheibe_2022Santa GraciaSG_1
+Sierra_2013ZAR04ZAR04_P3
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Posada_2011GORGGORG_1
+Posada_2011RITARITA_3
+Sierra_2013ZAR04ZAR04_P4
+ Posada_2011GORGGORG_2
+   Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+   Posada_2011GORGGORG_4
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Posada_2011RITARITA_3
+Posada_2011GORGGORG_5
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Scheibe_2022NahuelbutaNb_1
+ Nagy_2017FP32013_FP3
+Nagy_2017FP32013_FP3
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+  Scheibe_2022NahuelbutaNb_2
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011RITARITA_4
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+ Scheibe_2022Santa GraciaSG_2
+ Scheibe_2022NahuelbutaNb_2
+Posada_2011RITARITA_4
+   Scheibe_2022NahuelbutaNb_3
+Posada_2011SELVASELVA_INCEPTISOL_4
+Nagy_2017FP42013_FP4
+ Scheibe_2022Santa GraciaSG_3
+    Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Sierra_2013ZAR01ZAR01_C
+Scheibe_2022NahuelbutaNb_4
+ Posada_2011PACUPACU_1
+ Posada_2011SELVASELVA_UTISOL_4
+ Posada_2011PACUPACU_2
+ Posada_2011SELVASELVA_INCEPTISOL_4
+ Nagy_2017FP72013_FP7
+ Nagy_2017FP42013_FP4
+  Scheibe_2022Santa GraciaSG_1
+ Posada_2011PACUPACU_3
+  Posada_2011SHERSHER_2
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Nowinski_2021Joshua_TreeC10_near
+Sierra_2013ZAR01ZAR01_P1
+Posada_2011SELVASELVA_UTISOL_4
+  Nowinski_2021Joshua_TreeC5_near
+ Nowinski_2021Joshua_TreeC7_near
+  Scheibe_2022Santa GraciaSG_2
+Posada_2011AMAAMA_3
+   Scheibe_2022Santa GraciaSG_3
+ Sierra_2013ZAR01ZAR01_C
+ Scheibe_2022NahuelbutaNb_3
+Nagy_2017FP72013_FP7
+Posada_2011SHERSHER_3
+ Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011PACUPACU_4
+Sierra_2013ZAR01ZAR01_P3
+Scheibe_2022NahuelbutaNb_4
+      Scheibe_2022Santa GraciaSG_1
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Nowinski_2021Joshua_TreeC10_near
+ Sierra_2013ZAR01ZAR01_P1
+  Scheibe_2022Santa GraciaSG_2
+ Sierra_2013ZAR01ZAR01_P3
+Fekete_2020Carpathian Basin_1Bajansenye
+  Nowinski_2021Joshua_TreeC5_near
+Scheibe_2022Santa GraciaSG_3
+ Posada_2011SHERSHER_2
+  Sierra_2013ZAR01ZAR01_C
+Posada_2011AMAAMA_4
+Sierra_2013ZAR04ZAR04_P1
+      Fekete_2020Carpathian Basin_25Demjen-Eszak
+Sierra_2013ZAR04ZAR04_P2
+Posada_2011SHERSHER_3
+ Posada_2011BCIBCI_4
+   Sierra_2013ZAR04ZAR04_P3
+Posada_2011RITARITA_2
+Posada_2011BCIBCI_5
+  Posada_2011SHERSHER_5
+Posada_2011BCIBCI_6
+  Posada_2011SHERSHER_5
+Scheibe_2022NahuelbutaNb_1
+  Sierra_2013ZAR01ZAR01_P1
+Posada_2011GORGGORG_1
+Scheibe_2022NahuelbutaNb_2
+ Sierra_2013ZAR04ZAR04_P4
+Sierra_2013ZAR04ZAR04_P1
+ Fekete_2020Carpathian Basin_29Fule-1
+  Scheibe_2022NahuelbutaNb_1
+Posada_2011RITARITA_3
+Nowinski_2021Joshua_TreeC7_near
+    Fekete_2020Carpathian Basin_29Fule-2
+  Sierra_2013ZAR04ZAR04_P2
+Posada_2011AMAAMA_3
+ Scheibe_2022NahuelbutaNb_3
+ Posada_2011GORGGORG_2
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Scheibe_2022NahuelbutaNb_2
+Fekete_2020Carpathian Basin_3Szilvagy
+ Sierra_2013ZAR04ZAR04_P3
+   Sierra_2013ZAR04ZAR04_P4
+ Scheibe_2022NahuelbutaNb_3
+    Sierra_2013ZAR01ZAR01_P3
+Scheibe_2022NahuelbutaNb_4
+Posada_2011AMAAMA_4
+ Fekete_2020Carpathian Basin_5Bak-1
+ Sierra_2013ZAR04ZAR04_P1
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Posada_2011RITARITA_4
+    Foley_2023Hopland_BuckHopland_Buck_R4
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Posada_2011GORGGORG_4
+ Posada_2011BCIBCI_4
+ Scheibe_2022NahuelbutaNb_4
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Sierra_2013ZAR04ZAR04_P2
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Sierra_2013ZAR04ZAR04_P3
+Scheibe_2022Santa GraciaSG_1
+    Scheibe_2022Santa GraciaSG_1
+Posada_2011SELVASELVA_INCEPTISOL_4
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Sierra_2013ZAR04ZAR04_P4
+    Bird_2002Edmonton, AlbertaEDM
+Scheibe_2022Santa GraciaSG_2
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Posada_2011GORGGORG_5
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011SELVASELVA_UTISOL_4
+Scheibe_2022Santa GraciaSG_3
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Posada_2011SHERSHER_2
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+  Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011SHERSHER_3
+Scheibe_2022Santa GraciaSG_2
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Posada_2011PACUPACU_1
+  Posada_2011SHERSHER_5
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Scheibe_2022Santa GraciaSG_3
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Posada_2011BCIBCI_5
+ Scheibe_2022NahuelbutaNb_1
+Sierra_2013ZAR01ZAR01_C
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+  Posada_2011BCIBCI_6
+  Hahn_2004HainichHainich_1
+ Sierra_2013ZAR01ZAR01_C
+Posada_2011GORGGORG_1
+Posada_2011PACUPACU_2
+Scheibe_2022NahuelbutaNb_2
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Posada_2011GORGGORG_2
+   Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Sierra_2013ZAR01ZAR01_P1
+Posada_2011PACUPACU_3
+   Posada_2011GORGGORG_4
+ Nagy_2017FP12013_FP1
+   Nagy_2017FP32013_FP3
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+  Posada_2011PACUPACU_4
+Posada_2011GORGGORG_5
+Sierra_2013ZAR01ZAR01_P3
+ Nagy_2017FP42013_FP4
+Posada_2011RITARITA_2
+  Sierra_2013ZAR04ZAR04_P1
+Posada_2011RITARITA_3
+    Posada_2011RITARITA_4
+ Scheibe_2022NahuelbutaNb_3
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Posada_2011SELVASELVA_INCEPTISOL_4
+Sierra_2013ZAR01ZAR01_P1
+Sierra_2013ZAR04ZAR04_P2
+ Nagy_2017FP72013_FP7
+Posada_2011PACUPACU_1
+Posada_2011SELVASELVA_UTISOL_4
+  Posada_2011SHERSHER_2
+      Posada_2011SHERSHER_3
+Sierra_2013ZAR01ZAR01_P3
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Nowinski_2021Joshua_TreeC10_near
+  Sierra_2013ZAR04ZAR04_P1
+  Posada_2011PACUPACU_2
+ Posada_2011SHERSHER_5
+ Sierra_2013ZAR04ZAR04_P2
+ Posada_2011PACUPACU_3
+ Scheibe_2022NahuelbutaNb_1
+Sierra_2013ZAR04ZAR04_P3
+Scheibe_2022NahuelbutaNb_4
+  Sierra_2013ZAR04ZAR04_P3
+Nowinski_2021Joshua_TreeC5_near
+Posada_2011PACUPACU_4
+   Scheibe_2022Santa GraciaSG_1
+Posada_2011RITARITA_2
+  Nowinski_2021Joshua_TreeC7_near
+Posada_2011RITARITA_3
+    Posada_2011AMAAMA_3
+Posada_2011RITARITA_4
+  Posada_2011AMAAMA_4
+Posada_2011SELVASELVA_INCEPTISOL_4
+ Scheibe_2022Santa GraciaSG_2
+Sierra_2013ZAR04ZAR04_P4
+Posada_2011BCIBCI_4
+ Scheibe_2022NahuelbutaNb_2
+Posada_2011BCIBCI_5
+   Doetterl_2021UG_felsic_ForestUPL10_11_12
+Posada_2011BCIBCI_6
+Scheibe_2022Santa GraciaSG_3
+ Posada_2011SELVASELVA_UTISOL_4
+  Sierra_2013ZAR01ZAR01_C
+Posada_2011GORGGORG_1
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+     Sierra_2013ZAR04ZAR04_P4
+ Sierra_2013ZAR01ZAR01_P1
+  Posada_2011SHERSHER_2
+Bird_2002Edmonton, AlbertaEDM
+Posada_2011GORGGORG_2
+Scheibe_2022NahuelbutaNb_3
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Sierra_2013ZAR01ZAR01_P3
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+     Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Sierra_2013ZAR04ZAR04_P1
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Fekete_2020Carpathian Basin_1Bajansenye
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Scheibe_2022NahuelbutaNb_4
+Posada_2011GORGGORG_4
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+   Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+Posada_2011SHERSHER_3
+Posada_2011GORGGORG_5
+   Fekete_2020Carpathian Basin_29Fule-1
+Sierra_2013ZAR04ZAR04_P2
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Scheibe_2022Santa GraciaSG_1
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Posada_2011PACUPACU_1
+Scheibe_2022Santa GraciaSG_2
+    Posada_2011PACUPACU_2
+ Posada_2011PACUPACU_3
+  Scheibe_2022Santa GraciaSG_3
+Posada_2011PACUPACU_4
+    Posada_2011RITARITA_2
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Sierra_2013ZAR04ZAR04_P3
+Bird_2002Edmonton, AlbertaEDM
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011SHERSHER_5
+Fekete_2020Carpathian Basin_29Fule-2
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Scheibe_2022NahuelbutaNb_1
+Posada_2011RITARITA_3
+   Doetterl_2021UG_felsic_ForestUPL1_2_3
+Scheibe_2022NahuelbutaNb_2
+ Fekete_2020Carpathian Basin_3Szilvagy
+    Doetterl_2021UG_felsic_ForestUPL10_11_12
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Sierra_2013ZAR04ZAR04_P4
+Posada_2011RITARITA_4
+Scheibe_2022NahuelbutaNb_3
+ Fekete_2020Carpathian Basin_5Bak-1
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Sierra_2013ZAR01ZAR01_C
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Bird_2002Edmonton, AlbertaEDM
+   Posada_2011SELVASELVA_INCEPTISOL_4
+    Posada_2011SELVASELVA_UTISOL_4
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Sierra_2013ZAR01ZAR01_P1
+Posada_2011SHERSHER_2
+   Posada_2011SHERSHER_3
+Sierra_2013ZAR01ZAR01_P3
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Posada_2011SHERSHER_5
+ Fekete_2020Carpathian Basin_1Bajansenye
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Scheibe_2022NahuelbutaNb_1
+Scheibe_2022NahuelbutaNb_4
+    Scheibe_2022NahuelbutaNb_2
+Sierra_2013ZAR04ZAR04_P1
+ Foley_2023Hopland_BuckHopland_Buck_R4
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Scheibe_2022NahuelbutaNb_3
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Scheibe_2022NahuelbutaNb_4
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Scheibe_2022Santa GraciaSG_1
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Sierra_2013ZAR04ZAR04_P2
+ Fekete_2020Carpathian Basin_29Fule-1
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+   Scheibe_2022Santa GraciaSG_1
+Scheibe_2022Santa GraciaSG_2
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+   Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Scheibe_2022Santa GraciaSG_3
+Hahn_2004HainichHainich_1
+  Fekete_2020Carpathian Basin_29Fule-2
+ Sierra_2013ZAR01ZAR01_C
+ Bird_2002Edmonton, AlbertaEDM
+Sierra_2013ZAR04ZAR04_P3
+Nagy_2017FP12013_FP1
+  Sierra_2013ZAR01ZAR01_P1
+Nagy_2017FP32013_FP3
+    Doetterl_2021RW_mixed_ForestNPL10_11_12
+Sierra_2013ZAR01ZAR01_P3
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Sierra_2013ZAR04ZAR04_P1
+Sierra_2013ZAR04ZAR04_P4
+   Nagy_2017FP42013_FP4
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Sierra_2013ZAR04ZAR04_P2
+ Scheibe_2022Santa GraciaSG_2
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+    Scheibe_2022Santa GraciaSG_3
+Fekete_2020Carpathian Basin_3Szilvagy
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Fekete_2020Carpathian Basin_5Bak-1
+  Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Nagy_2017FP72013_FP7
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Sierra_2013ZAR01ZAR01_C
+  Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+   Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+ Foley_2023Hopland_BuckHopland_Buck_R4
+ Doetterl_2021UG_felsic_ForestUPL4_5_6
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Fekete_2020Carpathian Basin_1Bajansenye
+   Nowinski_2021Joshua_TreeC10_near
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Fekete_2020Carpathian Basin_29Fule-1
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Sierra_2013ZAR01ZAR01_P1
+ Sierra_2013ZAR04ZAR04_P3
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Sierra_2013ZAR04ZAR04_P4
+    Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Nowinski_2021Joshua_TreeC5_near
+ Bird_2002Edmonton, AlbertaEDM
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Sierra_2013ZAR01ZAR01_P3
+Fekete_2020Carpathian Basin_29Fule-2
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Hahn_2004HainichHainich_1
+Fekete_2020Carpathian Basin_3Szilvagy
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+Fekete_2020Carpathian Basin_5Bak-1
+ Fekete_2020Carpathian Basin_1Bajansenye
+   Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+ Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+  Fekete_2020Carpathian Basin_1Bajansenye
+Foley_2023Hopland_BuckHopland_Buck_R4
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+    Fekete_2020Carpathian Basin_25Demjen-Eszak
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Sierra_2013ZAR04ZAR04_P1
+    Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Hahn_2004HainichHainich_1
+  Nowinski_2021Joshua_TreeC7_near
+ Nagy_2017FP12013_FP1
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Fekete_2020Carpathian Basin_29Fule-1
+Nagy_2017FP12013_FP1
+Sierra_2013ZAR04ZAR04_P2
+  Posada_2011AMAAMA_3
+  Fekete_2020Carpathian Basin_29Fule-1
+ Nagy_2017FP32013_FP3
+    Fekete_2020Carpathian Basin_29Fule-2
+Nagy_2017FP32013_FP3
+  Doetterl_2021UG_felsic_ForestUPL10_11_12
+Fekete_2020Carpathian Basin_29Fule-2
+Sierra_2013ZAR04ZAR04_P3
+Posada_2011AMAAMA_4
+Fekete_2020Carpathian Basin_3Szilvagy
+ Nagy_2017FP42013_FP4
+   Posada_2011BCIBCI_4
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011BCIBCI_5
+Nagy_2017FP42013_FP4
+    Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011BCIBCI_6
+  Nagy_2017FP72013_FP7
+Fekete_2020Carpathian Basin_5Bak-1
+Posada_2011GORGGORG_1
+   Nowinski_2021Joshua_TreeC10_near
+Sierra_2013ZAR04ZAR04_P4
+ Fekete_2020Carpathian Basin_1Bajansenye
+ Fekete_2020Carpathian Basin_3Szilvagy
+Nowinski_2021Joshua_TreeC5_near
+Foley_2023Hopland_BuckHopland_Buck_R4
+ Posada_2011GORGGORG_2
+Nagy_2017FP72013_FP7
+Fekete_2020Carpathian Basin_5Bak-1
+     Foley_2023Hopland_BuckHopland_Buck_R4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Nowinski_2021Joshua_TreeC7_near
+   Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011AMAAMA_3
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011AMAAMA_4
+Hahn_2004HainichHainich_1
+ Nowinski_2021Joshua_TreeC10_near
+  Posada_2011BCIBCI_4
+    Bird_2002Edmonton, AlbertaEDM
+Hahn_2004HainichHainich_1
+Posada_2011GORGGORG_4
+ Fekete_2020Carpathian Basin_29Fule-1
+ Posada_2011BCIBCI_5
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Nagy_2017FP12013_FP1
+   Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+  Nowinski_2021Joshua_TreeC5_near
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Nagy_2017FP32013_FP3
+ Posada_2011GORGGORG_5
+ Fekete_2020Carpathian Basin_29Fule-2
+   Fekete_2020Carpathian Basin_3Szilvagy
+  Fekete_2020Carpathian Basin_5Bak-1
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Nagy_2017FP42013_FP4
+Posada_2011BCIBCI_6
+  Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+  Posada_2011GORGGORG_1
+  Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Nagy_2017FP12013_FP1
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Nagy_2017FP72013_FP7
+Posada_2011GORGGORG_2
+   Doetterl_2021UG_felsic_ForestUPL10_11_12
+Posada_2011PACUPACU_1
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Foley_2023Hopland_BuckHopland_Buck_R4
+ Posada_2011GORGGORG_4
+Posada_2011PACUPACU_2
+  Nagy_2017FP32013_FP3
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Nowinski_2021Joshua_TreeC7_near
+Nagy_2017FP42013_FP4
+Nowinski_2021Joshua_TreeC10_near
+    Posada_2011AMAAMA_3
+  Posada_2011GORGGORG_5
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011AMAAMA_4
+ Posada_2011PACUPACU_3
+Posada_2011BCIBCI_4
+Nagy_2017FP72013_FP7
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+   Posada_2011BCIBCI_5
+ Nowinski_2021Joshua_TreeC10_near
+ Hahn_2004HainichHainich_1
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011BCIBCI_6
+    Nagy_2017FP12013_FP1
+Fekete_2020Carpathian Basin_1Bajansenye
+Nowinski_2021Joshua_TreeC5_near
+Posada_2011GORGGORG_1
+    Nagy_2017FP32013_FP3
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Posada_2011GORGGORG_2
+Posada_2011PACUPACU_4
+Posada_2011PACUPACU_1
+   Posada_2011GORGGORG_4
+Nagy_2017FP42013_FP4
+Fekete_2020Carpathian Basin_29Fule-1
+ Nowinski_2021Joshua_TreeC5_near
+  Posada_2011GORGGORG_5
+Posada_2011PACUPACU_2
+Nowinski_2021Joshua_TreeC7_near
+ Nagy_2017FP72013_FP7
+ Posada_2011PACUPACU_1
+   Posada_2011PACUPACU_2
+Fekete_2020Carpathian Basin_29Fule-2
+Nowinski_2021Joshua_TreeC7_near
+   Posada_2011RITARITA_2
+Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011PACUPACU_3
+  Fekete_2020Carpathian Basin_5Bak-1
+Posada_2011PACUPACU_4
+   Foley_2023Hopland_BuckHopland_Buck_R4
+Posada_2011PACUPACU_3
+ Posada_2011RITARITA_2
+  Nowinski_2021Joshua_TreeC10_near
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011RITARITA_3
+   Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Posada_2011AMAAMA_3
+Bird_2002Edmonton, AlbertaEDM
+   Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Posada_2011RITARITA_4
+ Posada_2011RITARITA_3
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Nowinski_2021Joshua_TreeC5_near
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Posada_2011AMAAMA_4
+  Nowinski_2021Joshua_TreeC7_near
+Posada_2011RITARITA_4
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Posada_2011AMAAMA_3
+ Posada_2011SELVASELVA_INCEPTISOL_4
+ Posada_2011AMAAMA_3
+  Posada_2011AMAAMA_4
+Posada_2011SELVASELVA_UTISOL_4
+Hahn_2004HainichHainich_1
+Posada_2011PACUPACU_4
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011SELVASELVA_INCEPTISOL_4
+       Posada_2011SELVASELVA_UTISOL_4
+Posada_2011RITARITA_2
+Nagy_2017FP12013_FP1
+Posada_2011BCIBCI_4
+ Nagy_2017FP32013_FP3
+Posada_2011AMAAMA_4
+ Posada_2011SHERSHER_2
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+Nagy_2017FP42013_FP4
+   Posada_2011SHERSHER_3
+Nagy_2017FP72013_FP7
+  Posada_2011RITARITA_3
+   Posada_2011BCIBCI_4
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Nowinski_2021Joshua_TreeC10_near
+Posada_2011SHERSHER_5
+ Posada_2011BCIBCI_5
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Posada_2011SHERSHER_2
+   Posada_2011BCIBCI_4
+ Posada_2011RITARITA_4
+  Posada_2011BCIBCI_5
+   Doetterl_2021UG_felsic_ForestUPL4_5_6
+  Posada_2011BCIBCI_6
+Nowinski_2021Joshua_TreeC5_near
+Scheibe_2022NahuelbutaNb_1
+Posada_2011BCIBCI_6
+ Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011BCIBCI_5
+Posada_2011GORGGORG_1
+Posada_2011SHERSHER_3
+    Posada_2011SHERSHER_5
+ Posada_2011GORGGORG_2
+ Scheibe_2022NahuelbutaNb_2
+Posada_2011GORGGORG_1
+ Scheibe_2022NahuelbutaNb_3
+  Scheibe_2022NahuelbutaNb_4
+  Posada_2011SELVASELVA_UTISOL_4
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011GORGGORG_4
+Nowinski_2021Joshua_TreeC7_near
+Scheibe_2022Santa GraciaSG_1
+ Scheibe_2022NahuelbutaNb_1
+   Scheibe_2022Santa GraciaSG_2
+   Posada_2011SHERSHER_2
+Fekete_2020Carpathian Basin_1Bajansenye
+Posada_2011BCIBCI_6
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+ Scheibe_2022NahuelbutaNb_2
+Posada_2011GORGGORG_1
+ Posada_2011AMAAMA_3
+Posada_2011GORGGORG_5
+Scheibe_2022NahuelbutaNb_3
+ Posada_2011GORGGORG_2
+   Scheibe_2022NahuelbutaNb_4
+  Posada_2011GORGGORG_4
+ Scheibe_2022Santa GraciaSG_1
+Bird_2002Edmonton, AlbertaEDM
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+    Scheibe_2022Santa GraciaSG_3
+Fekete_2020Carpathian Basin_29Fule-1
+ Posada_2011GORGGORG_2
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+   Scheibe_2022Santa GraciaSG_2
+Posada_2011AMAAMA_4
+Posada_2011GORGGORG_4
+Posada_2011PACUPACU_1
+   Sierra_2013ZAR01ZAR01_C
+Posada_2011GORGGORG_5
+ Fekete_2020Carpathian Basin_29Fule-2
+ Posada_2011SHERSHER_3
+Scheibe_2022Santa GraciaSG_3
+Posada_2011PACUPACU_1
+   Posada_2011GORGGORG_5
+  Posada_2011PACUPACU_2
+Posada_2011SHERSHER_5
+Sierra_2013ZAR01ZAR01_P1
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Posada_2011BCIBCI_4
+ Posada_2011PACUPACU_3
+ Posada_2011PACUPACU_2
+Sierra_2013ZAR01ZAR01_P3
+Fekete_2020Carpathian Basin_3Szilvagy
+   Sierra_2013ZAR04ZAR04_P1
+Posada_2011PACUPACU_3
+Posada_2011PACUPACU_4
+ Sierra_2013ZAR01ZAR01_C
+Posada_2011PACUPACU_1
+Posada_2011PACUPACU_4
+     Sierra_2013ZAR04ZAR04_P2
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+ Posada_2011RITARITA_2
+  Posada_2011RITARITA_2
+Posada_2011BCIBCI_5
+Fekete_2020Carpathian Basin_5Bak-1
+  Sierra_2013ZAR01ZAR01_P1
+ Posada_2011PACUPACU_2
+ Scheibe_2022NahuelbutaNb_1
+ Sierra_2013ZAR04ZAR04_P3
+Sierra_2013ZAR01ZAR01_P3
+ Posada_2011RITARITA_3
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011RITARITA_3
+ Foley_2023Hopland_BuckHopland_Buck_R4
+Posada_2011RITARITA_4
+    Posada_2011BCIBCI_6
+  Sierra_2013ZAR04ZAR04_P1
+Posada_2011RITARITA_4
+  Sierra_2013ZAR04ZAR04_P4
+Posada_2011PACUPACU_3
+Posada_2011GORGGORG_1
+    Scheibe_2022NahuelbutaNb_2
+Posada_2011GORGGORG_2
+ Posada_2011SELVASELVA_INCEPTISOL_4
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+ Scheibe_2022NahuelbutaNb_3
+Posada_2011SELVASELVA_INCEPTISOL_4
+    Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+   Bird_2002Edmonton, AlbertaEDM
+Posada_2011GORGGORG_4
+Posada_2011SELVASELVA_UTISOL_4
+Scheibe_2022NahuelbutaNb_4
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Posada_2011SELVASELVA_UTISOL_4
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Posada_2011GORGGORG_5
+    Posada_2011SHERSHER_2
+Sierra_2013ZAR04ZAR04_P2
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Posada_2011PACUPACU_4
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Scheibe_2022Santa GraciaSG_1
+ Hahn_2004HainichHainich_1
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Sierra_2013ZAR04ZAR04_P3
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Sierra_2013ZAR04ZAR04_P4
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Posada_2011PACUPACU_1
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+    Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Nagy_2017FP12013_FP1
+Posada_2011RITARITA_2
+ Posada_2011SHERSHER_2
+ Posada_2011SHERSHER_3
+  Doetterl_2021UG_felsic_ForestUPL10_11_12
+  Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Nagy_2017FP32013_FP3
+       Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+ Posada_2011RITARITA_3
+Posada_2011SHERSHER_5
+ Nagy_2017FP42013_FP4
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Posada_2011SHERSHER_3
+Posada_2011PACUPACU_2
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+    Scheibe_2022NahuelbutaNb_1
+Scheibe_2022Santa GraciaSG_2
+Bird_2002Edmonton, AlbertaEDM
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+   Scheibe_2022NahuelbutaNb_2
+Posada_2011SHERSHER_5
+   Posada_2011PACUPACU_3
+ Scheibe_2022Santa GraciaSG_3
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011RITARITA_4
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Nagy_2017FP72013_FP7
+ Sierra_2013ZAR01ZAR01_C
+Posada_2011SELVASELVA_INCEPTISOL_4
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Scheibe_2022NahuelbutaNb_3
+ Fekete_2020Carpathian Basin_1Bajansenye
+  Doetterl_2021UG_felsic_ForestUPL1_2_3
+Posada_2011PACUPACU_4
+Posada_2011SELVASELVA_UTISOL_4
+  Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Nowinski_2021Joshua_TreeC10_near
+ Sierra_2013ZAR01ZAR01_P1
+   Scheibe_2022NahuelbutaNb_1
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Sierra_2013ZAR01ZAR01_P3
+ Scheibe_2022NahuelbutaNb_4
+Posada_2011RITARITA_2
+Fekete_2020Carpathian Basin_29Fule-1
+   Posada_2011SHERSHER_2
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+  Posada_2011RITARITA_3
+ Scheibe_2022Santa GraciaSG_1
+Nowinski_2021Joshua_TreeC5_near
+Sierra_2013ZAR04ZAR04_P1
+Scheibe_2022NahuelbutaNb_2
+ Fekete_2020Carpathian Basin_29Fule-2
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+   Sierra_2013ZAR04ZAR04_P2
+ Fekete_2020Carpathian Basin_3Szilvagy
+ Posada_2011RITARITA_4
+  Scheibe_2022NahuelbutaNb_3
+  Scheibe_2022Santa GraciaSG_2
+Nowinski_2021Joshua_TreeC7_near
+Posada_2011SHERSHER_3
+   Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Scheibe_2022Santa GraciaSG_3
+Posada_2011SELVASELVA_INCEPTISOL_4
+ Sierra_2013ZAR04ZAR04_P3
+ Fekete_2020Carpathian Basin_1Bajansenye
+ Fekete_2020Carpathian Basin_5Bak-1
+   Posada_2011AMAAMA_3
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+   Scheibe_2022NahuelbutaNb_4
+ Fekete_2020Carpathian Basin_29Fule-1
+Posada_2011SHERSHER_5
+ Foley_2023Hopland_BuckHopland_Buck_R4
+ Sierra_2013ZAR04ZAR04_P4
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Sierra_2013ZAR01ZAR01_C
+Posada_2011SELVASELVA_UTISOL_4
+     Posada_2011AMAAMA_4
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Posada_2011BCIBCI_4
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Doetterl_2021UG_felsic_ForestUPL10_11_12
+Posada_2011BCIBCI_5
+   Sierra_2013ZAR01ZAR01_P1
+Posada_2011BCIBCI_6
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+    Posada_2011GORGGORG_1
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Fekete_2020Carpathian Basin_29Fule-2
+Scheibe_2022NahuelbutaNb_1
+Posada_2011SHERSHER_2
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+    Sierra_2013ZAR01ZAR01_P3
+Scheibe_2022Santa GraciaSG_1
+ Scheibe_2022NahuelbutaNb_2
+  Scheibe_2022Santa GraciaSG_2
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+Sierra_2013ZAR04ZAR04_P1
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Posada_2011GORGGORG_2
+  Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011GORGGORG_4
+Scheibe_2022Santa GraciaSG_3
+ Posada_2011SHERSHER_3
+  Posada_2011GORGGORG_5
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+  Scheibe_2022NahuelbutaNb_3
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Fekete_2020Carpathian Basin_5Bak-1
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Sierra_2013ZAR01ZAR01_C
+   Bird_2002Edmonton, AlbertaEDM
+Scheibe_2022NahuelbutaNb_4
+  Fekete_2020Carpathian Basin_1Bajansenye
+Sierra_2013ZAR01ZAR01_P1
+Scheibe_2022Santa GraciaSG_1
+Sierra_2013ZAR04ZAR04_P2
+Hahn_2004HainichHainich_1
+Posada_2011SHERSHER_5
+    Posada_2011PACUPACU_1
+ Scheibe_2022NahuelbutaNb_1
+ Scheibe_2022NahuelbutaNb_2
+  Bird_2002Edmonton, AlbertaEDM
+    Nagy_2017FP12013_FP1
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Sierra_2013ZAR01ZAR01_P3
+Sierra_2013ZAR04ZAR04_P3
+Scheibe_2022NahuelbutaNb_3
+Posada_2011PACUPACU_2
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Nagy_2017FP32013_FP3
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Fekete_2020Carpathian Basin_29Fule-1
+  Foley_2023Hopland_BuckHopland_Buck_R4
+Scheibe_2022Santa GraciaSG_2
+Fekete_2020Carpathian Basin_29Fule-2
+   Scheibe_2022Santa GraciaSG_3
+ Sierra_2013ZAR01ZAR01_C
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Sierra_2013ZAR04ZAR04_P1
+    Sierra_2013ZAR01ZAR01_P1
+    Sierra_2013ZAR01ZAR01_P3
+Fekete_2020Carpathian Basin_3Szilvagy
+ Posada_2011PACUPACU_3
+Sierra_2013ZAR04ZAR04_P4
+ Nagy_2017FP42013_FP4
+Fekete_2020Carpathian Basin_5Bak-1
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Sierra_2013ZAR04ZAR04_P2
+Foley_2023Hopland_BuckHopland_Buck_R4
+   Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Sierra_2013ZAR04ZAR04_P1
+ Scheibe_2022NahuelbutaNb_4
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Nagy_2017FP72013_FP7
+Posada_2011PACUPACU_4
+  Sierra_2013ZAR04ZAR04_P3
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Scheibe_2022Santa GraciaSG_1
+    Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Scheibe_2022Santa GraciaSG_2
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+     Nowinski_2021Joshua_TreeC10_near
+Sierra_2013ZAR04ZAR04_P4
+ Hahn_2004HainichHainich_1
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Posada_2011RITARITA_2
+Scheibe_2022Santa GraciaSG_3
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Sierra_2013ZAR04ZAR04_P2
+  Doetterl_2021RW_mixed_ForestNPL10_11_12
+    Hahn_2004HainichHainich_1
+  Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Nagy_2017FP12013_FP1
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Nowinski_2021Joshua_TreeC5_near
+Posada_2011RITARITA_3
+  Doetterl_2021UG_felsic_ForestUPL1_2_3
+Sierra_2013ZAR01ZAR01_C
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+Posada_2011RITARITA_4
+ Nagy_2017FP12013_FP1
+     Sierra_2013ZAR04ZAR04_P3
+Posada_2011SELVASELVA_INCEPTISOL_4
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+    Nowinski_2021Joshua_TreeC7_near
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Sierra_2013ZAR04ZAR04_P4
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Nagy_2017FP32013_FP3
+   Sierra_2013ZAR01ZAR01_P1
+     Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011SELVASELVA_UTISOL_4
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Nagy_2017FP42013_FP4
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011AMAAMA_3
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+Nagy_2017FP32013_FP3
+Sierra_2013ZAR01ZAR01_P3
+ Posada_2011SHERSHER_2
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+  Nagy_2017FP42013_FP4
+ Sierra_2013ZAR04ZAR04_P1
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Nagy_2017FP72013_FP7
+Fekete_2020Carpathian Basin_1Bajansenye
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+   Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Posada_2011SHERSHER_3
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+Nagy_2017FP72013_FP7
+ Posada_2011SHERSHER_5
+  Nowinski_2021Joshua_TreeC10_near
+ Posada_2011AMAAMA_4
+Nowinski_2021Joshua_TreeC5_near
+   Fekete_2020Carpathian Basin_1Bajansenye
+Nowinski_2021Joshua_TreeC7_near
+   Fekete_2020Carpathian Basin_25Demjen-Eszak
+Posada_2011AMAAMA_3
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+   Posada_2011AMAAMA_4
+Fekete_2020Carpathian Basin_29Fule-1
+ Sierra_2013ZAR04ZAR04_P2
+Scheibe_2022NahuelbutaNb_1
+ Posada_2011BCIBCI_4
+Fekete_2020Carpathian Basin_29Fule-1
+Nowinski_2021Joshua_TreeC10_near
+  Posada_2011BCIBCI_4
+Fekete_2020Carpathian Basin_29Fule-2
+ Fekete_2020Carpathian Basin_29Fule-2
+   Sierra_2013ZAR04ZAR04_P3
+Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011BCIBCI_5
+ Fekete_2020Carpathian Basin_3Szilvagy
+   Posada_2011BCIBCI_6
+Fekete_2020Carpathian Basin_5Bak-1
+   Scheibe_2022NahuelbutaNb_2
+Sierra_2013ZAR04ZAR04_P4
+Posada_2011BCIBCI_5
+Nowinski_2021Joshua_TreeC5_near
+ Posada_2011BCIBCI_6
+   Posada_2011GORGGORG_1
+Fekete_2020Carpathian Basin_5Bak-1
+ Posada_2011GORGGORG_1
+Scheibe_2022NahuelbutaNb_3
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+    Posada_2011GORGGORG_2
+Foley_2023Hopland_BuckHopland_Buck_R4
+  Posada_2011GORGGORG_4
+Posada_2011GORGGORG_2
+ Foley_2023Hopland_BuckHopland_Buck_R4
+  Posada_2011GORGGORG_5
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Nowinski_2021Joshua_TreeC7_near
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Scheibe_2022NahuelbutaNb_4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+    Hahn_2004HainichHainich_1
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011PACUPACU_1
+  Nagy_2017FP12013_FP1
+   Posada_2011PACUPACU_2
+Posada_2011GORGGORG_4
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Posada_2011PACUPACU_3
+ Hahn_2004HainichHainich_1
+Scheibe_2022Santa GraciaSG_1
+Bird_2002Edmonton, AlbertaEDM
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Nagy_2017FP32013_FP3
+   Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Posada_2011AMAAMA_3
+Nagy_2017FP12013_FP1
+Posada_2011GORGGORG_5
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+    Posada_2011AMAAMA_4
+Posada_2011PACUPACU_4
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+ Nagy_2017FP42013_FP4
+ Posada_2011RITARITA_2
+ Scheibe_2022Santa GraciaSG_2
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011PACUPACU_1
+ Nagy_2017FP32013_FP3
+ Scheibe_2022Santa GraciaSG_3
+Posada_2011BCIBCI_4
+ Sierra_2013ZAR01ZAR01_C
+   Sierra_2013ZAR01ZAR01_P1
+  Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Sierra_2013ZAR01ZAR01_P3
+ Posada_2011PACUPACU_2
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+ Sierra_2013ZAR04ZAR04_P1
+ Posada_2011RITARITA_3
+Nagy_2017FP72013_FP7
+Nagy_2017FP42013_FP4
+   Sierra_2013ZAR04ZAR04_P2
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+ Posada_2011PACUPACU_3
+Sierra_2013ZAR04ZAR04_P3
+Nagy_2017FP72013_FP7
+   Sierra_2013ZAR04ZAR04_P4
+  Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Nowinski_2021Joshua_TreeC10_near
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Nowinski_2021Joshua_TreeC10_near
+ Bird_2002Edmonton, AlbertaEDM
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Posada_2011PACUPACU_4
+  Posada_2011RITARITA_2
+  Nowinski_2021Joshua_TreeC5_near
+ Posada_2011RITARITA_4
+   Nowinski_2021Joshua_TreeC7_near
+Nowinski_2021Joshua_TreeC5_near
+Posada_2011BCIBCI_5
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+   Posada_2011BCIBCI_6
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011AMAAMA_3
+  Posada_2011GORGGORG_1
+Posada_2011AMAAMA_4
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Posada_2011GORGGORG_2
+  Posada_2011RITARITA_3
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011SELVASELVA_INCEPTISOL_4
+   Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011SELVASELVA_UTISOL_4
+Nowinski_2021Joshua_TreeC7_near
+Posada_2011RITARITA_4
+  Posada_2011SELVASELVA_INCEPTISOL_4
+  Posada_2011GORGGORG_4
+Posada_2011SHERSHER_2
+ Posada_2011BCIBCI_4
+ Posada_2011SHERSHER_3
+  Posada_2011SHERSHER_5
+Posada_2011AMAAMA_3
+  Scheibe_2022NahuelbutaNb_1
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+   Posada_2011SELVASELVA_UTISOL_4
+Scheibe_2022NahuelbutaNb_2
+Posada_2011GORGGORG_5
+    Posada_2011PACUPACU_1
+Posada_2011AMAAMA_4
+Posada_2011SHERSHER_2
+  Fekete_2020Carpathian Basin_1Bajansenye
+Posada_2011PACUPACU_2
+   Scheibe_2022NahuelbutaNb_3
+ Posada_2011BCIBCI_4
+ Posada_2011BCIBCI_5
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Posada_2011SHERSHER_3
+Posada_2011PACUPACU_3
+Posada_2011BCIBCI_5
+   Posada_2011BCIBCI_6
+  Posada_2011BCIBCI_6
+Posada_2011GORGGORG_1
+Posada_2011SHERSHER_5
+Fekete_2020Carpathian Basin_29Fule-1
+   Posada_2011GORGGORG_2
+Posada_2011GORGGORG_1
+   Doetterl_2021UG_felsic_ForestUPL1_2_3
+Posada_2011GORGGORG_2
+Fekete_2020Carpathian Basin_29Fule-2
+  Posada_2011GORGGORG_4
+Posada_2011GORGGORG_4
+Scheibe_2022NahuelbutaNb_4
+Posada_2011PACUPACU_4
+    Posada_2011GORGGORG_5
+Scheibe_2022NahuelbutaNb_1
+ Posada_2011GORGGORG_5
+ Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011PACUPACU_1
+Scheibe_2022Santa GraciaSG_1
+  Posada_2011RITARITA_2
+   Posada_2011PACUPACU_2
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Fekete_2020Carpathian Basin_5Bak-1
+Posada_2011RITARITA_3
+Scheibe_2022NahuelbutaNb_2
+   Posada_2011RITARITA_4
+  Scheibe_2022NahuelbutaNb_3
+ Posada_2011SELVASELVA_INCEPTISOL_4
+ Foley_2023Hopland_BuckHopland_Buck_R4
+ Posada_2011PACUPACU_1
+Posada_2011SELVASELVA_UTISOL_4
+ Posada_2011PACUPACU_3
+ Posada_2011SHERSHER_2
+  Posada_2011SHERSHER_3
+Posada_2011PACUPACU_2
+ Scheibe_2022NahuelbutaNb_4
+Posada_2011SHERSHER_5
+     Doetterl_2021UG_felsic_ForestUPL4_5_6
+Scheibe_2022Santa GraciaSG_2
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011PACUPACU_3
+Scheibe_2022NahuelbutaNb_1
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Posada_2011PACUPACU_4
+  Scheibe_2022Santa GraciaSG_3
+Scheibe_2022Santa GraciaSG_1
+   Sierra_2013ZAR01ZAR01_C
+Posada_2011PACUPACU_4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+  Posada_2011RITARITA_2
+Hahn_2004HainichHainich_1
+    Posada_2011RITARITA_3
+Posada_2011RITARITA_2
+Sierra_2013ZAR01ZAR01_P1
+Scheibe_2022Santa GraciaSG_2
+  Bird_2002Edmonton, AlbertaEDM
+ Posada_2011RITARITA_4
+  Scheibe_2022NahuelbutaNb_2
+ Posada_2011SELVASELVA_INCEPTISOL_4
+   Nagy_2017FP12013_FP1
+Posada_2011SELVASELVA_UTISOL_4
+Posada_2011RITARITA_3
+Sierra_2013ZAR01ZAR01_P3
+  Fekete_2020Carpathian Basin_1Bajansenye
+Posada_2011SHERSHER_2
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Scheibe_2022NahuelbutaNb_3
+ Sierra_2013ZAR04ZAR04_P1
+   Nagy_2017FP32013_FP3
+Scheibe_2022Santa GraciaSG_3
+  Scheibe_2022NahuelbutaNb_4
+Sierra_2013ZAR04ZAR04_P2
+   Posada_2011RITARITA_4
+Scheibe_2022Santa GraciaSG_1
+Posada_2011SHERSHER_3
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Posada_2011SHERSHER_5
+Posada_2011SELVASELVA_INCEPTISOL_4
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Posada_2011SELVASELVA_UTISOL_4
+Nagy_2017FP42013_FP4
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Scheibe_2022Santa GraciaSG_2
+Sierra_2013ZAR04ZAR04_P3
+   Sierra_2013ZAR01ZAR01_C
+     Bird_2002Edmonton, AlbertaEDM
+Scheibe_2022NahuelbutaNb_1
+Nagy_2017FP72013_FP7
+Fekete_2020Carpathian Basin_29Fule-1
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Nowinski_2021Joshua_TreeC10_near
+Sierra_2013ZAR04ZAR04_P4
+Posada_2011SHERSHER_2
+  Scheibe_2022Santa GraciaSG_3
+  Nowinski_2021Joshua_TreeC5_near
+Fekete_2020Carpathian Basin_29Fule-2
+       Sierra_2013ZAR01ZAR01_C
+Scheibe_2022NahuelbutaNb_2
+Posada_2011SHERSHER_3
+  Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Fekete_2020Carpathian Basin_3Szilvagy
+Sierra_2013ZAR01ZAR01_P1
+Nowinski_2021Joshua_TreeC7_near
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Sierra_2013ZAR01ZAR01_P3
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Posada_2011SHERSHER_5
+   Scheibe_2022NahuelbutaNb_1
+  Scheibe_2022NahuelbutaNb_3
+Posada_2011AMAAMA_3
+Scheibe_2022NahuelbutaNb_2
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+   Doetterl_2021RW_mixed_ForestNPL10_11_12
+Scheibe_2022NahuelbutaNb_3
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+  Sierra_2013ZAR04ZAR04_P1
+Scheibe_2022NahuelbutaNb_4
+   Posada_2011AMAAMA_4
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Scheibe_2022Santa GraciaSG_1
+ Sierra_2013ZAR04ZAR04_P2
+  Sierra_2013ZAR01ZAR01_P1
+ Posada_2011BCIBCI_4
+  Fekete_2020Carpathian Basin_5Bak-1
+Scheibe_2022NahuelbutaNb_4
+ Scheibe_2022Santa GraciaSG_2
+    Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Sierra_2013ZAR04ZAR04_P3
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Scheibe_2022Santa GraciaSG_1
+   Foley_2023Hopland_BuckHopland_Buck_R4
+ Sierra_2013ZAR04ZAR04_P4
+Sierra_2013ZAR01ZAR01_P3
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011BCIBCI_5
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Posada_2011BCIBCI_6
+ Scheibe_2022Santa GraciaSG_3
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+  Sierra_2013ZAR04ZAR04_P1
+ Posada_2011GORGGORG_1
+ Sierra_2013ZAR01ZAR01_C
+  Scheibe_2022Santa GraciaSG_2
+Posada_2011GORGGORG_2
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Hahn_2004HainichHainich_1
+  Posada_2011GORGGORG_4
+Sierra_2013ZAR04ZAR04_P2
+Scheibe_2022Santa GraciaSG_3
+Sierra_2013ZAR01ZAR01_P1
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+    Posada_2011GORGGORG_5
+  Doetterl_2021RW_mixed_ForestNPL10_11_12
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Sierra_2013ZAR01ZAR01_C
+Posada_2011PACUPACU_1
+  Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Sierra_2013ZAR01ZAR01_P1
+Nagy_2017FP12013_FP1
+ Sierra_2013ZAR04ZAR04_P3
+  Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Nagy_2017FP32013_FP3
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Fekete_2020Carpathian Basin_1Bajansenye
+  Sierra_2013ZAR01ZAR01_P3
+Sierra_2013ZAR01ZAR01_P3
+  Nagy_2017FP42013_FP4
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Nagy_2017FP72013_FP7
+Sierra_2013ZAR04ZAR04_P1
+ Posada_2011PACUPACU_2
+    Nowinski_2021Joshua_TreeC10_near
+  Posada_2011PACUPACU_3
+ Doetterl_2021UG_felsic_ForestUPL7_8_9
+   Sierra_2013ZAR04ZAR04_P1
+Fekete_2020Carpathian Basin_1Bajansenye
+Posada_2011PACUPACU_4
+Sierra_2013ZAR04ZAR04_P2
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Fekete_2020Carpathian Basin_29Fule-1
+Sierra_2013ZAR04ZAR04_P4
+ Nowinski_2021Joshua_TreeC5_near
+ Posada_2011RITARITA_2
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+   Sierra_2013ZAR04ZAR04_P2
+Posada_2011RITARITA_3
+Fekete_2020Carpathian Basin_29Fule-1
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+     Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Fekete_2020Carpathian Basin_29Fule-2
+ Nowinski_2021Joshua_TreeC7_near
+  Sierra_2013ZAR04ZAR04_P3
+Fekete_2020Carpathian Basin_3Szilvagy
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Fekete_2020Carpathian Basin_29Fule-2
+Posada_2011RITARITA_4
+   Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011AMAAMA_3
+  Fekete_2020Carpathian Basin_5Bak-1
+Sierra_2013ZAR04ZAR04_P3
+  Foley_2023Hopland_BuckHopland_Buck_R4
+  Bird_2002Edmonton, AlbertaEDM
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Fekete_2020Carpathian Basin_5Bak-1
+  Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Posada_2011SELVASELVA_INCEPTISOL_4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Hahn_2004HainichHainich_1
+  Foley_2023Hopland_BuckHopland_Buck_R4
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+   Sierra_2013ZAR04ZAR04_P4
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Nagy_2017FP12013_FP1
+Posada_2011AMAAMA_4
+Sierra_2013ZAR04ZAR04_P4
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+  Bird_2002Edmonton, AlbertaEDM
+  Nagy_2017FP32013_FP3
+  Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+   Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+ Posada_2011BCIBCI_4
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+ Posada_2011SELVASELVA_UTISOL_4
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Posada_2011BCIBCI_5
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Doetterl_2021RW_mixed_ForestNPL10_11_12
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+   Hahn_2004HainichHainich_1
+Posada_2011BCIBCI_6
+     Doetterl_2021UG_felsic_ForestUPL1_2_3
+Nagy_2017FP42013_FP4
+ Nagy_2017FP12013_FP1
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+ Nagy_2017FP72013_FP7
+  Nagy_2017FP32013_FP3
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+  Posada_2011SHERSHER_2
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Nagy_2017FP42013_FP4
+   Nagy_2017FP72013_FP7
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+  Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Posada_2011GORGGORG_1
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Nowinski_2021Joshua_TreeC10_near
+ Fekete_2020Carpathian Basin_1Bajansenye
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+Nowinski_2021Joshua_TreeC5_near
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+     Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Nowinski_2021Joshua_TreeC7_near
+Fekete_2020Carpathian Basin_29Fule-1
+   Fekete_2020Carpathian Basin_1Bajansenye
+Nowinski_2021Joshua_TreeC10_near
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Posada_2011GORGGORG_2
+  Posada_2011SHERSHER_3
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Posada_2011AMAAMA_3
+Fekete_2020Carpathian Basin_29Fule-2
+  Fekete_2020Carpathian Basin_29Fule-1
+  Nowinski_2021Joshua_TreeC5_near
+  Posada_2011SHERSHER_5
+ Posada_2011AMAAMA_4
+ Fekete_2020Carpathian Basin_29Fule-2
+Scheibe_2022NahuelbutaNb_1
+Fekete_2020Carpathian Basin_3Szilvagy
+   Bird_2002Edmonton, AlbertaEDM
+Scheibe_2022NahuelbutaNb_2
+  Posada_2011BCIBCI_4
+Posada_2011GORGGORG_4
+ Scheibe_2022NahuelbutaNb_3
+  Posada_2011GORGGORG_5
+ Scheibe_2022NahuelbutaNb_4
+  Nowinski_2021Joshua_TreeC7_near
+Scheibe_2022Santa GraciaSG_1
+  Scheibe_2022Santa GraciaSG_2
+Fekete_2020Carpathian Basin_3Szilvagy
+ Posada_2011PACUPACU_1
+Posada_2011BCIBCI_5
+Scheibe_2022Santa GraciaSG_3
+  Fekete_2020Carpathian Basin_5Bak-1
+  Posada_2011BCIBCI_6
+Sierra_2013ZAR01ZAR01_C
+ Posada_2011PACUPACU_2
+ Posada_2011GORGGORG_1
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Foley_2023Hopland_BuckHopland_Buck_R4
+Posada_2011GORGGORG_2
+ Fekete_2020Carpathian Basin_5Bak-1
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Posada_2011GORGGORG_4
+   Foley_2023Hopland_BuckHopland_Buck_R4
+Posada_2011GORGGORG_5
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+  Posada_2011PACUPACU_1
+Sierra_2013ZAR01ZAR01_P1
+   Posada_2011PACUPACU_2
+Sierra_2013ZAR01ZAR01_P3
+   Posada_2011PACUPACU_3
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Posada_2011PACUPACU_3
+Posada_2011AMAAMA_3
+Posada_2011PACUPACU_4
+   Posada_2011PACUPACU_4
+Posada_2011RITARITA_2
+  Hahn_2004HainichHainich_1
+   Posada_2011AMAAMA_4
+Nagy_2017FP12013_FP1
+Posada_2011RITARITA_2
+Posada_2011RITARITA_3
+   Posada_2011RITARITA_3
+Posada_2011RITARITA_4
+  Nagy_2017FP32013_FP3
+Posada_2011RITARITA_4
+Posada_2011SELVASELVA_INCEPTISOL_4
+    Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011SELVASELVA_UTISOL_4
+   Posada_2011SELVASELVA_UTISOL_4
+Posada_2011SHERSHER_2
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Sierra_2013ZAR04ZAR04_P1
+Hahn_2004HainichHainich_1
+Posada_2011SHERSHER_3
+Posada_2011SHERSHER_2
+  Posada_2011SHERSHER_5
+Posada_2011SHERSHER_3
+Posada_2011BCIBCI_4
+  Posada_2011SHERSHER_5
+    Scheibe_2022NahuelbutaNb_1
+Nagy_2017FP42013_FP4
+ Posada_2011BCIBCI_5
+ Scheibe_2022NahuelbutaNb_2
+ Sierra_2013ZAR04ZAR04_P2
+Nagy_2017FP72013_FP7
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Scheibe_2022NahuelbutaNb_1
+ Nagy_2017FP12013_FP1
+    Scheibe_2022NahuelbutaNb_2
+  Nowinski_2021Joshua_TreeC10_near
+Nagy_2017FP32013_FP3
+Posada_2011BCIBCI_6
+Scheibe_2022NahuelbutaNb_3
+  Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Posada_2011GORGGORG_1
+Sierra_2013ZAR04ZAR04_P3
+ Nagy_2017FP42013_FP4
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Posada_2011GORGGORG_2
+Scheibe_2022NahuelbutaNb_3
+   Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Nowinski_2021Joshua_TreeC5_near
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+Sierra_2013ZAR04ZAR04_P4
+ Posada_2011GORGGORG_4
+Bird_2002Edmonton, AlbertaEDM
+Nagy_2017FP72013_FP7
+Scheibe_2022NahuelbutaNb_4
+    Scheibe_2022Santa GraciaSG_1
+Nowinski_2021Joshua_TreeC10_near
+   Posada_2011GORGGORG_5
+Nowinski_2021Joshua_TreeC7_near
+Nowinski_2021Joshua_TreeC5_near
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Scheibe_2022NahuelbutaNb_4
+  Scheibe_2022Santa GraciaSG_2
+Nowinski_2021Joshua_TreeC7_near
+   Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011AMAAMA_3
+Posada_2011AMAAMA_3
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+    Posada_2011AMAAMA_4
+Scheibe_2022Santa GraciaSG_1
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+Scheibe_2022Santa GraciaSG_3
+Scheibe_2022Santa GraciaSG_2
+ Posada_2011PACUPACU_1
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Sierra_2013ZAR01ZAR01_C
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Posada_2011AMAAMA_4
+    Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Posada_2011PACUPACU_2
+   Sierra_2013ZAR01ZAR01_P1
+    Posada_2011BCIBCI_4
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Bird_2002Edmonton, AlbertaEDM
+  Posada_2011BCIBCI_5
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Posada_2011BCIBCI_4
+Scheibe_2022Santa GraciaSG_3
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Sierra_2013ZAR01ZAR01_P3
+ Fekete_2020Carpathian Basin_1Bajansenye
+  Posada_2011PACUPACU_3
+Posada_2011BCIBCI_6
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+  Posada_2011GORGGORG_1
+   Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Sierra_2013ZAR04ZAR04_P1
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Sierra_2013ZAR01ZAR01_C
+Posada_2011GORGGORG_2
+   Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Posada_2011PACUPACU_4
+  Posada_2011GORGGORG_4
+Fekete_2020Carpathian Basin_29Fule-1
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Sierra_2013ZAR04ZAR04_P2
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+  Sierra_2013ZAR01ZAR01_P1
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011BCIBCI_5
+ Posada_2011RITARITA_2
+Sierra_2013ZAR04ZAR04_P3
+Posada_2011GORGGORG_5
+   Doetterl_2021UG_felsic_ForestUPL4_5_6
+Sierra_2013ZAR04ZAR04_P4
+  Fekete_2020Carpathian Basin_29Fule-2
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+   Doetterl_2021UG_felsic_ForestUPL7_8_9
+   Posada_2011BCIBCI_6
+Fekete_2020Carpathian Basin_3Szilvagy
+Sierra_2013ZAR01ZAR01_P3
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Posada_2011GORGGORG_1
+Fekete_2020Carpathian Basin_5Bak-1
+  Posada_2011PACUPACU_1
+Fekete_2020Carpathian Basin_1Bajansenye
+ Posada_2011GORGGORG_2
+ Sierra_2013ZAR04ZAR04_P1
+ Posada_2011RITARITA_3
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Posada_2011GORGGORG_4
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+      Foley_2023Hopland_BuckHopland_Buck_R4
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Posada_2011PACUPACU_2
+Sierra_2013ZAR04ZAR04_P2
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Posada_2011GORGGORG_5
+Posada_2011RITARITA_4
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+Fekete_2020Carpathian Basin_29Fule-1
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Bird_2002Edmonton, AlbertaEDM
+ Posada_2011SELVASELVA_INCEPTISOL_4
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+  Posada_2011SELVASELVA_UTISOL_4
+Posada_2011PACUPACU_3
+    Sierra_2013ZAR04ZAR04_P3
+Posada_2011PACUPACU_1
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Posada_2011SHERSHER_2
+Hahn_2004HainichHainich_1
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Sierra_2013ZAR04ZAR04_P4
+Posada_2011PACUPACU_2
+    Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+ Fekete_2020Carpathian Basin_29Fule-2
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Posada_2011PACUPACU_3
+    Posada_2011PACUPACU_4
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011PACUPACU_4
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Fekete_2020Carpathian Basin_1Bajansenye
+  Posada_2011RITARITA_2
+Posada_2011SHERSHER_3
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Fekete_2020Carpathian Basin_5Bak-1
+ Nagy_2017FP12013_FP1
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Posada_2011RITARITA_2
+  Fekete_2020Carpathian Basin_25Demjen-Eszak
+Nagy_2017FP32013_FP3
+   Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+  Doetterl_2021RW_mixed_ForestNPL10_11_12
+ Posada_2011RITARITA_3
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Posada_2011SHERSHER_5
+   Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Nagy_2017FP42013_FP4
+ Doetterl_2021UG_felsic_ForestUPL10_11_12
+Foley_2023Hopland_BuckHopland_Buck_R4
+Posada_2011RITARITA_3
+Scheibe_2022NahuelbutaNb_1
+Posada_2011RITARITA_4
+   Posada_2011RITARITA_4
+Scheibe_2022NahuelbutaNb_2
+   Fekete_2020Carpathian Basin_29Fule-1
+Posada_2011SELVASELVA_INCEPTISOL_4
+ Posada_2011SELVASELVA_INCEPTISOL_4
+ Bird_2002Edmonton, AlbertaEDM
+ Posada_2011SELVASELVA_UTISOL_4
+    Doetterl_2021UG_felsic_ForestUPL4_5_6
+Posada_2011SHERSHER_2
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Posada_2011SHERSHER_3
+Nagy_2017FP72013_FP7
+  Posada_2011SHERSHER_5
+ Nowinski_2021Joshua_TreeC10_near
+ Scheibe_2022NahuelbutaNb_3
+  Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Nowinski_2021Joshua_TreeC5_near
+ Nowinski_2021Joshua_TreeC7_near
+ Fekete_2020Carpathian Basin_29Fule-2
+Scheibe_2022NahuelbutaNb_1
+Posada_2011AMAAMA_3
+ Posada_2011SELVASELVA_UTISOL_4
+  Scheibe_2022NahuelbutaNb_2
+   Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011AMAAMA_4
+Scheibe_2022NahuelbutaNb_3
+   Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Scheibe_2022NahuelbutaNb_4
+ Doetterl_2021UG_felsic_ForestUPL7_8_9
+  Posada_2011SHERSHER_2
+Scheibe_2022NahuelbutaNb_4
+  Fekete_2020Carpathian Basin_5Bak-1
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Posada_2011BCIBCI_4
+  Hahn_2004HainichHainich_1
+   Scheibe_2022Santa GraciaSG_1
+ Fekete_2020Carpathian Basin_1Bajansenye
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Nagy_2017FP12013_FP1
+Posada_2011BCIBCI_5
+   Fekete_2020Carpathian Basin_25Demjen-Eszak
+Scheibe_2022Santa GraciaSG_1
+Posada_2011BCIBCI_6
+Nagy_2017FP32013_FP3
+Foley_2023Hopland_BuckHopland_Buck_R4
+    Fekete_2020Carpathian Basin_29Fule-1
+Scheibe_2022Santa GraciaSG_2
+Scheibe_2022Santa GraciaSG_2
+  Doetterl_2021RW_mixed_ForestNPL10_11_12
+   Scheibe_2022Santa GraciaSG_3
+ Posada_2011SHERSHER_3
+ Fekete_2020Carpathian Basin_29Fule-2
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+ Nagy_2017FP42013_FP4
+  Scheibe_2022Santa GraciaSG_3
+Fekete_2020Carpathian Basin_3Szilvagy
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Sierra_2013ZAR01ZAR01_C
+Posada_2011GORGGORG_1
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+     Posada_2011GORGGORG_2
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+Nagy_2017FP72013_FP7
+Bird_2002Edmonton, AlbertaEDM
+ Fekete_2020Carpathian Basin_5Bak-1
+Hahn_2004HainichHainich_1
+ Sierra_2013ZAR01ZAR01_C
+   Sierra_2013ZAR01ZAR01_P1
+Nowinski_2021Joshua_TreeC10_near
+ Sierra_2013ZAR01ZAR01_P3
+ Posada_2011SHERSHER_5
+ Posada_2011GORGGORG_4
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Sierra_2013ZAR01ZAR01_P1
+Sierra_2013ZAR04ZAR04_P1
+ Nagy_2017FP12013_FP1
+Sierra_2013ZAR01ZAR01_P3
+  Posada_2011GORGGORG_5
+       Scheibe_2022NahuelbutaNb_1
+Foley_2023Hopland_BuckHopland_Buck_R4
+Nagy_2017FP32013_FP3
+Sierra_2013ZAR04ZAR04_P2
+Nowinski_2021Joshua_TreeC5_near
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Posada_2011PACUPACU_1
+   Sierra_2013ZAR04ZAR04_P1
+Posada_2011PACUPACU_2
+  Scheibe_2022NahuelbutaNb_2
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Posada_2011PACUPACU_3
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Sierra_2013ZAR04ZAR04_P3
+ Hahn_2004HainichHainich_1
+ Nagy_2017FP12013_FP1
+Sierra_2013ZAR04ZAR04_P2
+   Nagy_2017FP32013_FP3
+Scheibe_2022NahuelbutaNb_3
+   Nagy_2017FP42013_FP4
+Posada_2011PACUPACU_4
+  Scheibe_2022NahuelbutaNb_4
+Nagy_2017FP42013_FP4
+Nagy_2017FP72013_FP7
+Posada_2011RITARITA_2
+   Scheibe_2022Santa GraciaSG_1
+Nowinski_2021Joshua_TreeC10_near
+Posada_2011RITARITA_3
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+  Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Nowinski_2021Joshua_TreeC5_near
+   Nowinski_2021Joshua_TreeC7_near
+Nowinski_2021Joshua_TreeC7_near
+   Nagy_2017FP72013_FP7
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Scheibe_2022Santa GraciaSG_2
+  Doetterl_2021RW_mixed_ForestNPL10_11_12
+  Fekete_2020Carpathian Basin_1Bajansenye
+Posada_2011AMAAMA_3
+Sierra_2013ZAR04ZAR04_P4
+  Doetterl_2021UG_felsic_ForestUPL1_2_3
+Posada_2011AMAAMA_3
+ Posada_2011RITARITA_4
+   Fekete_2020Carpathian Basin_25Demjen-Eszak
+Sierra_2013ZAR04ZAR04_P3
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011AMAAMA_4
+   Posada_2011BCIBCI_4
+Fekete_2020Carpathian Basin_29Fule-1
+ Sierra_2013ZAR04ZAR04_P4
+  Posada_2011BCIBCI_5
+  Fekete_2020Carpathian Basin_29Fule-2
+Scheibe_2022Santa GraciaSG_3
+Posada_2011BCIBCI_6
+ Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Nowinski_2021Joshua_TreeC10_near
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Fekete_2020Carpathian Basin_3Szilvagy
+   Doetterl_2021UG_felsic_ForestUPL10_11_12
+  Posada_2011SELVASELVA_UTISOL_4
+Posada_2011AMAAMA_4
+Bird_2002Edmonton, AlbertaEDM
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+   Fekete_2020Carpathian Basin_5Bak-1
+ Posada_2011GORGGORG_1
+ Sierra_2013ZAR01ZAR01_C
+ Posada_2011SHERSHER_2
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+  Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Nowinski_2021Joshua_TreeC5_near
+ Foley_2023Hopland_BuckHopland_Buck_R4
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+Sierra_2013ZAR01ZAR01_P1
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Posada_2011BCIBCI_4
+Fekete_2020Carpathian Basin_1Bajansenye
+     Sierra_2013ZAR01ZAR01_P3
+Posada_2011SHERSHER_3
+Nowinski_2021Joshua_TreeC7_near
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+ Posada_2011GORGGORG_2
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Sierra_2013ZAR04ZAR04_P1
+ Posada_2011BCIBCI_5
+   Sierra_2013ZAR04ZAR04_P2
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+  Sierra_2013ZAR04ZAR04_P3
+  Fekete_2020Carpathian Basin_29Fule-1
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+  Posada_2011GORGGORG_4
+ Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Posada_2011BCIBCI_6
+Fekete_2020Carpathian Basin_29Fule-2
+Posada_2011AMAAMA_3
+ Posada_2011SHERSHER_5
+ Posada_2011GORGGORG_5
+   Sierra_2013ZAR04ZAR04_P4
+ Posada_2011AMAAMA_4
+Hahn_2004HainichHainich_1
+Scheibe_2022NahuelbutaNb_1
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Fekete_2020Carpathian Basin_3Szilvagy
+    Posada_2011GORGGORG_1
+Scheibe_2022NahuelbutaNb_2
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011PACUPACU_1
+ Fekete_2020Carpathian Basin_5Bak-1
+  Scheibe_2022NahuelbutaNb_3
+Foley_2023Hopland_BuckHopland_Buck_R4
+  Posada_2011BCIBCI_4
+Nagy_2017FP12013_FP1
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Scheibe_2022NahuelbutaNb_4
+    Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+    Posada_2011BCIBCI_5
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+Posada_2011GORGGORG_2
+Posada_2011PACUPACU_2
+  Nagy_2017FP32013_FP3
+Hahn_2004HainichHainich_1
+Posada_2011BCIBCI_6
+   Posada_2011GORGGORG_1
+Scheibe_2022Santa GraciaSG_1
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+    Posada_2011GORGGORG_2
+Posada_2011GORGGORG_4
+ Nagy_2017FP42013_FP4
+Posada_2011PACUPACU_3
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+    Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Posada_2011GORGGORG_5
+Posada_2011PACUPACU_4
+  Posada_2011PACUPACU_1
+ Nagy_2017FP12013_FP1
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Posada_2011RITARITA_2
+Posada_2011GORGGORG_4
+    Posada_2011PACUPACU_2
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+Scheibe_2022Santa GraciaSG_2
+   Posada_2011PACUPACU_3
+Scheibe_2022Santa GraciaSG_3
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+Sierra_2013ZAR01ZAR01_C
+ Posada_2011PACUPACU_4
+ Posada_2011GORGGORG_5
+ Sierra_2013ZAR01ZAR01_P1
+Nagy_2017FP72013_FP7
+   Bird_2002Edmonton, AlbertaEDM
+Nowinski_2021Joshua_TreeC10_near
+ Sierra_2013ZAR01ZAR01_P3
+  Posada_2011RITARITA_2
+Posada_2011RITARITA_3
+ Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Nowinski_2021Joshua_TreeC5_near
+Posada_2011PACUPACU_1
+   Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Nagy_2017FP32013_FP3
+ Sierra_2013ZAR04ZAR04_P1
+Posada_2011RITARITA_3
+  Posada_2011RITARITA_4
+ Sierra_2013ZAR04ZAR04_P2
+Posada_2011RITARITA_4
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Sierra_2013ZAR04ZAR04_P3
+ Sierra_2013ZAR04ZAR04_P4
+  Fekete_2020Carpathian Basin_1Bajansenye
+Nagy_2017FP42013_FP4
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+    Nowinski_2021Joshua_TreeC7_near
+   Posada_2011SELVASELVA_INCEPTISOL_4
+Posada_2011SELVASELVA_INCEPTISOL_4
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Bird_2002Edmonton, AlbertaEDM
+  Nagy_2017FP72013_FP7
+   Posada_2011PACUPACU_2
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Posada_2011AMAAMA_3
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Fekete_2020Carpathian Basin_25Demjen-Eszak
+Nowinski_2021Joshua_TreeC10_near
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Posada_2011SELVASELVA_UTISOL_4
+   Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Posada_2011SHERSHER_2
+Posada_2011AMAAMA_4
+   Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+ Posada_2011PACUPACU_3
+  Posada_2011SELVASELVA_UTISOL_4
+Fekete_2020Carpathian Basin_29Fule-1
+Nowinski_2021Joshua_TreeC5_near
+Posada_2011BCIBCI_4
+  Posada_2011SHERSHER_2
+ Fekete_2020Carpathian Basin_29Fule-2
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+     Posada_2011BCIBCI_5
+ Nowinski_2021Joshua_TreeC7_near
+ Posada_2011SHERSHER_3
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011SHERSHER_3
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+ Posada_2011AMAAMA_3
+ Posada_2011SHERSHER_5
+  Posada_2011SHERSHER_5
+Scheibe_2022NahuelbutaNb_1
+ Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+ Posada_2011AMAAMA_4
+ Posada_2011PACUPACU_4
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+Scheibe_2022NahuelbutaNb_1
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+    Scheibe_2022NahuelbutaNb_2
+  Doetterl_2021UG_felsic_ForestUPL1_2_3
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+ Scheibe_2022NahuelbutaNb_3
+  Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011BCIBCI_6
+Scheibe_2022NahuelbutaNb_4
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+   Posada_2011GORGGORG_1
+Scheibe_2022NahuelbutaNb_2
+  Posada_2011BCIBCI_4
+Scheibe_2022Santa GraciaSG_1
+  Posada_2011GORGGORG_2
+Fekete_2020Carpathian Basin_5Bak-1
+  Posada_2011BCIBCI_5
+Posada_2011GORGGORG_4
+ Doetterl_2021UG_felsic_ForestUPL4_5_6
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Posada_2011GORGGORG_5
+ Posada_2011PACUPACU_1
+  Posada_2011RITARITA_2
+Posada_2011PACUPACU_2
+  Doetterl_2021UG_felsic_ForestUPL7_8_9
+   Scheibe_2022Santa GraciaSG_2
+Fekete_2020Carpathian Basin_1Bajansenye
+Foley_2023Hopland_BuckHopland_Buck_R4
+  Posada_2011BCIBCI_6
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Scheibe_2022Santa GraciaSG_3
+  Scheibe_2022NahuelbutaNb_3
+Posada_2011RITARITA_3
+Posada_2011GORGGORG_1
+  Scheibe_2022NahuelbutaNb_4
+ Fekete_2020Carpathian Basin_1Bajansenye
+ Posada_2011RITARITA_4
+ Posada_2011GORGGORG_2
+     Posada_2011PACUPACU_3
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+  Fekete_2020Carpathian Basin_25Demjen-Eszak
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Bird_2002Edmonton, AlbertaEDM
+Scheibe_2022Santa GraciaSG_1
+   Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Sierra_2013ZAR01ZAR01_C
+  Fekete_2020Carpathian Basin_25Demjen-Eszak
+Fekete_2020Carpathian Basin_29Fule-1
+Bird_2002Edmonton, AlbertaEDM
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+  Posada_2011SELVASELVA_INCEPTISOL_4
+ Scheibe_2022Santa GraciaSG_2
+ Posada_2011GORGGORG_4
+Fekete_2020Carpathian Basin_29Fule-1
+ Hahn_2004HainichHainich_1
+Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+ Sierra_2013ZAR01ZAR01_P1
+Posada_2011PACUPACU_4
+   Sierra_2013ZAR01ZAR01_P3
+   Scheibe_2022Santa GraciaSG_3
+Posada_2011SELVASELVA_UTISOL_4
+ Nagy_2017FP12013_FP1
+Agnelli_2002Agnelli_2002_CavallaAgnelli_2002_Cavalla_Avg
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Fekete_2020Carpathian Basin_29Fule-2
+   Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Posada_2011GORGGORG_5
+  Posada_2011RITARITA_2
+   Sierra_2013ZAR04ZAR04_P1
+Fekete_2020Carpathian Basin_29Fule-2
+Posada_2011SHERSHER_2
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Bird_2002Edmonton, AlbertaEDM
+Nagy_2017FP32013_FP3
+Posada_2011RITARITA_3
+  Sierra_2013ZAR01ZAR01_C
+  Posada_2011RITARITA_4
+Posada_2011SHERSHER_3
+   Sierra_2013ZAR04ZAR04_P2
+    Posada_2011PACUPACU_1
+Posada_2011SELVASELVA_INCEPTISOL_4
+ Fekete_2020Carpathian Basin_3Szilvagy
+ Fekete_2020Carpathian Basin_3Szilvagy
+Posada_2011SELVASELVA_UTISOL_4
+  Posada_2011SHERSHER_5
+Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Fekete_2020Carpathian Basin_5Bak-1
+Posada_2011SHERSHER_2
+ Doetterl_2021DRC_mafic_ForestKBPL1_2_3
+  Sierra_2013ZAR01ZAR01_P1
+Posada_2011SHERSHER_3
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+  Nagy_2017FP42013_FP4
+Scheibe_2022NahuelbutaNb_1
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+      Doetterl_2021RW_mixed_ForestNPL10_11_12
+Scheibe_2022NahuelbutaNb_2
+ Foley_2023Hopland_BuckHopland_Buck_R4
+Fekete_2020Carpathian Basin_5Bak-1
+Nagy_2017FP72013_FP7
+Doetterl_2021RW_mixed_ForestNPL10_11_12
+ Posada_2011SHERSHER_5
+Sierra_2013ZAR04ZAR04_P3
+Posada_2011PACUPACU_2
+        Foley_2023Hopland_BuckHopland_Buck_R4
+Doetterl_2021DRC_mafic_ForestKBPL10_11_12
+Sierra_2013ZAR04ZAR04_P4
+Sierra_2013ZAR01ZAR01_P3
+ Scheibe_2022NahuelbutaNb_3
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+  Scheibe_2022NahuelbutaNb_1
+ Doetterl_2021DRC_mafic_ForestKBPL4_5_6
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+  Posada_2011PACUPACU_3
+Nowinski_2021Joshua_TreeC10_near
+ Sierra_2013ZAR04ZAR04_P1
+ Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Doetterl_2021DRC_mafic_ForestKBPL7_8_9
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Scheibe_2022NahuelbutaNb_2
+ Posada_2011PACUPACU_4
+ Nowinski_2021Joshua_TreeC5_near
+Doetterl_2021UG_felsic_ForestUPL1_2_3
+     Scheibe_2022NahuelbutaNb_4
+Scheibe_2022NahuelbutaNb_3
+Posada_2011RITARITA_2
+Sierra_2013ZAR04ZAR04_P2
+    Doetterl_2021UG_felsic_ForestUPL10_11_12
+Doetterl_2021UG_felsic_ForestUPL10_11_12
+   Scheibe_2022Santa GraciaSG_1
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Sierra_2013ZAR04ZAR04_P3
+Posada_2011RITARITA_3
+Scheibe_2022NahuelbutaNb_4
+   Sierra_2013ZAR04ZAR04_P4
+ Doetterl_2021RW_mixed_ForestNPL10_11_12
+Nowinski_2021Joshua_TreeC7_near
+  Doetterl_2021UG_felsic_ForestUPL4_5_6
+Doetterl_2021UG_felsic_ForestUPL4_5_6
+ Scheibe_2022Santa GraciaSG_2
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+    Hahn_2004HainichHainich_1
+Posada_2011RITARITA_4
+ Doetterl_2021UG_felsic_ForestUPL7_8_9
+ Doetterl_2021UG_felsic_ForestUPL1_2_3
+Doetterl_2021UG_felsic_ForestUPL7_8_9
+Posada_2011AMAAMA_3
+     Scheibe_2022Santa GraciaSG_3
+Posada_2011SELVASELVA_INCEPTISOL_4
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Posada_2011AMAAMA_4
+ Hahn_2004HainichHainich_1
+   Doetterl_2021UG_felsic_ForestUPL10_11_12
+Scheibe_2022Santa GraciaSG_1
+Nagy_2017FP12013_FP1
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Fekete_2020Carpathian Basin_1Bajansenye
+Fekete_2020Carpathian Basin_1Bajansenye
+  Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Nagy_2017FP12013_FP1
+    Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+  Posada_2011SELVASELVA_UTISOL_4
+ Posada_2011BCIBCI_4
+Sierra_2013ZAR01ZAR01_C
+ Nagy_2017FP32013_FP3
+ Doetterl_2021UG_felsic_ForestUPL4_5_6
+Scheibe_2022Santa GraciaSG_2
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Posada_2011BCIBCI_5
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+    Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Sierra_2013ZAR01ZAR01_P1
+Posada_2011SHERSHER_2
+   Nagy_2017FP32013_FP3
+Scheibe_2022Santa GraciaSG_3
+Nagy_2017FP42013_FP4
+ Doetterl_2021UG_felsic_ForestUPL7_8_9
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Sierra_2013ZAR01ZAR01_P3
+   Fekete_2020Carpathian Basin_29Fule-1
+Fekete_2020Carpathian Basin_29Fule-1
+  Nagy_2017FP42013_FP4
+Fekete_2020Carpathian Basin_29Fule-2
+Nagy_2017FP72013_FP7
+Sierra_2013ZAR01ZAR01_C
+   Posada_2011SHERSHER_3
+   Fekete_2020Carpathian Basin_1Bajansenye
+Nagy_2017FP72013_FP7
+Posada_2011SHERSHER_5
+    Fekete_2020Carpathian Basin_3Szilvagy
+Scheibe_2022NahuelbutaNb_1
+Fekete_2020Carpathian Basin_29Fule-2
+Sierra_2013ZAR04ZAR04_P1
+Nowinski_2021Joshua_TreeC10_near
+Posada_2011BCIBCI_6
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+   Nowinski_2021Joshua_TreeC10_near
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Fekete_2020Carpathian Basin_25Demjen-Eszak
+  Nowinski_2021Joshua_TreeC5_near
+  Fekete_2020Carpathian Basin_29Fule-1
+Sierra_2013ZAR01ZAR01_P1
+Nowinski_2021Joshua_TreeC7_near
+   Fekete_2020Carpathian Basin_29Fule-2
+ Posada_2011AMAAMA_3
+  Fekete_2020Carpathian Basin_3Szilvagy
+ Nowinski_2021Joshua_TreeC5_near
+ Fekete_2020Carpathian Basin_5Bak-1
+  Posada_2011AMAAMA_4
+Fekete_2020Carpathian Basin_3Szilvagy
+   Posada_2011BCIBCI_4
+Fekete_2020Carpathian Basin_5Bak-1
+Posada_2011GORGGORG_1
+ Scheibe_2022NahuelbutaNb_2
+  Nowinski_2021Joshua_TreeC7_near
+ Posada_2011BCIBCI_5
+ Scheibe_2022NahuelbutaNb_3
+Sierra_2013ZAR04ZAR04_P2
+  Scheibe_2022NahuelbutaNb_4
+Posada_2011AMAAMA_3
+   Scheibe_2022Santa GraciaSG_1
+Posada_2011AMAAMA_4
+  Sierra_2013ZAR04ZAR04_P3
+Posada_2011BCIBCI_4
+Scheibe_2022Santa GraciaSG_2
+ Posada_2011BCIBCI_6
+Foley_2023Hopland_BuckHopland_Buck_R4
+ Sierra_2013ZAR01ZAR01_P3
+ Posada_2011BCIBCI_5
+Posada_2011GORGGORG_1
+ Fekete_2020Carpathian Basin_5Bak-1
+   Sierra_2013ZAR04ZAR04_P4
+Sierra_2013ZAR04ZAR04_P1
+Posada_2011GORGGORG_2
+     Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+Posada_2011GORGGORG_4
+Posada_2011GORGGORG_2
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Posada_2011GORGGORG_5
+ Sierra_2013ZAR04ZAR04_P2
+Scheibe_2022Santa GraciaSG_3
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Posada_2011BCIBCI_6
+Foley_2023Hopland_BuckHopland_Buck_R4
+    Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+   Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Posada_2011GORGGORG_4
+Foley_2023Hopland_BuckHopland_Buck_R4
+Sierra_2013ZAR04ZAR04_P3
+   Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+ Sierra_2013ZAR04ZAR04_P4
+Posada_2011GORGGORG_1
+ Hahn_2004HainichHainich_1
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+ Sierra_2013ZAR01ZAR01_C
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C4
+   Posada_2011PACUPACU_1
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Posada_2011GORGGORG_2
+ Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+   Foley_2023Sedgwick_weatherstationSedgwick_weatherstation_C5
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+  Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+  Hahn_2004HainichHainich_1
+ Posada_2011PACUPACU_2
+Sierra_2013ZAR01ZAR01_P1
+Posada_2011GORGGORG_5
+Posada_2011GORGGORG_4
+  Posada_2011PACUPACU_1
+ Hahn_2004HainichHainich_1
+Nagy_2017FP12013_FP1
+   Posada_2011GORGGORG_5
+Posada_2011PACUPACU_3
+Posada_2011PACUPACU_2
+  Posada_2011PACUPACU_1
+   Posada_2011PACUPACU_3
+Posada_2011PACUPACU_2
+Nagy_2017FP12013_FP1
+ Nagy_2017FP32013_FP3
+ Posada_2011PACUPACU_3
+ Posada_2011PACUPACU_4
+  Posada_2011PACUPACU_4
+Nagy_2017FP12013_FP1
+Posada_2011RITARITA_2
+   Posada_2011RITARITA_2
+Posada_2011RITARITA_3
+Nagy_2017FP32013_FP3
+Nagy_2017FP32013_FP3
+  Posada_2011RITARITA_4
+   Posada_2011RITARITA_3
+Nagy_2017FP42013_FP4
+Posada_2011SELVASELVA_INCEPTISOL_4
+Nagy_2017FP42013_FP4
+Sierra_2013ZAR01ZAR01_P3
+  Posada_2011SELVASELVA_UTISOL_4
+    Posada_2011SHERSHER_2
+Nagy_2017FP42013_FP4
+    Posada_2011RITARITA_4
+Nagy_2017FP72013_FP7
+Nagy_2017FP72013_FP7
+ Posada_2011SHERSHER_3
+Sierra_2013ZAR04ZAR04_P1
+  Posada_2011SHERSHER_5
+Nowinski_2021Joshua_TreeC10_near
+Nagy_2017FP72013_FP7
+ Nowinski_2021Joshua_TreeC10_near
+ Scheibe_2022NahuelbutaNb_1
+Nowinski_2021Joshua_TreeC10_near
+   Posada_2011PACUPACU_4
+Nowinski_2021Joshua_TreeC5_near
+Nowinski_2021Joshua_TreeC5_near
+  Nowinski_2021Joshua_TreeC5_near
+Scheibe_2022NahuelbutaNb_2
+Nowinski_2021Joshua_TreeC7_near
+  Scheibe_2022NahuelbutaNb_3
+   Posada_2011AMAAMA_3
+Sierra_2013ZAR04ZAR04_P2
+  Posada_2011AMAAMA_4
+  Scheibe_2022NahuelbutaNb_4
+Posada_2011RITARITA_2
+Nowinski_2021Joshua_TreeC7_near
+Posada_2011SELVASELVA_INCEPTISOL_4
+   Posada_2011BCIBCI_4
+Sierra_2013ZAR04ZAR04_P3
+ Posada_2011AMAAMA_3
+   Sierra_2013ZAR04ZAR04_P4
+Scheibe_2022Santa GraciaSG_1
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Nowinski_2021Joshua_TreeC7_near
+Posada_2011RITARITA_3
+ Posada_2011SELVASELVA_UTISOL_4
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Posada_2011SHERSHER_2
+    Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Posada_2011AMAAMA_3
+Posada_2011BCIBCI_5
+   Posada_2011RITARITA_4
+Scheibe_2022Santa GraciaSG_2
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Posada_2011SHERSHER_3
+Posada_2011AMAAMA_4
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011BCIBCI_6
+Posada_2011AMAAMA_4
+  Posada_2011SELVASELVA_INCEPTISOL_4
+   Posada_2011SELVASELVA_UTISOL_4
+ Posada_2011SHERSHER_5
+ Posada_2011BCIBCI_4
+Posada_2011SHERSHER_2
+ Scheibe_2022Santa GraciaSG_3
+ Posada_2011GORGGORG_1
+ Posada_2011SHERSHER_3
+  Posada_2011BCIBCI_4
+Scheibe_2022NahuelbutaNb_1
+    Posada_2011GORGGORG_2
+Scheibe_2022NahuelbutaNb_2
+Posada_2011BCIBCI_5
+Posada_2011SHERSHER_5
+  Scheibe_2022NahuelbutaNb_3
+Posada_2011BCIBCI_6
+   Posada_2011GORGGORG_1
+Sierra_2013ZAR01ZAR01_C
+Posada_2011BCIBCI_5
+Scheibe_2022NahuelbutaNb_4
+ Scheibe_2022NahuelbutaNb_1
+ Posada_2011GORGGORG_2
+ Posada_2011GORGGORG_4
+  Posada_2011GORGGORG_4
+Sierra_2013ZAR01ZAR01_P1
+  Posada_2011GORGGORG_5
+ Scheibe_2022Santa GraciaSG_1
+ Sierra_2013ZAR01ZAR01_P3
+   Sierra_2013ZAR04ZAR04_P1
+Posada_2011PACUPACU_1
+   Sierra_2013ZAR04ZAR04_P2
+Posada_2011PACUPACU_2
+  Scheibe_2022Santa GraciaSG_2
+Posada_2011GORGGORG_5
+Posada_2011PACUPACU_3
+Sierra_2013ZAR04ZAR04_P3
+  Posada_2011BCIBCI_6
+Posada_2011PACUPACU_4
+Scheibe_2022NahuelbutaNb_2
+Sierra_2013ZAR04ZAR04_P4
+   Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Posada_2011RITARITA_2
+   Posada_2011GORGGORG_1
+Posada_2011RITARITA_3
+  Posada_2011PACUPACU_1
+ Posada_2011RITARITA_4
+ Posada_2011PACUPACU_2
+  Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+ Posada_2011GORGGORG_2
+Posada_2011PACUPACU_3
+Scheibe_2022NahuelbutaNb_3
+Posada_2011SELVASELVA_INCEPTISOL_4
+    Posada_2011SELVASELVA_UTISOL_4
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Posada_2011PACUPACU_4
+Scheibe_2022NahuelbutaNb_4
+  Posada_2011RITARITA_2
+  Scheibe_2022Santa GraciaSG_1
+Posada_2011SHERSHER_2
+Scheibe_2022Santa GraciaSG_3
+  Posada_2011GORGGORG_4
+   Posada_2011SHERSHER_3
+  Posada_2011GORGGORG_5
+Posada_2011RITARITA_3
+Posada_2011SHERSHER_5
+ Sierra_2013ZAR01ZAR01_C
+ Posada_2011PACUPACU_1
+Scheibe_2022Santa GraciaSG_2
+   Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Posada_2011PACUPACU_2
+Scheibe_2022Santa GraciaSG_3
+ Scheibe_2022NahuelbutaNb_1
+Posada_2011RITARITA_4
+  Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Sierra_2013ZAR01ZAR01_C
+Posada_2011SELVASELVA_INCEPTISOL_4
+  Sierra_2013ZAR01ZAR01_P1
+   Sierra_2013ZAR01ZAR01_P3
+Posada_2011SELVASELVA_UTISOL_4
+ Posada_2011PACUPACU_3
+Sierra_2013ZAR01ZAR01_P1
+  Posada_2011PACUPACU_4
+Sierra_2013ZAR04ZAR04_P1
+  Posada_2011RITARITA_2
+ Posada_2011SHERSHER_2
+ Sierra_2013ZAR01ZAR01_P3
+Posada_2011RITARITA_3
+Sierra_2013ZAR04ZAR04_P2
+  Posada_2011RITARITA_4
+Sierra_2013ZAR04ZAR04_P3
+    Posada_2011SHERSHER_3
+  Sierra_2013ZAR04ZAR04_P4
+Posada_2011SHERSHER_5
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Scheibe_2022NahuelbutaNb_1
+  Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Scheibe_2022NahuelbutaNb_2
+Posada_2011SELVASELVA_INCEPTISOL_4
+ Sierra_2013ZAR04ZAR04_P1
+ Scheibe_2022NahuelbutaNb_2
+Scheibe_2022NahuelbutaNb_3
+  Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Scheibe_2022NahuelbutaNb_4
+ Posada_2011SELVASELVA_UTISOL_4
+   Sierra_2013ZAR04ZAR04_P2
+  Scheibe_2022Santa GraciaSG_1
+Sierra_2013ZAR04ZAR04_P3
+Posada_2011SHERSHER_2
+  Sierra_2013ZAR04ZAR04_P4
+  Scheibe_2022Santa GraciaSG_2
+Scheibe_2022NahuelbutaNb_3
+Posada_2011SHERSHER_3
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+ Scheibe_2022Santa GraciaSG_3
+   Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+Posada_2011SHERSHER_5
+Sierra_2013ZAR01ZAR01_C
+ Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+ Scheibe_2022NahuelbutaNb_1
+Sierra_2013ZAR01ZAR01_P1
+   Scheibe_2022NahuelbutaNb_2
+  Sierra_2013ZAR01ZAR01_P3
+Scheibe_2022NahuelbutaNb_3
+ Scheibe_2022NahuelbutaNb_4
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Sierra_2013ZAR04ZAR04_P1
+    Sierra_2013ZAR04ZAR04_P2
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+Scheibe_2022NahuelbutaNb_4
+Scheibe_2022Santa GraciaSG_1
+  Sierra_2013ZAR04ZAR04_P3
+Scheibe_2022Santa GraciaSG_1
+    Sierra_2013ZAR04ZAR04_P4
+Scheibe_2022Santa GraciaSG_2
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Scheibe_2022Santa GraciaSG_2
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+   Scheibe_2022Santa GraciaSG_3
+Scheibe_2022Santa GraciaSG_3
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+   Sierra_2013ZAR01ZAR01_C
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Sierra_2013ZAR01ZAR01_C
+  Sierra_2013ZAR01ZAR01_P1
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+  Sierra_2013ZAR01ZAR01_P3
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Sierra_2013ZAR01ZAR01_P1
+Sierra_2013ZAR04ZAR04_P1
+  Sierra_2013ZAR01ZAR01_P3
+Sierra_2013ZAR04ZAR04_P2
+  Sierra_2013ZAR04ZAR04_P1
+Sierra_2013ZAR04ZAR04_P3
+  Sierra_2013ZAR04ZAR04_P2
+Sierra_2013ZAR04ZAR04_P4
+  Sierra_2013ZAR04ZAR04_P3
+Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+  Sierra_2013ZAR04ZAR04_P4
+Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+  Trumbore_unpublishedTrumbore AhwahneeTrumbore Ahwahnee 2005
+Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+  Trumbore_unpublishedTrumbore ChiquitoTrumbore Chiquito 2005
+Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+  Trumbore_unpublishedTrumbore FalbrookTrumbore Falbrook 2005
+Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+ Trumbore_unpublishedTrumbore MusickTrumbore Musick 2005
+ Trumbore_unpublishedTrumbore ShaverTrumbore Shaver 2005
+starting worker pid=45403 on localhost:11182 at 12:13:17.696
+starting worker pid=45416 on localhost:11182 at 12:13:17.861
+starting worker pid=45429 on localhost:11182 at 12:13:18.022
+starting worker pid=45442 on localhost:11182 at 12:13:18.178
+starting worker pid=45456 on localhost:11182 at 12:13:18.334
+starting worker pid=45469 on localhost:11182 at 12:13:18.496
+starting worker pid=45482 on localhost:11182 at 12:13:18.655
+starting worker pid=45495 on localhost:11182 at 12:13:18.811
+starting worker pid=45508 on localhost:11182 at 12:13:18.948
+starting worker pid=45521 on localhost:11182 at 12:13:19.106
+starting worker pid=45534 on localhost:11182 at 12:13:19.273
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+starting worker pid=45565 on localhost:11182 at 12:14:01.628
+starting worker pid=45578 on localhost:11182 at 12:14:01.803
+starting worker pid=45591 on localhost:11182 at 12:14:01.960
+starting worker pid=45604 on localhost:11182 at 12:14:02.118
+starting worker pid=45617 on localhost:11182 at 12:14:02.277
+starting worker pid=45630 on localhost:11182 at 12:14:02.440
+starting worker pid=45643 on localhost:11182 at 12:14:02.593
+starting worker pid=45656 on localhost:11182 at 12:14:02.748
+starting worker pid=45669 on localhost:11182 at 12:14:02.906
+starting worker pid=45682 on localhost:11182 at 12:14:03.063
+starting worker pid=45695 on localhost:11182 at 12:14:03.227
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+starting worker pid=45731 on localhost:11182 at 12:14:47.182
+starting worker pid=45744 on localhost:11182 at 12:14:47.339
+starting worker pid=45757 on localhost:11182 at 12:14:47.502
+starting worker pid=45770 on localhost:11182 at 12:14:47.662
+starting worker pid=45783 on localhost:11182 at 12:14:47.820
+starting worker pid=45796 on localhost:11182 at 12:14:47.981
+starting worker pid=45809 on localhost:11182 at 12:14:48.128
+starting worker pid=45822 on localhost:11182 at 12:14:48.292
+starting worker pid=45835 on localhost:11182 at 12:14:48.455
+starting worker pid=45848 on localhost:11182 at 12:14:48.613
+starting worker pid=45861 on localhost:11182 at 12:14:48.769
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+Loading required package: deSolve
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+starting worker pid=45885 on localhost:11182 at 12:16:34.422
+starting worker pid=45899 on localhost:11182 at 12:16:34.591
+starting worker pid=45912 on localhost:11182 at 12:16:34.748
+starting worker pid=45925 on localhost:11182 at 12:16:34.902
+starting worker pid=45938 on localhost:11182 at 12:16:35.059
+starting worker pid=45951 on localhost:11182 at 12:16:35.211
+starting worker pid=45964 on localhost:11182 at 12:16:35.367
+starting worker pid=45977 on localhost:11182 at 12:16:35.524
+starting worker pid=45990 on localhost:11182 at 12:16:35.683
+starting worker pid=46003 on localhost:11182 at 12:16:35.839
+starting worker pid=46016 on localhost:11182 at 12:16:36.010
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+Loading required package: deSolve
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+Loading required package: deSolve
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+
+
+Attaching package: ‘SoilR’
+
+The following object is masked from ‘package:deSolve’:
+
+    euler
+

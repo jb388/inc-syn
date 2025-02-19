@@ -1,0 +1,1038 @@
+---
+title: "Minich Dissertation 14C Models"
+author: J. Beem-Miller
+date: \textit{\today}
+output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 3
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_depth: '2'
+  html_notebook:
+    css: "custom.css"
+    toc: yes
+    toc_depth: 2
+header_includes:
+- \usepackage[utf8]{inputenc}
+- \usepackage{float}
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE,
+                      fig.align = 'center', dev = c('cairo_pdf', 'png'), fig.width = 6.5,
+                      fig.height = 3.5)
+options(scipen = 5)
+# load page breaks fx
+source("./utilities/page_break_Rmd.R")
+```
+
+```{r setup, include = FALSE}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(SoilR)
+library(openxlsx)
+library(ISRaD)
+library(lme4)
+library(lmerTest)
+library(emmeans)
+library(gt)
+library(FME)
+```
+
+```{r load raw-data-ingest fx}
+source("./utilities/jena_ams_ingest.R")
+source("./utilities/jena_iso_ingest.R")
+source("./utilities/jena_elm_ingest.R")
+```
+
+```{r plot-funs}
+# color palettes for ECO & PM
+warm <- "#BF812D"
+cool <- "#80CDC1"
+cold <- "#01665E"
+granite <- "#9daba9"
+andesite <- "#382dbf"
+basalt <- "#bf382d"
+minC <- "#9b003f"
+fPOM <- "#3f9b00"
+oPOM <- "#0047af"
+```
+
+# Background
+This notebook contains code to model soil radiocarbon time series data from the Sierra Nevada Mountains, USA, with the goal of assessing the roles of climate, parent material, and soil mineral assemblages in determining ages and transit times of soil C. 
+
+Quantifying cycling rates of soil C is critical for determining the sink strength of the soil C reservoir. Soils rich in poorly crystalline minerals have a greater capacity for soil C storage than soils dominated by more crystalline minerals, but whether or not this additional soil C storage capacity is relevant for climate change mitigation remains an open question. Soils may store large amounts of C, but the potential for increasing sequestration rates of atmospheric CO~2~ is low if the majority of the C is cycling at centennial to millenial time scales. [New paragraph here...] Additionally, the question of whether temperature increases will lead to increased heterotrophic respiration fluxes is of critical importance for predicting the trajectory of future climate change. 
+
+The current study seeks to answer these questions using soils collected from a parent material by climate gradient in the Sierra Nevada Mountains, USA. Samples were collected in 2001, 2009/2010, and 2019. Parent materials include granodiorite, andesite, and basalt; climate zones are defined by mean annual temperature, and consist of paired elevation gradients for each parent material along the western slope of the Sierras.
+
+Earlier analysis of this dataset revealed that carbon respired by the microbial community at all sites consisted primarily of annual to decadally cycling soil C, and that this C was substantially younger than bulk soil C. Bulk soil C was older at sites where poorly crystalline mineral content was greater, indicating mineralogical control of the most persistent soil C. However, parent material and poorly crystalline mineral content also had a significant effect on the $\Delta$^14^C signal of respired CO~2~, suggesting that mineral assemblages also play a role in regulating more dynamic soil C cycling at annual to decadal scales.
+
+In the current study we seek to quantify the contribution of mineral-associated soil C to respiration as well as understand how parent material and climate interact to determine the partitioning of mineral-associated soil C between more persistent and more dynamic pools. Mineral associated soil C content will be quantified using density fractionation, while specific mineral assemblages will be determined using QXRD and selective dissolution. Finally, we will use radiocarbon measurements from bulk, respired, and density fraction samples collected over the period 2001 to 2019 to constrain compartmental models. We will use these models to determine how ages and transit times of soil C vary along the parent material by climate gradient, and also infer how potential changes in temperature or inputs may affect future soil C stocks.
+
+# Research Questions
+1. How do ages and transit times of soil carbon differ between soils developed on different parent materials and under different climate regimes?
+2. What are the roles of parent material, climate, and specific mineral types in controlling cycling rates of fast (annual to decadal) versus slow (centennial to millenial) mineral-associated soil C pools?
+3. How does the proportion of mineral-associated C relate to the change in system ages or transit times relative to changes in temperature? [or PCM content? or...?]
+
+# Methods
+## Models
+
+Preliminary modeling was undertaken with the bulk and respired $\Delta$^14^C data. We used bulk soil ^14^C observations from 2001, 2009, and 2019, and $\Delta$^14^C-CO~2~ measured in laboratory soil incubations of soils collected in 2001 and 2019. Previous work indicated that carbon stocks at these sites are likely in equilibrium with inputs, so we assumed steady-state for the models.
+
+One pool models have been shown repeatedly to be inadequate for describing soil carbon dynamics. However, in systems lacking substantial soil organic matter protection mechanisms such a model should still be relevant. Increasing model complexity to two pools, we can choose a model structure with inputs to the system split between pools with different decomposition rates (parallel), or a structure with all of the inputs to the system entering the first pool only, with the outputs from the first pool split between respiration and inputs into the second pool (serial). We can consider three pool systems within the same framework, contrasting a parallel type models with a serial model. Parameter uncertainty increases with model complexity, which limits the number of feasible model structures (Ingrid/Andres?). 
+
+We started with two-pool parallel and two-series models, as these are the simplest model system beyond the single pool approach and simpler models are easier to constrain. However, we were unable to successfully fit the bulk and respired radiocarbon time series data with only two pools. Accordingly, we expanded the model to include three pools, i.e. with C turning over at fast, intermediate, and slow cycling rates. We have not parameterized these pools mechanistically, although it is possible to imagine a system in which two pools exist that are protected by different SOM stabilization mechanisms but have similar turn over rates. Such as system could be described equally well as a one pool system. However, if the stabilization mechanisms are different, such pools may have different temperature sensitivities, which could lead to a scenario in which a soil could be described with a single pool under a given temperature regime, but the same soil would need multiple pools to accurately capture SOM dynamics under a different temperature regime. 
+
+The confines of our experimental design make it impossible to compare how the exact same soil would respond to a different temperature regime *in situ*. However, our combined parent material and climate gradient does allow us to compare how system ages and transit times may change for a soil that is further along the trajectory of soil development. Given that future changes in temperature due to global warming will likely contribute to a cascade of changes in the soil environment including the hydraulic regime (through differences in evaporation rates or the proportion of precipitation falling as rain vs. snow), vegetative community, pH, etc., such a comparison is perhaps more useful for predicting the effects of climate change on soil C dynamics. 
+
+The intrinsic heterogeneity of soils presents a challenge for comparing different soils *in situ*. The complexity of mineral weathering processes and the inherent stochastity of these processes makes comparison studies challenging. Accordingly, classifying soils according to traditional soil taxonomy or grouping different soils based on certain soil forming factors or physical properties is an alternative rubric for making comparisons that are useful for comparing actual soils rather than modeled or otherwise artificial constructs. The basis for comparison can be qualitative, such as parent material, or quantitative, such as mean annual site temperature, the proportion of the total soil organic matter pool found in the mineral-associated fraction, the concentration of poorly crystalline metal oxide content, etc. Such comparisons allow for advances in our understanding of soil C dynamics, as these simplified qualitative or quantitative metrics can be empirically measured or estimated at broad scales. For example, we can answer such questions of whether or not parent material affects relative temperature sensitivity of decomposition by comparing changes in transit time or system ages for soils developed on different parent materials but under the same temperature regime (e.g. GRwf vs. ANwf). Conversely, we can compare how the abundance of specific mineral phases, e.g. poorly crystalline metal oxides or 2:1 clays, or how the total amount of mineral-associated soil C (e.g. dense fraction proportion) relates to the change in transit times or system ages observed across a gradient of mean annual temperature (e.g. ANpp vs. ANwf). 
+
+We specifically avoided using potential forcing data when contructing models in order to avoid biases in model structure or parameterization, and only used the bulk and respired 14C data in constraining our models. Using information theory to identify the best-performing models, we then compare how the model complexity is related to parent material, climate, parent material-climate interactions, or to specific mineralogical indices. Furthermore, we can compare and contrast the 14C data measured for potentially empirically determined soil C pools with 14C values determined for the model pools. This comparison can be made between specific modeled pools and potentially corresponding empircal pools, but also by comparing age or transit time distributions determined with empirical fractionation approaches with the distributioned obtained from the models. Such a comparision will enable us to assess the utility of using empirically measured fractions as conceptual pools in a modeling framework. 
+
+
+(ref:mod-scheme-4p-cap) Schematic for a compartmental model of soil C with three pools (POM~fast~, MOM~fast~, SOM~slow~). Inputs and transfers between pools are drawn with gray arrows and heterotrophic respiration fluxes are drawn with purple arrows. Relative sizes of pools and fluxes are respresented by box size and arrow weights. The transfer coefficients $\alpha$~POM~ and $\alpha$~MOM~ represent the proportion of inputs transfered from the fast to the slow pool for POM~fast~ and MOM~fast~ respectively. The coefficient $\gamma$~in~ gives the proportion of C inputs partitioned to the POM~fast~ and MOM~fast~ pools.
+
+```{r mod-scheme-4p, out.width="100%", fig.cap="(ref:mod-scheme-4p-cap)"}
+knitr::include_graphics("../data/img/Mod_fig_4p.pdf")
+```
+
+This three-pool model requires the following parameters:
+* input partitioning coefficient ($\gamma$~in~)
+* decomposition constants for each soil C pool (*k*~POMfast~, *k*~MOMfast~, *k*~SOMslow~)
+* transfer coefficients ($\alpha$~POM~, $\alpha$~MOM~)
+
+Constraints for the model include:
+* C stocks
+* $\Delta$^14^C of heterotrophic respiration in 2001 and 2019 (n = 4)
+
+The central issue with such a complex model is that the number of unknown parameters (6) is high relative to the available data constraints. The parameters that we know the least about and that therefore may be most appropriate to fit with the model are the turnover rates (*k*s) for the pools and the transfer coefficients ($\alpha$s). In case the optimal parameter set has poor identifiabiliy, we will employ a combination of reference data from the literature and empirical measurements made in the laboratory to reduce the number of parameters fit by the model, specifying first $\gamma$~in~ and second *k*~SOMslow~, as needed.
+
+The input partitioning coefficient, $\gamma$~in~, determines the proportion of the inputs going into POM~fast~ versus MOM~fast~. The dominant precursors to MOM are low molecular weight (LMW, < 600 Da) molecules that can be dissolved in the soil solution and transported as dissolved organic matter (DOM) (Lehmann & Kleber, 2015; Sokol et al., 2019). A study by Uselman et al. (2007a) in a similar setting (Mt. Shasta) to that of our study sites provides some insight into the production of dissolved versus particulate organic matter from both leaf and fine root inputs into the soil. Following 47 d of simulated snowmelt, the authors observed that 13.4% of the leaf litter input at the soil surface was translocated in the soil as DOM, and for fine roots added to the soil at a depth of 10 cm, they observed 88.6% of the root material remained as POM, 5.2% was transformed to DOM, and 6.2% was lost via respiration or leaching. Using the data from these study and disregarding the losses, we may assume that a ballpark estimate for $\gamma$~in~ could be calculated as the sum of DOM production from litter and fine roots divided by the sum of litter DOM and both POM and DOM from fine roots. Using data from a companion study from the same authors (Uselman et al. 2007b) in which they measured litter fall and fine root production from the A horizon, the estimate for $\gamma$~in~ using this procedure would be 0.13.
+
+Inputs are relative to the C stocks at steady state, and can be adjusted after parameter fitting so that C stocks are realistic. Alternatively, inputs could be estimated from data obtained from flux towers near to the cool climate sites for the granitic and andesitic parent materials. However, we do not have a similar data source for the basaltic soils. Other potential data sources for inputs are remotely sensed GPP data or downscaled GPP estimates from global models. While inputs could be assumed to be a function of climate and not vary among parent materials, this is a strong assumption that could limit the inferential power of the models regarding temperature sensitivity. 
+
+We can calculate the value of *k*~SOMslow~ using the relationship between input, carbon stock, and turnover rate at steady-state (**Eq. 1**). The amount of C in the SOM~slow~ pool can be determined *a priori* using the proportion of C in the oPOM fraction and the most thermally resistant component of the heavy fraction, while the amount of C going into the SOM~slow~ pool would be a function of both the turnover rates of the MOM~fast~ and POM~fast~ pools and the transfer coefficients $\alpha$~POM~ and $\alpha$~MOM~.
+
+>**Eq. 1**
+
+$$In = (k_{1} \cdot C_{1}) + ... + (k_{n} \cdot C_{n})$$
+
+>where *k~1~* and *k~n~* and *C~1~* and *C~n~* are the decomposition rates and carbon stocks of the first and *n*th model pools, respectively.
+
+The thermal fractionation data measured from the heavy fraction samples provides a distribution of carbon content and $\Delta$^14^C across operationally defined subpools of mineral-associated C. Previous studies on the relationship between the temperature of oxidative combustion and $\Delta$^14^C have shown that the carbon oxidized at highest temperatures is consistently the most depleted in $\Delta$^14^C. While oxidative combustion is an imperfect proxy for microbial decomposition *in situ*, it is clear that the majority of the organic matter lost at high temperatures is highly persistent. Using the proportion of C lost from the two highest temperature cuts (> 390° C) allows us to infer the mineral-associated organic matter contribution to SOM~slow~.
+
+Thermal fractionation was only performed for a subset of samples, specifically the heavy fraction samples from the 20-30 cm depth of the cool climate soil profiles collected in 2019. However, we expect the amount of C partitioned to the oldest component of the mineral-associated C pool to be largely controlled by lithology, rather than climate. Under this assumption, we will determine the mineral-associated organic matter contribution to SOM~slow~ by parent material, i.e. this value will differ within a climate zone among parent materials, but not among climate zones within a parent material.
+
+We did not directly measure charcoal content of our samples, so the contribution of charcoal to SOM~slow~ is more challenging to estimate. However, through a combination of visual inspection and $\Delta$^14^C  measurements, we have determined that charcoal must make up a substantial of the occluded light fraction (oPOM). The $\Delta$^14^C values for the oPOM fraction were below zero for almost all of the sites, indicating that these fractions are dominated by pre-bomb C cycling at centennial or greater time scales. We also observed charcoal in the free light fraction. However, both visual assessment and $\Delta$^14^C measurements indicate that the contribution of centennial to millenial-aged charcoal is minimal for the fPOM. Accordingly, we would consider the charcoal contribution to SOM~slow~ to be equivalent to the proportion of C in the oPOM fraction.
+
+## Initial conditions
+The problem of determining initial parameter values prior to optimization is non-trivial. Sensitivity to initial values can lead the optimization algorithm to stop at local minima before finding the global minima. Values for decomposition rates (*k*) are related to the amount of ^14^C in a pre-bomb system (fraction modern, *F*) at steady-state by **Eq. 1** (cf. Schuur, Druffle, and Trumbore, 2016), making this a useful relationship for determining initial *k* values. However, the use of this relationship requires knowledge of pre-bomb values for $\Delta$^14^C. 
+
+We obtained $\Delta$^14^C values from samples collected in 1959 from sites adjacent to the three granitic soil sites. These soils were fractionated with both physical (density) and chemical means. Initial values for *k~MOMfast~* and *k~SOMslow~* were determined with **Eq. 2** using the $\Delta$^14^C values measured for the acid-hydrolyzable and non-acid-hydrolyzable fractions of heavy fraction samples collected in 1959. We used the same initial values of *k~MOMfast~* and *k~SOMslow~* at all sites. Free light and occluded light fractions were not measured separately for the 1959 samples, so we calculated the initial value for *k~POMfast* using a one pool model fit to the observations of $\Delta$^14^C for the free light fraction in 2001 and 2019. The one pool model assumption is valid for the POM~fast~ pool as this pool only receives external inputs and therefore *k~POMfast* is not affected by turnover rates of the other pools. 
+
+>**Eq. 2**
+
+$$k = \frac{\lambda \cdot F}{1 - F}$$
+>where $\lambda$ is the radioactive decay constant (8267^-1).
+
+## Workflow
+
+A Monte-Carlo Markov Chain approach will be used for parameter estimation in combination with an initial optimization algorithm run to determine an optimal initial parameter set. Initial parameter optimization was performed using turnover times constrained to be between 1 and 50 years for for POM~fast~ (*k~POMfast~* = [0.02, 1]), between 1 and 100 years for MOM~fast~ (*k~MOMfast~* = [0.01, 1]), and between 100 and 100,000 years for SOM~slow~ (*k~SOMslow~* = [0.00001, .01]). The values for $\alpha$~POM~ and $\alpha$~MOM~ were not constrained. We used the function "modFit" (R package FME) with the the Nelder-Mead algorithm for the initial parameter optimization. The best set of parameters found by modFit was then used as the input to a Monte Carlo Markov Chain (MCMC), using the function "modMCMC" (R package FME). The number of iterations for the MCMC optimization was set at 5000 intially, with delayed rejection employed to increase efficiency. 
+
+```{r obs-14c-dat}
+load("dens.01.09.19.df.RData")
+obs.frc.14c <- lapply(split(dens.01.09.19.df, dens.01.09.19.df$PMeco_depth), function(df) {
+  df %>%
+    select(frc, year, frc_14c) %>%
+    pivot_wider(names_from = frc, values_from = frc_14c) %>%
+    mutate(time = year + .5) %>%
+    select(!year) %>%
+    select(time, fPOM, oPOM, minC) %>%
+    data.frame
+})
+load("/Users/jeff/sra-ts/source/obs.resp.14c.RData")
+load("/Users/jeff/sra-ts/source/obs.bulk.14c.RData")
+```
+
+```{r obs-blk-c-dat}
+# 2019
+elm_results_dir <- list.files("../data/raw", pattern = "elm_jena_results-soil", full.names = TRUE)
+elm_results_ls <- suppressMessages(lapply(seq_along(elm_results_dir), function(i) {
+  read_jena_elm_results(elm_results_dir[i], verbose = FALSE)
+}))
+names(elm_results_ls) <- list.files("../data/raw", pattern = "elm_jena_results-soil")
+
+# extract to df
+sra.19.blkC.all <- bind_rows(unlist(elm_results_ls, recursive = FALSE)) %>%
+  mutate(PMeco = sapply(strsplit(ID, "_"), "[", 2),
+         pro_rep = sapply(strsplit(ID, "_"), "[", 3),
+         depth = sapply(strsplit(ID, "_"), "[", 4),
+         year = 2019)
+
+# 0-30 cm only
+sra.19.blkC <- bind_rows(
+  lapply(split(sra.19.blkC.all, sra.19.blkC.all$PMeco), function(df) {
+    df$lyr_bot <- as.numeric(unlist(lapply(strsplit(df$depth, "-"), "[[", 2)))
+    df <- df[df$lyr_bot < 31, ]
+    df$pro_name <- paste(df$PMeco, df$pro_rep, sep = "_")
+    return(df[ , c("year", "PMeco", "pro_rep", "depth", "lyr_bot", "C", "N")])
+  }))
+save(sra.19.blkC, file = "sra.19.blkC.RData")
+
+# c-spline fx
+sp.fx <- function(df, sp_var_in, sp_var_out, d = t(c(0, 10, 20, 30)), year) {
+  out <- bind_rows(
+    lapply(split(df, df$PMeco), function(x) {
+      depths(x) <- pro_name ~ lyr_top + lyr_bot
+      sp <- suppressMessages(
+        mpspline(x, var.name = sp_var_in, d = d, show.progress = FALSE))$var.std
+      sp$rep <- seq(1, nrow(sp))
+      sp %>%
+        pivot_longer(cols = 1:3, names_to = "depth", values_to = sp_var_out)
+    }), .id = "PMeco") %>%
+    mutate(lyr_bot = as.numeric(substr(sapply(strsplit(depth, "-"), "[", 2), 1, 2)),
+           year = year) %>% data.frame
+  out[ , c("PMeco", "rep", "year", "lyr_bot", sp_var_out)]
+}
+
+## 2001
+sra.01.blkC <- read_excel("../data/external/sra_ras_sum/sierra_data_summary_2020.xlsx", sheet = "2001_bulk_data") %>% type.convert(., as.is = TRUE) %>% mutate(pro_name = paste(PMeco, pro_rep, sep = "_")) %>% data.frame 
+sra.01.blkC <- sra.01.blkC[c(which(grepl("AN", sra.01.blkC$ID)), which(grepl("BS", sra.01.blkC$ID)), which(grepl("GR", sra.01.blkC$ID))), ]
+sra.01.blkC <- sra.01.blkC[which(!is.na(sra.01.blkC$C.)), ]
+# convert lyr_top to numeric and add pro_name col
+sra.01.blkC$lyr_top <- as.numeric(sra.01.blkC$lyr_top)
+sra.01.blkC$pro_name <- paste0(sra.01.blkC$PMeco, sra.01.blkC$pro_rep)
+sra.01.blkC$lyr_soc <- sra.01.blkC$bd.g.cm3 * sra.01.blkC$fine.earth. * sra.01.blkC$C. * (sra.01.blkC$lyr_bot - sra.01.blkC$lyr_top) * 10^-3
+blkC.rep.soc.sp.01.df <- sp.fx(sra.01.blkC, "lyr_soc", "lyr_soc", year = 2001)
+
+## 2009
+sra.09.blkC <- read_excel("../data/external/sra_ras_sum/sierra_data_summary_2020.xlsx", sheet = "2009_bulk_data") %>% type.convert(., as.is = TRUE) %>% data.frame
+sra.09.blkC$PMeco <- paste0(toupper(substr(sra.09.blkC$Parent_Material, 1, 2)),
+                            tolower(sra.09.blkC$Biome))
+sra.09.blkC$PMeco <- ifelse(
+  substr(sra.09.blkC$PMeco, 1, 2) == "BA", 
+  paste0("BS", substr(sra.09.blkC$PMeco, 3, 4)), 
+  sra.09.blkC$PMeco)
+names(sra.09.blkC)[which(names(sra.09.blkC) == "top.mineral")] <- "lyr_top"
+names(sra.09.blkC)[which(names(sra.09.blkC) == "bottom.mineral")] <- "lyr_bot"
+sra.09.blkC$lyr_soc <- sra.09.blkC$Thickness_cm * sra.09.blkC$BD_g_cm_3 * sra.09.blkC$Soil_finefraction * sra.09.blkC$C_pct * 10^-1
+# fit spline to C data (0-10, 10-20, 20-30 cm output)
+blkC.rep.soc.sp.09.df <- sp.fx(sra.09.blkC, "lyr_soc", "lyr_soc", year = 2009)
+
+## SOC stocks
+# use mean of 2001 and 2009 SOC stocks for steady-state estimate
+csoc.19.0_30.df <- rbind(blkC.rep.soc.sp.09.df, blkC.rep.soc.sp.01.df) %>%
+  mutate(lyr_top = lyr_bot - 10,
+         lyr_name = paste0(PMeco, "_", lyr_top, "-", lyr_bot))
+csoc.19.0_30.sum.df <- csoc.19.0_30.df %>%
+  group_by(PMeco, lyr_top, lyr_bot) %>%
+  summarize(across(lyr_soc, .fns = list(mean = mean, sd = sd)), 
+                   .groups = "drop") 
+csoc.19.0_30 <- lapply(
+  split(csoc.19.0_30.df, csoc.19.0_30.df$lyr_name), 
+  function(df) data.frame(lyr_soc = df$lyr_soc_mean, lyr_soc_sd = df$lyr_soc_sd))
+obs.cStock <- lapply(split(csoc.19.0_30.df, csoc.19.0_30.df$lyr_name), function(x)
+      x %>% rename(time = year, cStock = lyr_soc) %>% select(time, cStock) %>% data.frame)
+```
+
+```{r atm-14c}
+# use Hua2021
+NHZone2 <- read_excel(
+  "../data/external/Hua_2021/S0033822221000953sup002.xls", sheet = 2, skip = 5,
+  col_names = c("Year.AD", "mean.Delta14C", "sd.Delta14C", "mean.F14C", "sd.F14C")) %>%
+  data.frame
+
+# bind pre and post-bomb curves
+atm14c <- bind.C14curves(IntCal20, NHZone2, "AD")
+
+# filter to 1900-2019, cal annual averages
+Datm <- data.frame(Date = seq(1901, 2019, 1), d14c = NA)
+for (i in seq_along(Datm$Date)) {
+  ix <- which(atm14c$Year.AD >= Datm[i, "Date"] & atm14c$Year.AD < Datm[i, "Date"] + 1)
+  Datm[i, "d14c"] <- mean(atm14c[ix, "Delta14C"], na.rm = TRUE)
+}
+```
+
+```{r mod-fx}
+# splicing indices
+ix.10 <- seq(1, 27, 3)
+ix.20 <- seq(2, 27, 3)
+ix.30 <- seq(3, 27, 3)
+
+# index of years for which bulk/resp 14C are known
+atm14c.01.09.19 <- data.frame(
+  year = c(2001, 2009, 2019),
+  d14c = c(mean(atm14c[which(atm14c$Year.AD > 2001 & atm14c$Year.AD < 2002), "Delta14C"]),
+           mean(atm14c[which(atm14c$Year.AD > 2009 & atm14c$Year.AD < 2010), "Delta14C"]),
+           mean(atm14c[which(atm14c$Year.AD > 2019 & atm14c$Year.AD < 2020), "Delta14C"])))
+
+# constraint df
+con.df.fx <- function(PMeco_depth) {
+  bulk.df <- obs.bulk.14c[[PMeco_depth]]
+  resp.df <- obs.resp.14c[[PMeco_depth]]
+  return(
+    con.df <- data.frame(pool = c(rep("bulkC", nrow(bulk.df)), rep("respiration", nrow(resp.df))),
+                         d14c = c(bulk.df$bulkC, resp.df$resp),
+                         Year = c(bulk.df$time, resp.df$time)))
+}
+
+# C stocks function
+soc.fx <- function(pars, In, PM, gam, out = "pools") {
+  
+  # fit k_SOMslow  
+  if (PM == "AN") {
+    j <- 1
+  } else if (PM == "BS") {
+    j <- 2
+  } else {
+    j <- 3
+  }
+  SOMslow_d14c <- tapply(frc.14c.df$d14c, frc.14c.df$PM, min)[[j]]
+  
+  # add k_SOMslow to pars list
+  PARS <- c(pars[1:2], 
+            k(convert_fm_d14c(d14c = SOMslow_d14c, obs_date_y = 2019, verbose = FALSE)), 
+            pars[3])
+  
+  # model matrix
+  A <- -diag(PARS[1:3])
+  A[3, 1] <- PARS[4] * PARS[1]
+  A[3, 2] <- PARS[4] * PARS[2]
+  
+  # steady-state C stocks
+  ss.cstock <- (-1 * solve(A) %*% c(In * gam, In * (1 - gam), 0))
+  
+  if (out == "sum") {
+    sum(ss.cstock)
+  } else {
+    ss.cstock
+  }
+}
+
+# mod fun
+modFun_3p <- function(pars, gam = NA, In, mod, PM, lag = 0, pass = TRUE, verbose = TRUE, out = "modFit") {
+  
+  # fit k_SOMslow  
+  if (PM == "AN") {
+    j <- 1
+  } else if (PM == "BS") {
+    j <- 2
+  } else {
+    j <- 3
+  }
+  SOMslow_d14c <- tapply(frc.14c.df$d14c, frc.14c.df$PM, min)[[j]]
+  
+  # add k_SOMslow to pars list (PARS = (k1, k2, k3, alpha))
+  PARS <- c(pars[1:2], 
+            k(convert_fm_d14c(d14c = SOMslow_d14c, obs_date_y = 2019, verbose = FALSE)), 
+            pars[3:length(pars)])
+  
+  # model matrix
+  A <- -diag(PARS[1:3])
+  
+  # steady-state C stocks
+  if (mod != "3ps") {
+  
+    # model matrix
+    A[3, 1] <- PARS[4] * PARS[1]
+    A[3, 2] <- PARS[4] * PARS[2]
+    
+    # calc stocks
+    ss.cstock <- (-1 * solve(A) %*% c(In * gam, In * (1 - gam), 0))
+    
+  } else {
+    
+    # model matrix
+    A[2, 1] <- PARS[4] * PARS[1]
+    A[3, 2] <- PARS[5] * PARS[2]
+    
+    # calc stocks
+    ss.cstock <- (-1 * solve(A) %*% c(In, 0, 0))
+    
+    if (any(ss.cstock <= 0)) {
+      cat("pool ", which(ss.cstock <= 0), "< 0")
+    }
+  }
+  
+  # intial 14C
+  F0_Delta14C <- unlist(
+    lapply(PARS[1:3], function(x) Delta14C_from_AbsoluteFractionModern(fm(x))))
+  
+  # time index
+  ix.t <- c((lag + 1):nrow(Datm))
+  
+  # model
+  mod.fx <- function(A,
+                     t,
+                     In,
+                     C0,
+                     F0_Delta14C, 
+                     xi = 1, # timestep
+                     inputFc, 
+                     lag = lag,
+                     pass = pass) {
+    t_start = min(t)
+    t_stop = max(t)
+    if (length(PARS) != 4) 
+      stop("pars must be of length = 4")
+    if (length(C0) != 3) 
+      stop("the vector with initial conditions must be of length = 3")
+    if (length(In) == 1) 
+      inputFluxes = BoundInFluxes(function(t) {
+        matrix(nrow = 3, ncol = 1, c(In * gam, In * (1 - gam), 0))
+      }, t_start, t_stop)
+    if (length(xi) == 1) 
+      fX = function(t) {
+        xi
+      }
+    At = BoundLinDecompOp(map = function(t) {
+      fX(t) * A
+    }, t_start, t_stop)
+    Fc = BoundFc(inputFc, lag = lag, format = "Delta14C")
+    mod = Model_14(t, At, ivList = C0, initialValF = ConstFc(F0_Delta14C, "Delta14C"), 
+                   inputFluxes = inputFluxes, inputFc = Fc, pass = pass)
+  }
+  
+  # run mod
+  if (mod == "3ps") {
+    mod <- ThreepSeriesModel14(
+      t = Datm$Date[ix.t],
+      ks = PARS[1:3],
+      C0 = as.vector(ss.cstock),
+      F0_Delta14C = F0_Delta14C,
+      In = In,
+      a21 = PARS[4],
+      a32 = PARS[5],
+      inputFc = Datm,
+      lag = lag,
+      pass = FALSE)
+  } else {
+    mod <- mod.fx(
+      A = A,
+      t = Datm$Date[ix.t],
+      In = In,
+      C0 = as.vector(ss.cstock),
+      F0_Delta14C = F0_Delta14C,
+      inputFc = Datm,
+      lag = lag,
+      pass = pass)
+  }
+  
+  # get mod values
+  C14m <- getF14C(mod)
+  C14p <- getF14(mod)
+  C14r <- getF14R(mod)
+  Ctot <- getC(mod)
+  
+  if (out == "modFit") {
+    # dataframe for modFit fx
+    data.frame(
+      time = Datm$Date[ix.t],
+      resp = C14r,
+      bulkC = rowSums(Ctot[1, ] / sum(Ctot[1, ]) * C14p),
+      cStock = sum(Ctot[1, ]))
+  } else {
+    
+    # sum c stocks
+    ss.cstock <- round(ss.cstock, 2)
+    cstock.sum <- colSums(ss.cstock)
+    
+    if (verbose) {
+      # print site and steady-state stocks
+      cat(paste0(PMeco_depth, "\n"))
+      cat(paste0(ss.cstock[1], " (POMfast)\n", 
+                 ss.cstock[2], " (MOMfast)\n",
+                 ss.cstock[3], " (SOMslow)\n"))
+      cat(cstock.sum, " (modeled total C stock)\n")
+      cat(round(csoc.19.0_30[[PMeco_depth]][ , "lyr_soc"], 1), " (measured total C stock)\n")  
+    }
+    
+    # data frame for plotting
+    data.frame(
+      years = rep(Datm$Date[ix.t], 6),
+      d14C = c(C14p[,1], 
+               C14p[,2],
+               C14p[,3],
+               C14m,
+               C14r,
+               Datm$d14c[ix.t]),
+      pool = rep(c("POMfast", "MOMfast", "SOMslow", "bulkC", "respiration", "atm"), 
+                 each = nrow(C14p)))
+  }
+}
+
+# plotting fx
+C14.3p.plot.fx <- function(plot.df, con.df, PMeco_depth) {
+  plot.df %>%
+    ggplot(., aes(years, d14C, color = pool, linetype = pool)) +
+    geom_path() +
+    geom_point(data = con.df, aes(Year, d14c, color = pool), size = 3) +
+    scale_color_manual(
+      name = "Pool",
+      values = c("atm" = 8,
+                 "POMfast" = "#e41f88",
+                 "MOMfast" = "#1f88e4",
+                 "SOMslow" = "#1fe47b",
+                 "bulkC" = "#e47b1f",
+                 "respiration" = "black")) +
+    scale_linetype_manual(
+      values = c("atm" = 1,
+                 "POMfast" = 2,
+                 "MOMfast" = 2,
+                 "SOMslow" = 2,
+                 "bulkC" = 1,
+                 "respiration" = 1)) +
+    scale_x_continuous(limits = c(1950, 2022)) +
+    ggtitle(PMeco_depth) +
+    xlab("Year") +
+    ylab(expression(''*Delta*''^14*'C (‰)')) +
+    guides(linetype = "none") +
+    theme_bw() +
+    theme(panel.grid = element_blank())
+}
+```
+
+```{r mod-utils}
+# define lambda 
+lambda <- 1/8267 # = 1/(true mean life of 14C)
+
+# k from fraction modern
+k <- function (Fm) {
+  (Fm * lambda)/(1 - Fm)
+}
+
+# d14C from fraction modern 
+fm_14c <- function (fm, date) {
+  (fm * exp(lambda * (1950 - date)) - 1) * 1000
+}
+
+# pre-bomb fraction modern from k (steady-state assumed)
+fm <- function (k){
+  k/(k + lambda)
+}
+```
+
+```{r mod-fit-fx}
+mod.fits.fx <- function(pars, gam, In, sub, lag = 0, upper, lower, cost) {
+  
+  # start loop
+  lapply(seq_along(pars[sub]), function(i) {
+    
+    # start timer and print PMeco_depth
+    start <- Sys.time()
+    cat(paste0(names(pars)[sub][i], " parameter fitting\n"))
+    
+    # set vars
+    PM <- substr(names(pars)[sub][i], 1, 2)
+    pars <- pars[sub][[i]]
+    gam <- .87
+    
+    # Set input
+    In <- In[sub][[i]]
+    
+    # define cost function
+    if (cost == "14C + cStock") {
+      mod.Cost <- function(pars) {
+        modelOutput <- modFun_3p(pars, gam, In, PM, lag)
+        cost1 <- modCost(model = modelOutput, obs = obs.bulk.14c[sub][[i]], scaleVar = TRUE)
+        cost2 <- modCost(model = modelOutput, obs = obs.resp.14c[sub][[i]], scaleVar = TRUE, cost = cost1) 
+        return(modCost(model = modelOutput, obs = obs.cStock[sub][[i]], cost = cost2))
+      }
+    } else if (cost == "14C") {
+      mod.Cost <- function(pars) {
+        modelOutput <- modFun_3p(pars, gam, In, PM, lag)
+        cost1 <- modCost(model = modelOutput, obs = obs.bulk.14c[sub][[i]], scaleVar = TRUE)
+        return(modCost(model = modelOutput, obs = obs.resp.14c[sub][[i]], scaleVar = TRUE, cost = cost1))
+      } 
+    }
+    
+    # fit pars
+    fit <- tryCatch(
+      modFit(f = mod.Cost,
+             p = pars,
+             method = 'Nelder-Mead',
+             upper = upper, 
+             lower = lower),
+      error = function (e) {cat("ERROR :", conditionMessage(e), "\n")})
+    
+    Sfun <- sensFun(mod.Cost, fit$par)
+    
+    # End timer and print elapsed time
+    end <- Sys.time()
+    cat(paste0("time: ", end - start, "\n"))
+    
+    # Return fitted parameters and sensitivity
+    return(list(modfit = fit, sens = Sfun))
+  }) 
+}
+```
+
+```{r input-est}
+# Flux estimated from Goulden et al. 2012; Tang et al. 2005; Wang et al. 2000; Gaudinski 2000
+# fluxes by elevation from GPP reported in Goulden et al. Fig. 5 and approximated
+# Rh percentage from Tang et al. 2005 = 0.44 (ann. mean Blodgett); cf. 0.48 Harvard Forest
+# A horizon contribution est. = 0.55 (Gaudinski et al., 2000)
+# assuming A = 0-30, assume 0-10 = 50%, 10-20 = 30%, 20-30 = 20% of total A production 
+hznA.Rh.kgm2 <- 0.44 * 0.55 * 10^-3
+gpp.ls <- c(1800, 1600, 1400)
+in.frc.ls <- c(0.5, 0.3, 0.2)
+
+# fx for calculating inputs
+in.flx.fx <- function(PMeco_depth) {
+  gpp <- ifelse(grepl("pp", PMeco_depth), gpp.ls[1], ifelse(grepl("wf", PMeco_depth), gpp.ls[2], gpp.ls[3]))
+  in.frc <- ifelse(grepl("0-10", PMeco_depth), in.frc.ls[1], ifelse(grepl("10-20", PMeco_depth), in.frc.ls[2], in.frc.ls[3]))
+  return(gpp * in.frc * hznA.Rh.kgm2)
+}
+```
+
+```{r fit-mods}
+# load initial pars as needed
+if (!exists("pars.i.3p")) {
+ load("../data/derived/modFit_pars/pars.i.3ps_2022-05-13.Rdata") 
+}
+
+if (!exists("frc.14c.df")) {
+ load("frc.14c.df") 
+}
+
+# input list
+in.est <- lapply(seq_along(pars.i.3p), function(i) {
+  PMeco_depth <- names(pars.i.3p)[i]
+  return(in.flx.fx(PMeco_depth))
+})
+names(in.est) <- names(pars.i.3p)
+
+# fit pars, fixed gam = 0.87
+mod.sens.fits.3p2 <- mod.fits.fx(pars = pars.i.3p,
+                                 In = in.est,
+                                 sub = ix.10,
+                                 upper = c(1, 1, 1),
+                                 lower = c(0, 0, 0),
+                                 cost = "14C + cStock")
+names(mod.sens.fits.3p2) <- names(pars.i.3p)[ix.10]
+save(mod.sens.fits.3p2, file = paste0("../data/derived/modFit_pars/", "mod.sens.fits.3p2", "_", Sys.Date(), ".Rdata"))
+
+# fit w/ flexible gamma par (this doesn't make a difference for 14C!)
+pars.i.3p <- lapply(pars.i.3p, function(x) c(x, .87))
+mod.sens.fits.3p3 <- mod.fits.fx(pars = pars.i.3p,
+                                 In = in.est,
+                                 sub = ix.10,
+                                 upper = c(1, 1, 1, .95),
+                                 lower = c(0, 0, 0, .5),
+                                 cost = "14C + cStock")
+names(mod.sens.fits.3p3) <- names(pars.i.3p)[ix.10]
+save(mod.sens.fits.3p3, file = paste0("../data/derived/modFit_pars/", "mod.sens.fits.3p3", "_", Sys.Date(), ".Rdata"))
+
+# fit pars, fixed gam = 0.87, 14C only
+mod.sens.fits.3p4 <- mod.fits.fx(pars = pars.i.3p,
+                                 In = in.est,
+                                 sub = ix.10,
+                                 upper = c(1, 1, 1),
+                                 lower = c(0, 0, 0),
+                                 cost = "14C")
+names(mod.sens.fits.3p4) <- names(pars.i.3p)[ix.10]
+save(mod.sens.fits.3p4, file = paste0("../data/derived/modFit_pars/", "mod.sens.fits.3p4", "_", Sys.Date(), ".Rdata"))
+
+# load fits as needed
+if (!exists("mod.sens.fits.3p2")) {
+ load("../data/derived/modFit_pars/mod.sens.fits.3p2_2022-05-13.Rdata") 
+}
+if (!exists("mod.sens.fits.3p3")) {
+ load("../data/derived/modFit_pars/mod.sens.fits.3p3_2022-05-16.Rdata") 
+}
+if (!exists("mod.sens.fits.3p4")) {
+ load("../data/derived/modFit_pars/mod.sens.fits.3p4_2022-05-18.Rdata") 
+}
+
+# get mod fit only
+mod.fits.3p2 <- lapply(mod.sens.fits.3p2, function(x) x[[1]])
+mod.fits.3p3 <- lapply(mod.sens.fits.3p3, function(x) x[[1]])
+mod.fits.3p4 <- lapply(mod.sens.fits.3p4, function(x) x[[1]])
+
+# get pars
+pars.fit.3p2 <- lapply(mod.fits.3p2, "[[", 1)
+names(pars.fit.3p2) <- names(pars.i.3p)[ix.10]
+pars.fit.3p3 <- lapply(mod.fits.3p3, "[[", 1)
+names(pars.fit.3p3) <- names(pars.i.3p)[ix.10]
+pars.fit.3p4 <- lapply(mod.fits.3p4, "[[", 1)
+names(pars.fit.3p4) <- names(pars.i.3p)[ix.10]
+
+# run fitted models
+mod.fitted.3p2 <- lapply(seq_along(pars.fit.3p2), function(i) {
+  modFun_3p(pars = pars.fit.3p2[[i]], gam = .87, In = in.est[ix.10][[i]], mod = "3p",
+            PM = substr(names(pars.fit.3p2)[i], 1, 2), verbose = FALSE, out = "plot.df")
+})
+names(mod.fitted.3p2) <- names(pars.fit.3p2)
+
+mod.fitted.3p3 <- lapply(seq_along(pars.fit.3p3), function(i) {
+  modFun_3p(pars = pars.fit.3p3[[i]], gam = .87, In = in.est[ix.10][[i]], 
+            PM = substr(names(pars.fit.3p3)[i], 1, 2), verbose = FALSE, out = "plot.df")
+})
+names(mod.fitted.3p3) <- names(pars.fit.3p3)
+
+mod.fitted.3p4 <- lapply(seq_along(pars.fit.3p4), function(i) {
+  modFun_3p(pars = pars.fit.3p4[[i]], gam = .87, In = in.est[ix.10][[i]], 
+            PM = substr(names(pars.fit.3p4)[i], 1, 2), verbose = FALSE, out = "plot.df")
+})
+names(mod.fitted.3p4) <- names(pars.fit.3p4)
+
+# get ssr
+ssr.3p2.df <- data.frame(bind_rows(lapply(mod.fits.3p2, "[", "ssr"), .id = "PMeco_depth"))
+ssr.3p3.df <- data.frame(bind_rows(lapply(mod.fits.3p3, "[", "ssr"), .id = "PMeco_depth"))
+ssr.3p4.df <- data.frame(bind_rows(lapply(mod.fits.3p4, "[", "ssr"), .id = "PMeco_depth"))
+
+# mean residuals, by var (var_ms)
+var_ms.df.fx <- function(mod.fits.ls, costs) {
+  df <- data.frame(bind_rows(lapply(mod.fits.ls, "[", "var_ms"), .id = "PMeco_depth"))
+  df$var <- rep(costs, nrow(df)/length(costs))
+  df$var_ms <- round(df$var_ms, 5)
+  return(df)
+}
+var_ms.3p2.df <- var_ms.df.fx(mod.fits.3p2, c("resp", "bulkC", "cStock"))
+var_ms.3p3.df <- var_ms.df.fx(mod.fits.3p3, c("resp", "bulkC", "cStock"))
+var_ms.3p4.df <- var_ms.df.fx(mod.fits.3p4, c("resp", "bulkC"))
+
+# summarize pars
+pars.fit.3p2.sum <- lapply(mod.fits.3p2, function(x) {
+  tryCatch(summary(x), 
+           error = function (e) {cat("ERROR :", conditionMessage(e), "\n")})
+})
+names(pars.fit.3p2.sum) <- names(pars.fit.3p2)
+
+pars.fit.3p4.sum <- lapply(mod.fits.3p4, function(x) {
+  tryCatch(summary(x), 
+           error = function (e) {cat("ERROR :", conditionMessage(e), "\n")})
+})
+names(pars.fit.3p4.sum) <- names(pars.fit.3p4)
+
+# bind fitted pars with initial pars into data frame for plotting/summarizing
+par.fit.df.fx <- function(mod, pars.fit, pars.i) {
+  df <- bind_rows(
+    lapply(
+      mapply(rbind, 
+             pars.fit,
+             pars.i,
+             SIMPLIFY = FALSE), 
+      function(df) {
+        df <- data.frame(df)
+          colnames(df) <- c("kPOMf", "kMOMf", "alfa")
+          df$est <- c("fit", "init")
+        return(df)
+      })
+  )
+  df$PMeco_depth <- rep(names(pars.i), each = 2)
+  df$PM <- substr(df$PMeco_depth, start = 1, stop = 2)
+  df$eco <- substr(df$PMeco_depth, start = 3, stop = 4)
+  df$depth <- substr(df$PMeco_depth, start = 6, stop = length(df$PMeco_depth))
+  return(df)
+}
+
+# run fx
+pars.fit.3p2.df <- par.fit.df.fx(mod = "3p",
+                                 pars.fit = pars.fit.3p2,
+                                 pars.i = pars.i.3p[ix.10]) %>%
+    filter(est == "fit") %>%
+    select(!c(est, PMeco_depth, eco)) %>%
+    group_by(PM, depth) %>%
+    summarize(across(.cols = everything(), .fns = list(mean = mean, sd = sd)), .groups = "drop") %>%
+    mutate_if(is.numeric, format, digits = 2)
+
+# # print
+# knitr::kable(pars.fit.3p.df,
+#       caption = "Mean parameter estimates by parent material (PM)",
+#       align = "c")
+```
+
+```{r mod-fit-plot-fxs}
+singleMod.fit.plot.fx <- function(modFit.ls) {
+  lapply(seq_along(modFit.ls), function(i) {
+    PMeco_depth <- names(modFit.ls)[i]
+    con.df <- con.df.fx(PMeco_depth)
+    C14.3p.plot.fx(modFit.ls[[i]], con.df, PMeco_depth)
+  })
+}
+
+multiMod.fit.plot.fx <- function(fit1, fit1.name, fit2, fit2.name, fit3 = NULL, fit3.name = NULL) {
+  lapply(seq_along(fit1), function(i) {
+    PMeco_depth <- names(fit1)[i]
+    con.df <- con.df.fx(PMeco_depth)
+    plot.df <- rbind(fit1[[i]],
+                     fit2[[i]],
+                     fit3[[i]])
+    plot.df$Model <- factor(c(rep(fit1.name, nrow(fit1[[i]])),
+                              rep(fit2.name, nrow(fit2[[i]])),
+                              rep(fit3.name, nrow(fit3[[i]]))),
+                            levels = c(fit1.name, fit2.name, fit3.name))
+    return(plot.df %>%
+             filter(pool == "bulkC" | pool == "respiration" | pool == "atm") %>%
+             ggplot(., aes(years, d14C, color = pool)) +
+             geom_path(aes(linetype = Model)) +
+             geom_point(data = con.df, aes(Year, d14c, color = pool), size = 3) +
+             scale_color_manual(
+               name = "Model pool",
+               values = c("atm" = 8,
+                          "bulkC" = "#e47b1f",
+                          "respiration" = "black")) +
+             scale_x_continuous(limits = c(1950, 2022)) +
+             ggtitle(PMeco_depth) +
+             xlab("Year") +
+             ylab(expression(''*Delta*''^14*'C (‰)')) +
+             theme_bw() +
+             theme(panel.grid = element_blank()))
+  })
+}
+```
+
+```{r plot-modFit-curves}
+# gamma fixed (.87)
+lapply(seq_along(pars.fit.3p2), function(i) {
+  PMeco_depth <- names(pars.fit.3p2)[i]
+  C14.3p.plot.fx(
+    modFun_3p(
+      pars = pars.fit.3p2[[i]], 
+      gam = .87, 
+      In = in.est[ix.10][[i]], 
+      PM = substr(PMeco_depth, 1, 2),
+      mod = "3p",
+      out = "plot.df",
+      verbose = FALSE),
+    con.df.fx(PMeco_depth),
+    PMeco_depth)
+})
+
+# gamma flexible [.5, .9]
+lapply(seq_along(pars.fit.3p3), function(i) {
+  PMeco_depth <- names(pars.fit.3p3)[i]
+  C14.3p.plot.fx(
+    modFun_3p(
+      pars = pars.fit.3p3[[i]], 
+      gam = .87, 
+      In = in.est[ix.10][[i]], 
+      PM = substr(PMeco_depth, 1, 2), 
+      out = "plot.df",
+      verbose = FALSE),
+    con.df.fx(PMeco_depth),
+    PMeco_depth)
+})
+
+# gamma fixed (.87), 14C constraint only
+singleMod.fit.plot.fx(mod.fitted.3p4)
+
+# plot both fits
+multiMod.fit.plot.fx(mod.fitted.3p2, "stock + 14C", mod.fitted.3p4, "14C only")
+```
+
+```{r plot-modFit-pars}
+plot.pars.fx <- function(pars.ls, x_var) {
+  
+  # quote x_var
+  quo_var <- sym(x_var)
+  
+  # set group var
+  if (x_var == "eco") {
+    quo_fil <- sym("pm")
+    quo_vls <- c("andesite" = andesite, "basalt" = basalt, "granite" = granite)
+  } else {
+    quo_fil <- sym("eco")
+    quo_vls <- c("warm" = warm, "cool" = cool, "cold" = cold)
+  }
+  
+  bind_rows(
+  lapply(seq_along(pars.ls), function(i) {
+    data.frame(value = pars.ls[[i]],
+               par = factor(c("k_POMf", "k_MOMf", "alpha"), 
+                            levels = c("k_POMf", "k_MOMf", "alpha")),
+               PM = substr(names(pars.ls)[i], 1, 2),
+               ECO = substr(names(pars.ls)[i], 3, 4))
+  })) %>%
+  mutate(eco = factor(ifelse(ECO == "pp", "warm", ifelse(ECO == "wf", "cool", "cold")),
+                      levels = c("warm", "cool", "cold")),
+         pm = ifelse(PM == "AN", "andesite", ifelse(PM == "BS", "basalt", "granite"))) %>%
+  ggplot(., aes(!! quo_var, value, fill = !! quo_fil)) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(name = NULL,
+                    values = quo_vls) +
+  facet_grid(rows = vars(par), scales = "free") +
+  theme_bw() +
+  theme(panel.grid = element_blank(),
+        axis.title.x = element_blank())
+}
+
+# plot
+plot.pars.fx(pars.fit.3p2, "eco")
+plot.pars.fx(pars.fit.3p4, "eco")
+```
+
+```{r modFit-soc}
+# function to get cstocks
+csoc.ls.fx <- function(pars.ls, constraint) {
+  bind_rows(
+    lapply(seq_along(pars.ls), function(i) {
+      PMeco_depth <- names(pars.ls)[i]
+      soc <- soc.fx(pars = pars.ls[[i]], 
+                    In = in.est[ix.10][[i]], 
+                    PM = substr(PMeco_depth, 1, 2), 
+                    gam = .87)
+      df <- data.frame(
+        PMeco_depth = PMeco_depth,
+        pool = c("POMfast", "MOMfast", "SOMslow"),
+        soc_mean = soc,
+        soc_sd = NA,
+        type = "modeled",
+        constraint = constraint)
+      bulkC <- df[1, ]
+      bulkC$pool <- "bulkC"
+      bulkC$soc_mean <- sum(soc)
+      rbind(df, bulkC)
+    })
+  )
+}
+
+# get C stocks
+csoc.3p2.df <- csoc.ls.fx(pars.fit.3p2, "14C + cStock")
+csoc.3p4.df <- csoc.ls.fx(pars.fit.3p4, "14C")
+
+# get measured soc
+csoc.measured.df <- bind_rows(
+  lapply(csoc.19.0_30.ls[ix.10], function(df) 
+    df %>% 
+      summarize(across(lyr_soc, .fns = list(mean = mean, sd = sd))) %>%
+      rename(soc_mean = lyr_soc_mean, soc_sd = lyr_soc_sd) %>%
+      mutate(pool = "bulkC",
+             constraint = NA,
+             type = "measured")), 
+  .id = "PMeco_depth") 
+
+# plot
+csoc.3p2.df %>%
+  rbind(csoc.3p4.df) %>%
+  rbind(csoc.measured.df) %>%
+  mutate(PM = substr(PMeco_depth, 1, 2),
+         eco = factor(substr(PMeco_depth, 3, 4), levels = c("pp", "wf", "rf")),
+         type = ifelse(type == "measured", as.character(type), paste(type, constraint)),
+         pool = factor(pool, levels = c("POMfast", "MOMfast", "SOMslow", "bulkC"))) %>%
+  ggplot(., aes(PM, soc_mean, fill = PM)) +
+  geom_col(aes(alpha = type), position = position_dodge(preserve = "single")) +
+  geom_errorbar(aes(ymax = soc_mean + soc_sd, ymin = soc_mean - soc_sd),
+                position = position_dodge(preserve = "single")) +
+  scale_alpha_manual(values = c("measured" = 1,
+                                "modeled 14C" = .8,
+                                "modeled 14C + cStock" = .5)) +
+  scale_fill_manual(name = NULL,
+                    values = c("AN" = andesite,
+                               "BS" = basalt,
+                               "GR" = granite),
+                    labels = c("AN" = "andesite",
+                               "BS" = "basalt",
+                               "GR" = "granite")) +
+  facet_grid(rows = vars(eco), cols = vars(pool), scales = "free") +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+# # plot versus measured soc
+# bind_rows(
+#   lapply(
+#     split(mod.socs.df.fx(mod.socs.ls), mod.socs.df.fx(mod.socs.ls)[["PMeco_depth"]]), function(df) {
+#       data.frame(SOC = sum(df$SOC))
+#     }), .id = "PMeco_depth") %>%
+#   rbind(., 
+#         bind_rows(csoc.19.0_30, .id = "PMeco_depth") %>%
+#           filter(lyr_bot < 11) %>%
+#           select(PMeco_depth, lyr_soc) %>%
+#           rename(SOC = lyr_soc)) %>%
+#   mutate(type = rep(c("modeled", "measured"), each = nrow(.) / 2),
+#          PM = substr(PMeco_depth, 1, 2),
+#          eco = factor(substr(PMeco_depth, 3, 4), levels = c("pp", "wf", "rf"))) %>%
+#   ggplot(., aes(type, SOC, fill = PM)) +
+#   geom_col(position = position_dodge()) +
+#   scale_fill_manual(name = NULL,
+#                      values = c("AN" = andesite,
+#                                 "BS" = basalt,
+#                                 "GR" = granite),
+#                      labels = c("AN" = "andesite",
+#                                 "BS" = "basalt",
+#                                 "GR" = "granite")) +
+#   facet_grid(rows = vars(eco), cols = vars(PM)) +
+#   theme_bw() +
+#   theme(panel.grid = element_blank())
+```
+
+```{r modFit-sens}
+## look at sensFun output
+sens.3p2 <- lapply(mod.sens.fits.3p2, function(x) x[[2]])
+# lapply(sens.3p, function(x) plot(x, which = c("bulkC", "resp")))
+```
+
+```{r modFit-ident}
+# look at identifiability
+inden.df.fx <- function(ls, mod) {
+  lapply(ls, function(x) {
+    df <- collin(x)
+    df$ParCombo <- unlist(lapply(
+      lapply(apply(df, 1, function(x) which(x == 1)), names), function(y) {
+        y <- gsub("X1", "k_POMf", y)
+        y <- gsub("X2", "k_MOMf", y)
+        y <- gsub("X3", "alpha", y)
+        paste(y, collapse = " + ")
+      }))
+    return(df)
+  })
+}
+iden.3p2 <- inden.df.fx(sens.3p2, mod = "3p")
+
+# identifiability plot function
+coll.plot.fx <- function(df, PMeco_depth, col.max) {
+  ggplot(df, aes(N, log(collinearity), color = ParCombo)) +
+    geom_hline(yintercept = log(20)) +
+    geom_point(size = 3.5, position = position_dodge(width = .1)) +
+    scale_color_manual(
+      name = "Parameter combination",
+      values = c("k_POMf + k_MOMf" = "#EF476F",
+                 "k_POMf + alpha" = "#FFD166",
+                 "k_MOMf + alpha" = "#118AB2",
+                 "k_POMf + k_MOMf + alpha" = "073B4C")) + 
+    scale_y_continuous(limits = c(0, log(col.max))) +
+    scale_x_continuous(limits = c(1.5, 3.5), breaks = c(2, 3)) +
+    labs(title = PMeco_depth) +
+    theme_bw() +
+    theme(panel.grid = element_blank())
+}
+
+# plot
+lapply(seq_along(iden.3p2), function(i) {
+  coll.plot.fx(iden.3p2[[i]], names(iden.3p2)[i], max(iden.3p2[[i]]["collinearity"]))
+})
+```
+
+```{r adjust-inputs}
+# function for fitting input to modeled stocks
+in.fit.fx <- function(pars, initialIn, SOC) {
+  # sequence of possible input values
+  if  (SOC < soc.fx(pars, In, gam, out)) {
+    ins <- seq(.01, 
+               initialIn, 
+               .01)
+    } else {
+      ins <- seq(initialIn, 
+                 SOC, 
+                 .01)
+    }
+  # modeled stocks
+  soc_mod <- lapply(seq_along(ins), function(j) {
+    soc.fx(modStr, pars, ins[j], out = "sum")
+  })
+  ix <- which.min(abs(unlist(soc_mod) - SOC))
+  return(ins[ix])
+}
+
+in.fit.3p2 <- lapply(seq_along(pars.fit.3p2), function(i) {
+  PMeco_depth <- names(pars.fit.3p2)[i]
+  SOC <- csoc.19.0_30[[PMeco_depth]][ ,"lyr_soc"]
+  return(in.fit.fx("2pp", pars.fit.2pp[[i]], in.i[ix.10][[i]], SOC))
+})
+names(in.fit.2pp) <- names(mod.fits.2pp)
+```

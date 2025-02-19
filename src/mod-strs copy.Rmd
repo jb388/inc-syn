@@ -1,0 +1,781 @@
+---
+title: "Incubation Synthesis"
+author: "Jeffrey Beem-Miller"
+editor_options:
+  markdown:
+    wrap: 72
+output:
+  html_document:
+    df_print: paged
+    dev: png
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, warning = FALSE, message = FALSE, fig.align = 'center', 
+  crop = NULL)
+options(scipen = 5)
+```
+
+```{r setup, include = FALSE}
+# libraries here
+library(ISRaD)
+library(SoilR)
+library(FME)
+library(scales)
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+select <- dplyr::select
+filter <- dplyr::filter
+```
+
+# Notes:
+
+1.  bulk & respired 14C used for constraints
+
+-   1 time point for bulk 14C
+-   1 time point for respired CO2
+
+2.  steady-state C stocks used to determine inputs
+
+# Workflow
+
+1. Get data from ISRaD for all respired 14C w/ accompanying bulk 14C observations
+  - by sit_name
+2. Filter to < 12 cm; average any sites with multiple depths < 12 cm
+3. Set initial conditions
+  - inputs = 1 (assumed steady-state)
+  - initial parameter set a priori
+  - 2ps models
+4. Run bayesian parameter optimization
+5. Adjust inputs w/ modeled stocks and reject models w/ unrealistic
+    inputs
+6. Get ages and transit times from optimal model
+
+
+# Helper fxs
+
+Load functions for: calculating analytical solution for SOC stocks at steady state (soc_fx), running 2-pool series (2ps) SoilR 14C models (mod_fx), and various helper functions (lambda, k, fm).
+
+Function "k" determines the initial decomposition rate from pre-bomb fraction modern value, and "fm" determines the initial fraction modern value from the decomposition rate. 
+
+Lambda is defined as 1 over the true half-life of 14C, i.e., lambda = 1/8267.
+
+Additional functions defined here include:
+* 'con.df.fx', which takes "siteDepth" and creates a data frame with 14C constraint data to use for plotting.
+* 'C14.plot.fx', which is used to plot 14C time series data from the output of a 2ps SoilR 14C model
+
+```{r mod-fxs}
+# load soc_fx
+source('utilities/soc_fx.R')
+
+# load mod_fx
+source('utilities/mod_fx.R')
+
+# helper fxs (lambda, fm, k)
+source('utilities/mod_help_fxs.R')
+
+# constraint df fx (used for plotting)
+con.df.fx <- function(sit_name) {
+  bulk.df <- obs.bulk14C.ls[[sit_name]]
+  resp.df <- obs.resp14C.ls[[sit_name]]
+  
+  return(
+    data.frame(
+      pool = c(rep("bulkC", nrow(bulk.df)), rep("respiration", nrow(resp.df))),
+      d14c = c(bulk.df[ , 2], resp.df[, 2]),
+      Year = c(bulk.df[ , 1], resp.df[ , 1])))
+}
+```
+
+```{r mod-plot-fx}
+C14.plot.fx <- function(plot.df, con.df, pool_filter = NULL, siteDepth, ...) {
+    
+  # set line and color values
+  cvals <- c("atm" = 8, "fast" = "#e41f88", "slow" = "#1f88e4", "respiration" = "#e47b1f", "bulkC" = "black")
+  lvals <- c("atm" = 1, "fast" = 2, "slow" = 2, "respiration" = 1, "bulkC" = 1)
+  
+  # filter pools as desired
+  if (!is.null(pool_filter)) {
+    plot.df <- plot.df[which(plot.df$pool %in% pool_filter), ]
+  }
+  
+  # plot
+  plot.df %>%
+    ggplot(., aes(years, d14C)) +
+    geom_path(aes(color = pool, linetype = pool)) +
+    geom_point(data = con.df, aes(Year, d14c, color = pool), size = 3) +
+    scale_color_manual(name = "Pool", values = cvals, limits = force) +
+    scale_linetype_manual(values = lvals) +
+    scale_x_continuous(limits = c(1950, 2025)) +
+    ggtitle(paste(siteDepth, "2ps")) +
+    xlab("Year") +
+    ylab(expression(''*Delta*''^14*'C (‰)')) +
+    guides(linetype = "none") +
+    theme_bw() +
+    theme(panel.grid = element_blank())
+}
+```
+
+# Constraints
+## observed 14C
+Create lists containing: 1) bulk 14C, and 2) respired 14C; for each target model (i.e., site x depth). These lists will be used to constrain the model parameter optimization runs. Also generate similar list for observed SOC stocks to use for adjusting inputs with optimized parameter set.
+
+```{r obs-blk-rsp-soc}
+# ISRaD_extra
+dbx <- ISRaD.getdata("~/inc-syn/dat/raw", extra = TRUE)
+
+# filter to inc, join to higher level tables
+inc <- right_join(
+  left_join(
+    ISRaD:::lapply_df(dbx$profile, as.character),
+    ISRaD:::lapply_df(dbx$layer, as.character),
+    by = c("entry_name", "site_name", "pro_name", "pro_atm_zone")),
+  ISRaD:::lapply_df(dbx$incubation, as.character),
+  by = c("entry_name", "site_name", "pro_name", "lyr_name", "lyr_obs_date_y")) %>%
+  utils::type.convert(., as.is = FALSE)
+
+# get records w/ lyr & inc 14C
+inc_cln <- inc %>%
+  filter(!is.na(inc_14c)) %>%
+  filter(!is.na(lyr_14c)) %>%
+  filter(pro_treatment == "control") %>%
+  filter(entry_name != "Hardie_2011") %>% # Peatland study
+  filter(entry_name != "Morris_unpub") %>%
+  filter(pro_land_cover != "cultivated" ) %>%
+  filter(inc_type == 'root-picked soil' | inc_type == 'soil w/ dead roots') %>%
+  filter(inc_duration < 300 | is.na(inc_duration)) %>%
+  filter(lyr_bot <= 12 & lyr_bot >= 0 & lyr_top >=0) %>%
+  select("entry_name", "site_name", "pro_name", "lyr_obs_date_y", "lyr_top", "lyr_bot", "lyr_c_org", "lyr_bd_tot", "lyr_soc", "lyr_14c", "inc_name", "inc_14c", "inc_duration", "inc_duration_type", "pro_atm_zone", "pro_MAT", "pro_MAP", "pro_PET_mmyr_mean", "pro_land_cover") %>%
+  mutate(esp_name = paste0(entry_name, site_name, pro_name))
+
+# split by site_name
+inc_cln.sp <- Filter(nrow, split(inc_cln, inc_cln$esp_name))
+
+# remove Mueller multiple time points
+inc_cln.sp$Mueller_2014HoeglwaldH_1 <- inc_cln.sp$Mueller_2014HoeglwaldH_1 %>%
+  filter(inc_duration_type == "<1 month")
+
+# create constraint lists for bulk and resp. data w/ vars (time, d14C)
+obs.bulk14C.ls <- lapply(inc_cln.sp, function(x) {
+  x[ , c("lyr_obs_date_y", "lyr_14c")] %>%
+    rename(time = lyr_obs_date_y, bulkC = lyr_14c)
+})
+obs.resp14C.ls <- lapply(inc_cln.sp, function(x) {
+  x[ , c("lyr_obs_date_y", "inc_14c")] %>%
+    rename(time = lyr_obs_date_y, resp = inc_14c)
+})
+
+# need to revisit SOC stocks
+obs.soc.ls <- lapply(inc_cln.sp, function(x) {
+  if (all(is.na(x$lyr_soc))) {
+    NULL
+  } else {
+    x$lyr_soc
+  }
+})
+```
+
+# Set-up
+## initial pars
+
+Initial parameters set a priori as:
+- $k_{fast} = 0.1$
+- $k_{slow} = 0.01$
+- $\alpha = 0.1$
+
+```{r pars-i}
+pars.i.2ps <- setNames(
+  lapply(
+    vector(mode = "list", length = length(inc_cln.sp)), function(x) c(.1, .01, .1)), 
+  nm = names(inc_cln.sp))
+```
+
+## initial inputs
+
+Start with 1 for simplicity (inputs do not affect 14C  in steady state system with unconstrained stocks).
+
+```{r mod-inputs}
+# start with In = 1
+in.1.ls <- setNames(
+  lapply(vector(mode = "list", length = length(pars.i.2ps)), function(x) 1),
+  nm = names(pars.i.2ps))
+```
+
+
+## atm 14C
+
+```{r atm-14c}
+atm14C.ls <- lapply(inc_cln.sp, function(x) {
+  z <- unique(as.character(x$pro_atm_zone))
+  if (length(z) > 1) {
+    cat("> 1 atm zone!\n")
+  } 
+    Hua_2021 %>%
+      select(Year.AD, !! sym(z))
+})
+```
+
+# modFit optimization
+## define fx
+
+Define a wrapper function for estimating the model cost for the modFit optimization routine.
+
+```{r modFit-fx-multipool}
+mod.fits.fx <- function(pars.ls, In.ls, sub, upper, lower, maxit = 500, method = "Nelder-Mead", ...) {
+  
+  # start loop
+  lapply(seq_along(pars.ls[sub]), function(i) {
+    
+    # start timer and print siteDepth
+    start <- Sys.time()
+    cat(paste0(names(pars.ls)[sub][i], " parameter fitting\n"))
+    
+    # set vars
+    siteDepth <- names(pars.ls)[sub][i]
+    PARS <- pars.ls[sub][[i]]
+    In <- In.ls[sub][[i]]
+    atm14C <- atm14C.ls[sub][[i]]
+    obs.bulk <- obs.bulk14C.ls[sub][[i]]
+    obs.resp <- obs.resp14C.ls[sub][[i]]
+    
+    # define cost function
+    mod.Cost <- function(PARS) {
+      modelOutput <- modFun(
+        PARS, In = In, atm14C = atm14C, verbose = FALSE, siteDepth = siteDepth)
+      cost1 <- modCost(
+        model = modelOutput, obs = obs.bulk)
+      modCost(
+        model = modelOutput, obs = obs.resp, cost = cost1)
+    }
+    
+    # set control list for optim method
+    if (method == "Nelder-Mead") {
+      ctl <- list(maxit = maxit)
+    } else {
+      ctl <- NULL
+    }
+    
+    # fit pars
+    fit <- tryCatch(
+      modFit(f = mod.Cost,
+             p = PARS,
+             method = method,
+             lower = lower,
+             upper = upper,
+             control = ctl),
+      error = function (e) {cat("ERROR :", conditionMessage(e), "\n")}) 
+    
+    # parameter sensitivity
+    Sfun <- sensFun(mod.Cost, fit$par)
+        
+    # End timer and print elapsed time
+    end <- Sys.time()
+    cat(paste0("time: ", end - start, "\n"))
+  
+    # Return fitted parameters and sensitivity
+    list(modfit = fit, sens = Sfun)
+  }) 
+}
+```
+
+## run optimization
+
+Run modFit optimization (currently using 'Nelder-Mead' algorithm and 500 iterations), and check for convergence. If attribute 'convergence' = 1, this means the algorithm did not converge within the defined iterations, and should be run again with more iterations. If 'convergence' = 10, this indicates an issue with the algorithm, and can be addressed by running the optimization with a different algorithm (e.g., method = 'BFGS' recommended).
+
+```{r modFit-2ps, eval = FALSE}
+## series
+mod.sens.fits.2ps <- mod.fits.fx(
+  pars.ls = pars.i.2ps,
+  In.ls = in.1.ls,
+  sub = c(1,4:14),
+  upper = c(1, 1, 1),
+  lower = c(0, 0, 0))
+names(mod.sens.fits.2ps) <- names(pars.i.2ps)[c(1,4:14)]
+save(mod.sens.fits.2ps, file = paste0("../dat/derived/modFit_pars/", "mod.sens.fits.2ps", "_", Sys.Date(), ".RData"))
+
+## check for convergence
+# max iterations check:
+cvg1 <- which(unlist(lapply(mod.sens.fits.2ps, "[[", "convergence")) == 1)
+# degeneracy check:
+cvg10 <- which(unlist(lapply(mod.sens.fits.2ps, "[[", "convergence")) == 10)
+```
+
+Convergence looks good, so no issues here.
+
+## fit models
+
+Run mod_fx using modFit optimized parameters, and get sum of squared residuals (ssr). 
+
+```{r modFit-summary}
+if (!exists("mod.sens.fits.2ps")) {
+ load("../dat/derived/modFit_pars/mod.sens.fits.2ps_2025-01-13.RData") 
+}
+
+# 2ps
+modFit.2ps.ls <- lapply(mod.sens.fits.2ps, function(x) x$modfit)
+pars.fit.2ps <- lapply(modFit.2ps.ls, "[[", 1)
+names(pars.fit.2ps) <- names(mod.sens.fits.2ps)
+
+# run fitted models
+## 2ps
+mod.fitted.2ps <- lapply(seq_along(pars.fit.2ps), function(i) {
+  nm <- names(pars.fit.2ps)[i]
+  modFun(pars = pars.fit.2ps[[i]], In = 1, atm14C = atm14C.ls[[match(nm, names(atm14C.ls))]], verbose = FALSE, out = "plot.df")
+})
+names(mod.fitted.2ps) <- names(pars.fit.2ps)
+
+# get ssr
+get.ssr.fx <- function(mod.fit.ls) {
+  siteDepth <- names(mod.fit.ls)
+  data.frame(
+    siteDepth = siteDepth,
+    site = sapply(strsplit(siteDepth, "_"), "[[", 1),
+    depth = sapply(strsplit(siteDepth, "_"), "[[", 2),
+    ssr = sapply(mod.fit.ls, "[[", "ssr"))
+}
+ssr.2ps.df <- get.ssr.fx(modFit.2ps.ls)
+```
+
+## plot 14C ts
+
+```{r mod-fit-plot-fxs}
+singleMod.fit.plot.fx <- function(modFit.ls, sensrange = FALSE, ...) {
+  lapply(seq_along(modFit.ls), function(i) {
+    siteDepth <- names(modFit.ls)[i]
+    con.df <- con.df.fx(siteDepth)
+    p <- C14.plot.fx(modFit.ls[[i]], con.df, siteDepth = siteDepth)
+    if (sensrange) {
+      p + 
+        geom_ribbon(aes(ymin = q95, ymax = q05, fill = pool), alpha = .3) +
+        scale_fill_manual(
+          name = "Model pool",
+          values = c("bulkC" = "black",
+                     "respiration" = "#e47b1f"))
+    } else {
+      p
+    }
+  })
+}
+```
+
+```{r plot-modFit-curves}
+# all 2ps mods
+plot.ls.2ps <- singleMod.fit.plot.fx(mod.fitted.2ps)
+plot.ls.2ps
+```
+
+## parameter ID
+
+Parameter identifiability asks the question: how well can I identify combinations of parameters given the data constraints? With limited data constraints multiple model solutions may fit the data equally well. This uncertainty in parameter identifiability can be quantified as a function of collinearity among parameters. 
+
+```{r modFit-ident}
+# look at identifiability
+inden.df.fx <- function(ls) {
+  lapply(ls, function(x) {
+    df <- collin(x)
+    df$ParCombo <- unlist(lapply(
+      lapply(apply(df, 1, function(x) which(x == 1)), names), function(y) {
+        paste(y, collapse = " + ")
+      }))
+    return(df)
+  })
+}
+
+# function to ID sites where full par set cannot be IDed
+iden.fail.fx <- function(ls) {
+  idset <- bind_rows(
+      lapply(ls, function(x) x[which(x$collinearity <= 20 & x$N == max(x$N)), ]),
+      .id = "siteDepth")
+  failed <- names(ls)[!(names(ls) %in% idset$siteDepth)]
+  list("idset" = idset, "failed" = failed, "n_id" = length(ls) - length(failed))
+}
+
+# 2ps  
+sens.2ps <- lapply(lapply(mod.sens.fits.2ps, "[[", "sens"), function(x) {
+  names(x)[3:5] <- c("kfast", "kslow", "alpha")
+  return(x) 
+})
+iden.2ps <- inden.df.fx(sens.2ps)
+iden.2ps.df <- iden.fail.fx(iden.2ps)
+
+
+# identifiability plot function
+coll.plot.fx <- function(df, siteDepth, col.max) {
+  
+  # set color values
+  cvals <- c("kfast + kslow" = "#EF476F",
+             "kfast + alpha" = "#FFD166",
+             "kslow + alpha" = "#118AB2",
+             "kfast + kslow + gamma" = "073B4C")
+  
+  # plot
+  ggplot(df, aes(N, log(collinearity), color = ParCombo)) +
+    geom_hline(yintercept = log(20)) +
+    geom_point(size = 3.5, position = position_dodge(width = .1)) +
+    scale_color_manual(
+      name = "Parameter combination",
+      values = cvals) +
+    scale_y_continuous(limits = c(0, log(col.max))) +
+    scale_x_continuous(limits = c(1.5, 3.5), breaks = c(2, 3)) +
+    labs(title = siteDepth) +
+    theme_bw() +
+    theme(panel.grid = element_blank())
+}
+```
+
+```{r plot-ident}
+# plot
+id.plot.2ps <- lapply(seq_along(iden.2ps), function(i) {
+  coll.plot.fx(iden.2ps[[i]], names(iden.2ps)[i], max(iden.2ps[[i]]["collinearity"]))
+})
+id.plot.2ps
+```
+
+The results indicate that parameter combination of length \> 2 are rarely identifiable, meaning that the data constraints in this study are only sufficient for fitting 2 parameters. This indicates that the 3rd is fit as a (linear) function of one of the others. However, this may not be much of an issue, as we are not focused on the internal dynamics of the model, but rather on the estimated system ages and transit times. Since a 1-pool model can be rejected a priori (except for when bulk 14C = respired 14C), it seems appropriate to continue with the 2-pool model despite the lack of identifiability when estimating three parameters. That said, this should be taken into account if comparing the optimized parameters across the sites. 
+
+## inputs
+
+Inputs can be estimated using the optimized parameter set and the observed SOC stocks. This is accomplished by using a simple brute force search algorithm to try different input values until the analytical solution for SOC stocks matches the observed values.  
+
+```{r adjust-input}
+## 1. Fit inputs to modeled stocks
+# function for fitting input to modeled stocks
+in.fit.fx <- function(par.ls, initIn.ls, res = 500) {
+  
+  # get names
+  nms <- names(par.ls)
+  
+  ls <- lapply(seq_along(par.ls), function(i) {
+    
+    PARS <- par.ls[[i]]
+    
+    # sequence of possible input values
+    SOC <- obs.soc.ls[[i]]
+    IN <- initIn.ls[[i]]
+
+    if  (SOC < soc.fx(PARS, IN, "sum")) {
+      
+      # by step; floor set at .001
+      byStep <- (IN - .001) / res 
+      
+      # in vector
+      ins <- seq(.001, 
+                 IN, 
+                 byStep)
+    } else {
+      
+      # by step; ceiling set at SOC
+      byStep <- (SOC - IN) / res 
+      
+      # in vector
+      ins <- seq(IN, 
+                 SOC, 
+                 byStep)
+    }
+    
+    # modeled stocks
+    soc_mod <- lapply(seq_along(ins), function(j) soc.fx(PARS, ins[j], "sum"))
+    round(ins[which.min(abs(unlist(soc_mod) - SOC))], 3)
+  })
+  names(ls) <- nms
+  return(ls)
+}
+
+## 2ps
+in.fit.2ps <- in.fit.fx(pars.fit.2ps, in.1.ls)
+in.fit.2ps.plot <- bind_rows(lapply(in.fit.2ps, function(x) data.frame(In = x)), .id = "siteDepth") %>%
+  mutate(lyr_bot = sapply(strsplit(siteDepth, "_"), "[[", 2)) %>%
+  ggplot(., aes(siteDepth, In)) +
+  geom_col(position = "dodge") +
+  coord_cartesian(ylim = c(0, .5)) +
+  theme_bw() +
+  theme(panel.grid.minor = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1))
+in.fit.2ps.plot
+```
+
+## ages & TTs
+
+System ages and transit times can be estimated from the optimized parameter set using the SoilR functions systemAge and transitTime. 
+
+### extract
+```{r age-tt-modFit}
+# system age and transit time function
+sa.tt.modFit.fx <- function(pars, input) {
+  
+  # get mod_mat
+  soc.fx_out <- soc.fx(pars, input, mod_mat = TRUE)
+  
+  # System ages and transit times
+  list(
+    SA = systemAge(A = soc.fx_out$A_mat, u = soc.fx_out$in_vector), 
+    TT = transitTime(A = soc.fx_out$A_mat, u = soc.fx_out$in_vector))
+}
+
+# get SA, TT
+## 2p
+### ps
+sa.tt.2ps.ls <- lapply(pars.fit.2ps, function(x) sa.tt.modFit.fx(pars = x, input = 1))
+```
+
+### plot
+
+```{r plot-SA-TT}
+# plot ages & TT
+bind_rows(
+  lapply(sa.tt.2ps.ls, function(x) 
+      data.frame(value = c(x[[1]]$meanSystemAge, x[[2]]$meanTransitTime),
+                 stat = c("meanSA", "meanTT"))),
+  .id = "siteDepth") %>%
+  ggplot(., aes(siteDepth, value, fill = stat)) +
+  geom_col(position = "dodge") +
+  scale_y_log10() +
+  ggtitle("System age & transit time (modFit)") +
+  ylab("Years") +
+  xlab("") +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+# MCMC fits
+
+A Markov Chain Monte Carlo (MCMC) simulation can be used to improve the search over the parameter space and minimize bias from the initial parameter choice. This Bayesian approach also enables quantification of the parameter estimate uncertainty. I used the function modMCMC from the FME package, with the adaptive Metropolis algorithm, delayed rejection, and the default jump value (see R help('modMCMC', package = "FME") for details).
+
+```{r extract-bayes-fits}
+# load fits as needed
+if (!exists("bayes_fit_2ps")) {
+ load("../dat/derived/bayes-par-fit-2025-01-14/bayes_fit_2ps_ad_10000iter.RData")
+}
+
+# pars
+pars.fit.2ps.mcmc <- lapply(bayes_fit_2ps, "[[", "bestpar")
+
+# modfits
+mod.fitted.2ps.mcmc <- setNames(lapply(seq_along(bayes_fit_2ps), function(i) 
+    modFun(bayes_fit_2ps[[i]]$bestpar, In = 1, atm14C = atm14C.ls[[i]], out = "", verbose = FALSE)), nm = names(bayes_fit_2ps))
+```
+
+## check diagnostics
+
+The performance of the MCMC simulation can be checked by examining the trace and collinearity of the parameter estimates over the course of the simulation. Ideally the trace line should stabilize around an optimum value, and collinearity should be minimal.
+
+```{r plot-mcmc-drift-collin}
+# most MCMC chains have not converged after 1000 itr; better after 10,000
+lapply(bayes_fit_2ps, function(x) plot(x))
+
+# look at parameter collinearity
+lapply(bayes_fit_2ps, pairs)
+```
+
+## sum. pars
+
+The summary function for modMCMC output produces summary statistics for the parameter estimates (mean, min, max, quartiles).
+
+```{r bayes-pars}
+pars.mcmc.sum.fx <- function(bayes_pars.ls, pars) {
+  lapply(bayes_pars.ls, function(x) {
+    s <- data.frame(summary(x$pars))
+    df <- data.frame(do.call(rbind, lapply(split(s, s$Var2), function(y) {
+      fs <- strsplit(as.character(y$Freq), ":")
+      as.numeric(sapply(fs, "[[", 2))
+    })))
+    names(df) <- c("min", "q25", "q50", "mean", "q75", "max")
+    df
+  })
+}
+
+pars.2ps.mcmc.sum <- pars.mcmc.sum.fx(, pars = c("k1", "k2", "alpha"))
+```
+
+## pred uncert.
+
+The sensRange function produces an uncertainty estimate for the estimated parameters, i.e., an envelope of potential solutions given the data constraints. I used a random subset of the MCMC parameter estimates to generate this envelope (n = 200). 
+
+```{r bayes-fit-sens}
+## Extract timeseries distribution envelopes from MCMC par fits
+# load data
+if (!exists("pred_uncert_2ps")) {
+ load("../dat/derived/bayes-par-fit-2025-01-14/pred_uncert_2ps_ad_10000iter.RData")
+}
+
+# sensitivity summary
+# 2ps
+sens_sum.2ps.ls <- lapply(pred_uncert_2ps, summary)
+# lapply(sens_sum.2ps.ls, function(x) plot(x, quant = TRUE))
+```
+
+## plot 14C ts
+
+After fitting the 2ps model with the mean values from the sensitivity analysis, the modeled 14C time series can be plotted using the mean MCMC values and an envelope of uncertainty (here the 25th and 75th quantiles). Only bulk soil and respired 14C will be plotted, as uncertainty estimates can not be made for data without observed data.
+
+```{r plot-bayes-fits}
+# plot bayes fits w/ sensitivity envelopes
+lapply(seq_along(sens_sum.2ps.ls), function(i) {
+  
+  esp_name <- names(sens_sum.2ps.ls)[i]
+  con.df <- con.df.fx(esp_name) %>%
+    mutate(pool = ifelse(pool == "respiration", "resp", pool))
+  
+  atm14C <- atm14C.ls[[i]] %>%
+    mutate(pool = "atm", Sd = NA, Min = NA, Max = NA, q05 = NA, q25 = NA, q50 = NA, q75 = NA, q95 = NA)
+  names(atm14C)[1:2] <- c("x", "Mean")
+  
+  # set line and color values
+  cvals <- c("atm" = 8, "resp" = "#e47b1f", "bulkC" = "black")
+  lvals <- c("atm" = 1, "resp" = 1, "bulkC" = 1)
+  
+  if (all(names(sens_sum.2ps.ls[[i]]) %in% names(atm14C))) {
+   sens_sum.2ps.ls[[i]] %>%
+    mutate(pool = substr(rownames(.), 1, nchar(rownames(.)) - 4)) %>%
+    data.frame()  %>%
+    rbind(., atm14C) %>%
+    ggplot(., aes(x, Mean)) +
+    geom_ribbon(aes(ymin = q95, ymax = q05, fill = pool), alpha = .3) +
+    geom_path(aes(color = pool, linetype = pool)) +
+    geom_point(data = con.df, aes(Year, d14c, color = pool), size = 3) +
+    scale_color_manual(name = "Pool", values = cvals) +
+    scale_fill_manual(name = "Pool", values = cvals) +
+    scale_linetype_manual(values = lvals) +
+    scale_x_continuous(limits = c(1950, 2025)) +
+    ggtitle(paste(esp_name, "2ps")) +
+    xlab("Year") +
+    ylab(expression(''*Delta*''^14*'C (‰)')) +
+    guides(linetype = "none") +
+    theme_bw() +
+    theme(panel.grid = element_blank()) 
+  }
+})  
+```
+
+## ages & tt
+
+System ages and transit times can now be estimated from the MCMC parameter set, along with an uncertainty estimate.
+
+### plot
+
+```{r plot-SA-TT-bayes}
+if (!exists("SA.TT.2ps.ls")) {
+  load("../dat/derived/bayes-par-fit-2025-01-15/bayes_fit_SA_TT_2ps_10000iter.RData")
+}
+SA.TT.extract.fx <- function(SA.TT.ls) {
+  setNames(lapply(seq_along(SA.TT.ls), function(i) {
+    x <- SA.TT.ls[[i]]
+    if (length(x$sysAge) == 100) {
+      meanAges <- unlist(lapply(x$sysAge, function(y) {
+        y$meanSystemAge
+      }))
+      medianAges <- unlist(lapply(x$sysAge, function(y) {
+        y$quantilesSystemAge[2]
+      }))
+      q25Ages <- unlist(lapply(x$sysAge, function(y) {
+        y$quantilesSystemAge[1]
+      }))
+      q75Ages <- unlist(lapply(x$sysAge, function(y) {
+        y$quantilesSystemAge[3]
+      }))
+      meanTransTs <- unlist(lapply(x$transT, function(y) {
+        y$meanTransitTime
+      }))
+      medianTransTs <- unlist(lapply(x$transT, function(y) {
+        y$quantiles[2]
+      }))
+      q25TransTs <- unlist(lapply(x$transT, function(y) {
+        y$quantiles[1]
+      }))
+      q75TransTs <- unlist(lapply(x$transT, function(y) {
+        y$quantiles[3]
+      }))
+      data.frame(meanAge = mean(meanAges),
+                 meanAgeSD = sd(meanAges),
+                 medianAge = median(medianAges),
+                 q25Age = median(q25Ages),
+                 q75Age = median(q75Ages),
+                 meanTransT = mean(meanTransTs),
+                 meanTTSD = sd(meanTransTs),
+                 medianTransT = median(medianTransTs),
+                 q25TransT = median(q25TransTs),
+                 q75TransT = median(q75TransTs),
+                 n = length(meanAges)) 
+      }
+  }), nm = names(SA.TT.ls))
+}
+
+## 2ps
+sa.tt.2ps.mcmc.err.ls <- Filter(Negate(is.null), SA.TT.extract.fx(SA.TT.2ps.ls))
+sa.tt.2ps.mcmc.ls <- lapply(SA.TT.2ps.ls, function(x) {
+  sa.df <- bind_rows(lapply(x$sysAge, function(y) {
+    data.frame(meanAge = y$meanSystemAge,
+               sa.q50 = y$quantilesSystemAge[2])
+  }))
+  tt.df <- bind_rows(lapply(x$transT, function(y) {
+    data.frame(meanTransT = y$meanTransitTime,
+               tt.q50 = y$quantiles[2])
+  }))
+  cbind(sa.df, tt.df)
+})
+sa.tt.2ps.mcmc.rep.df <- bind_rows(
+  lapply(sa.tt.2ps.mcmc.ls, function(x) x %>% mutate(ix = rownames(x))),
+  .id = "esp_name")
+
+# plot df
+sa.tt.2ps.mcmc.err.df <- bind_rows(sa.tt.2ps.mcmc.err.ls, .id = "esp_name") %>%
+  left_join(inc_cln, by = "esp_name")
+
+# plot SA
+sigma <- min(sapply(sa.tt.2ps.mcmc.err.ls, "[[", "q25Age"))
+ggplot(sa.tt.2ps.mcmc.err.df, aes(esp_name, meanAge)) +
+  geom_col(position = "dodge") +
+  geom_errorbar(aes(ymin = q25Age, ymax = q75Age), width = .2) +
+  scale_y_continuous(
+    trans = pseudo_log_trans(base = 10, sigma = sigma),
+    breaks = c(0, 10^(0:4))) +
+  ggtitle("System age (MCMC)") +
+  ylab("Years") +
+  xlab("") +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# plot TT
+sigma <- min(sapply(sa.tt.2ps.mcmc.err.ls, "[[", "q25TransT"))
+ggplot(sa.tt.2ps.mcmc.err.df, aes(esp_name, meanTransT)) +
+  geom_col(position = "dodge") +
+  geom_errorbar(aes(ymin = q25TransT, ymax = q75TransT), width = .2) +
+  scale_y_continuous(
+    trans = pseudo_log_trans(base = 10, sigma = sigma),
+    breaks = c(0, 10^(0:4))) +
+  ggtitle("Transit time (MCMC)") +
+  ylab("Years") +
+  xlab("") +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+#
+ggplot(sa.tt.2ps.mcmc.err.df, aes(pro_MAT, meanAge)) +
+  geom_point(aes(color = pro_land_cover)) +
+  # geom_errorbar(aes(ymin = q25Age, ymax = q75Age), width = .2) +
+  # scale_y_continuous(
+  #   trans = pseudo_log_trans(base = 10, sigma = sigma),
+  #   breaks = c(0, 10^(0:4))) +
+  ggtitle("System age (MCMC)") +
+  ylab("Years") +
+  xlab("MAT") +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+ggplot(sa.tt.2ps.mcmc.err.df, aes(pro_MAT, meanTransT)) +
+  geom_point(aes(color = pro_land_cover)) +
+  # geom_errorbar(aes(ymin = q25Age, ymax = q75Age), width = .2) +
+  # scale_y_continuous(
+  #   trans = pseudo_log_trans(base = 10, sigma = sigma),
+  #   breaks = c(0, 10^(0:4))) +
+  ggtitle("Transit time (MCMC)") +
+  ylab("Years") +
+  xlab("MAT") +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+```
