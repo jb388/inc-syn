@@ -128,19 +128,18 @@ Create lists containing: 1) bulk 14C, and 2) respired 14C; for each target model
 dbx <- ISRaD.getdata("~/inc-syn/dat/raw", extra = TRUE)
 
 # filter to inc, join to higher level tables
-inc <- right_join(
+inc_lyr <- right_join(
   left_join(
     ISRaD:::lapply_df(dbx$profile, as.character),
     ISRaD:::lapply_df(dbx$layer, as.character),
     by = c("entry_name", "site_name", "pro_name", "pro_atm_zone")),
   ISRaD:::lapply_df(dbx$incubation, as.character),
-  by = c("entry_name", "site_name", "pro_name", "lyr_name", "lyr_obs_date_y")) %>%
+  by = c("entry_name", "site_name", "pro_name", "lyr_name", "lyr_obs_date_y", "pro_atm_zone")) %>%
   utils::type.convert(., as.is = FALSE)
 
 # get records w/ lyr & inc 14C
-inc_cln <- inc %>%
+inc_lyr_cln <- inc_lyr %>%
   filter(!is.na(inc_14c)) %>%
-  filter(!is.na(lyr_14c)) %>%
   filter(pro_treatment == "control") %>%
   filter(entry_name != "Hardie_2011") %>% # Peatland study
   filter(entry_name != "Morris_unpub") %>%
@@ -148,22 +147,25 @@ inc_cln <- inc %>%
   filter(inc_type == 'root-picked soil' | inc_type == 'soil w/ dead roots') %>%
   filter(inc_duration < 300 | is.na(inc_duration)) %>%
   filter(lyr_bot <= 12 & lyr_bot >= 0 & lyr_top >=0) %>%
-  select("entry_name", "site_name", "pro_name", "lyr_obs_date_y", "lyr_top", "lyr_bot", "lyr_c_org", "lyr_bd_tot", "lyr_soc", "lyr_14c", "inc_name", "inc_14c", "inc_duration", "inc_duration_type", "pro_atm_zone", "pro_MAT", "pro_MAP", "pro_PET_mmyr_mean", "pro_land_cover") %>%
+  select("entry_name", "site_name", "pro_name", "lyr_obs_date_y", "lyr_top", "lyr_bot", "lyr_c_org", "lyr_bd_tot", "lyr_soc", "lyr_14c", "inc_name", "frc_name", "inc_14c", "inc_dd14c", "inc_duration", "inc_duration_type", "pro_atm_zone", "pro_parent_material", "pro_MAT", "pro_MAP", "pro_PET_mmyr_mean", "pro_land_cover") %>%
   mutate(esp_name = paste0(entry_name, site_name, pro_name))
 
-# split by site_name
-inc_cln.sp <- Filter(nrow, split(inc_cln, inc_cln$esp_name))
+# split by site_name & filter by 
+inc_lyr_cln.sp <- Filter(
+  nrow, 
+  lapply(split(inc_lyr_cln, inc_lyr_cln$esp_name), function(x) 
+    x %>% filter(!is.na(lyr_14c))))
 
 # remove Mueller multiple time points
-inc_cln.sp$Mueller_2014HoeglwaldH_1 <- inc_cln.sp$Mueller_2014HoeglwaldH_1 %>%
+inc_lyr_cln.sp$Mueller_2014HoeglwaldH_1 <- inc_lyr_cln.sp$Mueller_2014HoeglwaldH_1 %>%
   filter(inc_duration_type == "<1 month")
 
 # create constraint lists for bulk and resp. data w/ vars (time, d14C)
-obs.bulk14C.ls <- lapply(inc_cln.sp, function(x) {
+obs.bulk14C.ls <- lapply(inc_lyr_cln.sp, function(x) {
   x[ , c("lyr_obs_date_y", "lyr_14c")] %>%
     rename(time = lyr_obs_date_y, bulkC = lyr_14c)
 })
-obs.resp14C.ls <- lapply(inc_cln.sp, function(x) {
+obs.resp14C.ls <- lapply(inc_lyr_cln.sp, function(x) {
   x[ , c("lyr_obs_date_y", "inc_14c")] %>%
     rename(time = lyr_obs_date_y, resp = inc_14c)
 })
@@ -216,6 +218,128 @@ atm14C.ls <- lapply(inc_cln.sp, function(x) {
     Hua_2021 %>%
       select(Year.AD, !! sym(z))
 })
+```
+
+# 1p mod
+
+```{r 1p-mod}
+# filter out multiple time points, i.e., keep first 14C obs
+## Mueller 2014
+inc_cln <- inc_lyr_cln[-which(inc_lyr_cln$esp_name == "Mueller_2014HoeglwaldH_1" & inc_lyr_cln$inc_duration_type != "<1 month"), ]
+## Schuur 2001
+inc_cln <- inc_cln[-which(inc_cln$entry_name == "Schuur_2001" & grepl("final", inc_cln$inc_name)), ]
+## Schimel
+inc_cln <- inc_cln[-which(inc_cln$entry_name == "Schimel_2011" & inc_cln$inc_duration_type != "<1 month"), ]
+
+# filter out fraction incubations
+## Mueller 2014
+inc_cln <- inc_cln[-which(inc_cln$entry_name == "Mueller_2014" & !is.na(inc_cln$frc_name)), ]
+
+# separate dataset into inc_dd14c > 0 vs. < 0
+inc_cln_ddPos <- inc_cln %>%
+  filter(inc_dd14c > 0)
+inc_cln_ddNeg <- inc_cln %>%
+  filter(inc_dd14c < 0)
+  
+inc_1p.slow <- ISRaD.extra.norm14c_year(
+  obs_d14c = "inc_14c",
+  obs_year = "lyr_obs_date_y",
+  atm_zone = "pro_atm_zone",
+  norm_year = 2010,
+  df = inc_cln_ddNeg) %>% 
+  mutate(inc_tau = "slow")
+
+inc_1p.fast <- ISRaD.extra.norm14c_year(
+  obs_d14c = "inc_14c",
+  obs_year = "lyr_obs_date_y",
+  atm_zone = "pro_atm_zone",
+  norm_year = 2010,
+  df = inc_cln_ddPos,
+  slow = FALSE) %>% 
+  mutate(inc_tau = "fast")
+
+inc_1p <- rbind(
+  inc_1p.fast,
+  inc_1p.slow
+)
+
+inc_1p.slow.all <- ISRaD.extra.norm14c_year(
+  obs_d14c = "inc_14c",
+  obs_year = "lyr_obs_date_y",
+  atm_zone = "pro_atm_zone",
+  norm_year = 2010,
+  df = inc_cln)
+inc_1p.fast.all <- ISRaD.extra.norm14c_year(
+  obs_d14c = "inc_14c",
+  obs_year = "lyr_obs_date_y",
+  atm_zone = "pro_atm_zone",
+  norm_year = 2010,
+  df = inc_cln,
+  slow = FALSE)
+
+ggplot(inc_1p, aes(pro_MAT, inc_norm_tau, color = inc_tau)) +
+  geom_point() +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+ggplot(inc_1p.slow.all, aes(pro_MAT, inc_norm_tau)) +
+  geom_point(color = "#00BFC4") +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+ggplot(inc_1p.fast.all, aes(pro_MAT, inc_norm_tau)) +
+  geom_point(color = "#F8766D") +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+ggplot(inc_1p.fast.all, aes(pro_MAT, inc_norm_tau)) +
+  geom_point(aes(color = pro_MAP - pro_PET_mmyr_mean), size = 3) +
+  scale_color_viridis_c() + 
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+ggplot(inc_1p.fast.all, aes(lyr_obs_date_y, inc_norm_tau)) +
+  geom_point() +
+  geom_text() +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+inc_1p.fast.all %>%
+  filter(inc_norm_tau < 50) %>%
+  ggplot(., aes(pro_MAT, inc_norm_tau, color = pro_PET_mmyr_mean)) +
+  geom_point(aes(shape = pro_land_cover)) +
+  scale_color_viridis_c() + 
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+inc_1p %>%
+  filter(inc_norm_tau < 50) %>%
+  filter(pro_land_cover == "forest") %>%
+  filter(entry_name != "Czimczik_2007") %>%
+  ggplot(., aes(pro_MAT, inc_norm_tau)) +
+  geom_smooth(method = "lm", formula = y ~ x) +
+  geom_point() +
+  # scale_color_viridis_c() +
+  scale_x_continuous(limits = c(-20, 30)) +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+inc_1p %>%
+  filter(inc_dd14c > -100) %>%
+  # filter(pro_land_cover == "forest") %>%
+  # filter(entry_name != "Czimczik_2007") %>%
+  ggplot(., aes(pro_MAT, inc_dd14c)) +
+  # geom_smooth(method = "lm", formula = y ~ x) +
+  geom_point() +
+  # geom_text(aes(label=entry_name)) +
+  # scale_color_viridis_c() + 
+  theme_bw() +
+  theme(panel.grid = element_blank())
+
+
+cbind(
+  inc_1p.slow.all, 
+  inc_1p.fast.all)
+
 ```
 
 # modFit optimization
